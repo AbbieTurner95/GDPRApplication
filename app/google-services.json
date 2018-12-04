@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "157836690895",
+    "firebase_url": "https://thegdprapplication.firebaseio.com",
+    "project_id": "thegdprapplication",
+    "storage_bucket": "thegdprapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157836690895:android:47713c6fb7504f14",
+        "android_client_info": {
+          "package_name": "com.example.thegdprapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157836690895-0mi0qp1f3e9a7kqa9on4ms6skkiq2uql.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thegdprapplication",
+            "certificate_hash": "1c7cb9528d3c3883074b07c4dfd5958ecfcafe4a"
+          }
+        },
+        {
+          "client_id": "157836690895-283dovm9o1ik6t676kfmpujgojed1jd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMzIBqszRcgmO-TMyzhcjLS0d1vcQEQ7M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157836690895-283dovm9o1ik6t676kfmpujgojed1jd0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

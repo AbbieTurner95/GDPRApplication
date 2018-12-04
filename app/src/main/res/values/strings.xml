@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">GDPR Application</string>
+    <string name="log_in">Log In</string>
+    <string name="slogan">Because your company cares.</string>
+    <string name="error_connection">ERROR - Connection Error!</string>
+    <string name="check_connection">Check your connection!</string>
+    <string name="OK">OK</string>
+    <string name="sign_in_error">Sign in error - please try again!</string>
+    <string name="cancelled_sign_in">Sign in cancelled.</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log In</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="fax">Fax</string>
+    <string name="language">Language</string>
+    <string name="ethnicity">Ethnicity</string>
+    <string name="medical_history">Medical History</string>
+    <string name="work_place">Work Place</string>
+    <string name="work_hours">Work Hours</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+</resources>
