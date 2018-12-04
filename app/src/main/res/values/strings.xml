@@ -16,4 +16,7 @@
     <string name="medical_history">Medical History</string>
     <string name="work_place">Work Place</string>
     <string name="work_hours">Work Hours</string>
+    <string name="register">Register</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="address">Address</string>
 </resources>

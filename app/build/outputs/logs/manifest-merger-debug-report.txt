@@ -167,7 +167,7 @@ MERGED from [com.google.android.gms:play-services-ads-base:17.1.1] /Users/abbiet
 MERGED from [com.google.android.gms:play-services-ads-base:17.1.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-17.1.1.aar/a6c18415fef3aa0ac54159b3b448f0a3/AndroidManifest.xml:7:5-20
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/78b26014af96e08d0fbb3c13e0688f75/AndroidManifest.xml:22:18-91
-activity#com.example.abbieturner.gdprapplication.ui.activity.LoginActivity
+activity#com.example.abbieturner.gdprapplication.UI.Activity.LoginActivity
 ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:16:9-22:20
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:16:19-60
@@ -181,11 +181,11 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:20:27-74
-activity#com.example.abbieturner.gdprapplication.ui.activity.MainActivity
+activity#com.example.abbieturner.gdprapplication.UI.Activity.MainActivity
 ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:23:9-62
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:23:19-59
-activity#com.example.abbieturner.gdprapplication.ui.activity.RegisterActivity
+activity#com.example.abbieturner.gdprapplication.UI.Activity.RegisterActivity
 ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:24:9-65
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:24:19-63

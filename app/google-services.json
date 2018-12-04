@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "157836690895",
-    "firebase_url": "https://thegdprapplication.firebaseio.com",
-    "project_id": "thegdprapplication",
-    "storage_bucket": "thegdprapplication.appspot.com"
+    "project_number": "967349496854",
+    "firebase_url": "https://gdprapplication.firebaseio.com",
+    "project_id": "gdprapplication",
+    "storage_bucket": "gdprapplication.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:157836690895:android:47713c6fb7504f14",
+        "mobilesdk_app_id": "1:967349496854:android:b44448141d2d700e",
         "android_client_info": {
-          "package_name": "com.example.thegdprapplication"
+          "package_name": "com.example.abbieturner.gdprapplication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "157836690895-0mi0qp1f3e9a7kqa9on4ms6skkiq2uql.apps.googleusercontent.com",
+          "client_id": "967349496854-5nc3geaf7apenv1s2ddhljmuc6i0pdgt.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.thegdprapplication",
-            "certificate_hash": "1c7cb9528d3c3883074b07c4dfd5958ecfcafe4a"
+            "package_name": "com.example.abbieturner.gdprapplication",
+            "certificate_hash": "8b078c9e3a2d2492e70ce5d3ba3c1c6de8c794d0"
           }
         },
         {
-          "client_id": "157836690895-283dovm9o1ik6t676kfmpujgojed1jd0.apps.googleusercontent.com",
+          "client_id": "967349496854-rfi4p0ohsv3lokrusv6e3avmvj2ra9mr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBMzIBqszRcgmO-TMyzhcjLS0d1vcQEQ7M"
+          "current_key": "AIzaSyCXL3sQl_HRmhSHJgRRwayEB3TdkXJ2hPM"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "157836690895-283dovm9o1ik6t676kfmpujgojed1jd0.apps.googleusercontent.com",
+              "client_id": "967349496854-rfi4p0ohsv3lokrusv6e3avmvj2ra9mr.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

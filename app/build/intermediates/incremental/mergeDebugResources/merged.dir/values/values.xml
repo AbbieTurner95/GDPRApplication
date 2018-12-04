@@ -2207,9 +2207,12 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="default_web_client_id" translatable="false">CHANGE-ME</string>
+    <string name="email">Email</string>
     <string name="error_connection">ERROR - Connection Error!</string>
+    <string name="ethnicity">Ethnicity</string>
     <string name="facebook_application_id" translatable="false">CHANGE-ME</string>
     <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
+    <string name="fax">Fax</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="firebase_web_host" translatable="false">CHANGE-ME</string>
     <string name="fui_accessibility_logo" translation_description="Content description for app logo">App logo</string>
@@ -2288,12 +2291,17 @@
     </string>
     <string name="github_client_id" translatable="false">CHANGE-ME</string>
     <string name="github_client_secret" translatable="false">CHANGE-ME</string>
+    <string name="language">Language</string>
     <string name="log_in">Log In</string>
+    <string name="medical_history">Medical History</string>
+    <string name="password">Password</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
+    <string name="phone">Phone</string>
+    <string name="register">Register</string>
     <string name="s1">Save image</string>
     <string name="s2">"Allow Ad to store image in Picture gallery?"</string>
     <string name="s3">Accept</string>
@@ -2308,6 +2316,8 @@
     <string name="toast_message">Toast message</string>
     <string name="twitter_consumer_key" translatable="false">CHANGE-ME</string>
     <string name="twitter_consumer_secret" translatable="false">CHANGE-ME</string>
+    <string name="work_hours">Work Hours</string>
+    <string name="work_place">Work Place</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

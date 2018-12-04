@@ -30,7 +30,7 @@
                 android:id="@+id/et_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter your name" />
+                android:hint="@string/enter_your_name" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -48,7 +48,7 @@
                 android:id="@+id/et_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Address" />
+                android:hint="@string/address" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -217,6 +217,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/password" />
         </android.support.design.widget.TextInputLayout>
+
         <Button
             android:id="@+id/btn_register"
             style="@style/Widget.AppCompat.Button.Colored"
