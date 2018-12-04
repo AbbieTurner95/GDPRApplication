@@ -110,13 +110,6 @@
     <string name="fui_welcome_back_idp_header">계정이 이미 있음</string>
     <string name="fui_welcome_back_idp_prompt">%1$s을(를) 이미 사용하고 있습니다. 계속하려면 %2$s(으)로 로그인하세요.</string>
     <string name="fui_welcome_back_password_prompt_body">이미 %1$s을(를) 사용하여 로그인했습니다. 해당 계정의 비밀번호를 입력하세요.</string>
-    <string msgid="368094699078615544" name="s1">"이미지 저장"</string>
-    <string msgid="4550830452390689489" name="s2">"광고에서 사진 갤러리에 이미지를 저장하도록 허용하시겠습니까?"</string>
-    <string msgid="2435407834265420668" name="s3">"동의"</string>
-    <string msgid="9167523597401839819" name="s4">"거부"</string>
-    <string msgid="1566682516266724847" name="s5">"캘린더 일정 만들기"</string>
-    <string msgid="5996672174517137271" name="s6">"광고에서 캘린더 일정을 만들도록 허용하시겠습니까?"</string>
-    <string msgid="7163549807207034258" name="s7">"테스트 광고"</string>
     <string msgid="146198913615257606" name="search_menu_title">"검색"</string>
     <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

@@ -110,13 +110,6 @@
     <string name="fui_welcome_back_idp_header">Вече имате профил</string>
     <string name="fui_welcome_back_idp_prompt">Вече използвахте %1$s. За да продължите, влезте с %2$s.</string>
     <string name="fui_welcome_back_password_prompt_body">Вече използвахте %1$s за вход. Въведете паролата си за този профил.</string>
-    <string msgid="368094699078615544" name="s1">"Запазване на изображението"</string>
-    <string msgid="4550830452390689489" name="s2">"Да се разреши ли на рекламата да съхрани изображение в галерията със снимки?"</string>
-    <string msgid="2435407834265420668" name="s3">"Приемам"</string>
-    <string msgid="9167523597401839819" name="s4">"Отхвърлям"</string>
-    <string msgid="1566682516266724847" name="s5">"Създаване на събитие в календара"</string>
-    <string msgid="5996672174517137271" name="s6">"Да се разреши ли на рекламата да създаде събитие в календара?"</string>
-    <string msgid="7163549807207034258" name="s7">"Тестова реклама"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Търсене"</string>
     <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

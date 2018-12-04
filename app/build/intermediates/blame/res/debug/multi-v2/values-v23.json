@@ -4,7 +4,7 @@
             "outputFile": "/Users/abbieturner/Documents/GitHub/GDPRApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/abbieturner/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8448871da7fc94579d0307c110805f43/res/values-v23/values-v23.xml",
+                    "source": "/Users/abbieturner/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f0ce22d98be02427cfa49697d880a42e/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "/Users/abbieturner/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/06f692e37a1163c7d86a2eac914ef9ee/res/values-v23/values-v23.xml",
+                    "source": "/Users/abbieturner/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/c299e58c967c93e08b37ddacd5c48e22/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

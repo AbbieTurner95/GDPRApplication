@@ -110,13 +110,6 @@
     <string name="fui_welcome_back_idp_header">Anda sudah mempunyai akaun</string>
     <string name="fui_welcome_back_idp_prompt">Anda sudah menggunakan %1$s. Log masuk dengan %2$s untuk teruskan.</string>
     <string name="fui_welcome_back_password_prompt_body">Anda sudah menggunakan %1$s untuk log masuk. Masukkan kata laluan anda untuk akaun tersebut.</string>
-    <string msgid="368094699078615544" name="s1">"Simpan imej"</string>
-    <string msgid="4550830452390689489" name="s2">"Benarkan Iklan menyimpan imej dalam galeri Gambar?"</string>
-    <string msgid="2435407834265420668" name="s3">"Terima"</string>
-    <string msgid="9167523597401839819" name="s4">"Tolak"</string>
-    <string msgid="1566682516266724847" name="s5">"Buat acara kalendar"</string>
-    <string msgid="5996672174517137271" name="s6">"Benarkan Iklan membuat acara kalendar?"</string>
-    <string msgid="7163549807207034258" name="s7">"Iklan Ujian"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Cari"</string>
     <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

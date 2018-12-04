@@ -110,13 +110,6 @@
     <string name="fui_welcome_back_idp_header">Aveți deja un cont</string>
     <string name="fui_welcome_back_idp_prompt">Ați folosit deja %1$s. Pentru a continua, conectați-vă cu %2$s.</string>
     <string name="fui_welcome_back_password_prompt_body">Ați folosit deja %1$s pentru a vă conecta. Introduceți parola acestui cont.</string>
-    <string msgid="368094699078615544" name="s1">"Salvați imaginea"</string>
-    <string msgid="4550830452390689489" name="s2">"Permiteți ca anunțul să stocheze imaginea în Galeria de fotografii?"</string>
-    <string msgid="2435407834265420668" name="s3">"Acceptați"</string>
-    <string msgid="9167523597401839819" name="s4">"Refuzați"</string>
-    <string msgid="1566682516266724847" name="s5">"Creați un eveniment în calendar"</string>
-    <string msgid="5996672174517137271" name="s6">"Permiteți ca anunțul să creeze un eveniment în calendar?"</string>
-    <string msgid="7163549807207034258" name="s7">"Anunț de probă"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Căutați"</string>
     <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

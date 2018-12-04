@@ -110,13 +110,6 @@
     <string name="fui_welcome_back_idp_header">તમારી પાસે પહેલેથી જ એક એકાઉન્ટ છે</string>
     <string name="fui_welcome_back_idp_prompt">તમે પહેલાંથી જ %1$sનો ઉપયોગ કરી લીધો છે. આગળ વધવા માટે %2$s વડે સાઇન ઇન કરો.</string>
     <string name="fui_welcome_back_password_prompt_body">તમે સાઇન ઇન કરવા માટે પહેલેથી %1$sનો ઉપયોગ કરી લીધો છે. તે એકાઉન્ટ માટેનો તમારો પાસવર્ડ દાખલ કરો.</string>
-    <string msgid="368094699078615544" name="s1">"છબી સાચવો"</string>
-    <string msgid="4550830452390689489" name="s2">"જાહેરાતને ચિત્ર ગૅલેરીમાં છબી સંગ્રહિત કરવાની મંજૂરી આપીએ?"</string>
-    <string msgid="2435407834265420668" name="s3">"સ્વીકારો"</string>
-    <string msgid="9167523597401839819" name="s4">"નકારો"</string>
-    <string msgid="1566682516266724847" name="s5">"કૅલેન્ડર ઇવેન્ટ બનાવો"</string>
-    <string msgid="5996672174517137271" name="s6">"જાહેરાતને કૅલેન્ડર ઇવેન્ટ બનાવવાની મંજૂરી આપીએ?"</string>
-    <string msgid="7163549807207034258" name="s7">"પરીક્ષણની જાહેરાત"</string>
     <string msgid="146198913615257606" name="search_menu_title">"શોધો"</string>
     <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

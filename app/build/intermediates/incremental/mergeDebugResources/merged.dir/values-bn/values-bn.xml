@@ -110,13 +110,6 @@
     <string name="fui_welcome_back_idp_header">আপনার আগে থেকেই একটি অ্যাকাউন্ট আছে</string>
     <string name="fui_welcome_back_idp_prompt">আপনি %1$s আগেই ব্যবহার করেছেন। চালিয়ে যেতে %2$s দিয়ে সাইন-ইন করুন।</string>
     <string name="fui_welcome_back_password_prompt_body">আপনি আগেই %1$s দিয়ে সাইন-ইন করেছেন। সেই অ্যাকাউন্টের জন্য পাসওয়ার্ডটি লিখুন।</string>
-    <string msgid="368094699078615544" name="s1">"ছবি সেভ করুন"</string>
-    <string msgid="4550830452390689489" name="s2">"বিজ্ঞাপনকে ছবির গ্যালারিতে ছবি সংরক্ষণ করার অনুমতি দেবেন?"</string>
-    <string msgid="2435407834265420668" name="s3">"গ্রহণ করুন"</string>
-    <string msgid="9167523597401839819" name="s4">"প্রত্যাখ্যান করুন"</string>
-    <string msgid="1566682516266724847" name="s5">"ক্যালেন্ডার ইভেন্ট তৈরি করুন"</string>
-    <string msgid="5996672174517137271" name="s6">"বিজ্ঞাপনকে একটি ক্যালেন্ডার ইভেন্ট তৈরি করার অনুমতি দেবেন?"</string>
-    <string msgid="7163549807207034258" name="s7">"পরীক্ষামূলক বিজ্ঞাপন"</string>
     <string msgid="146198913615257606" name="search_menu_title">"খুঁজুন"</string>
     <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"৯৯৯+"</string>
 </resources>

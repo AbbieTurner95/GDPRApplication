@@ -110,13 +110,6 @@
     <string name="fui_welcome_back_idp_header">Već imate račun</string>
     <string name="fui_welcome_back_idp_prompt">Već ste upotrijebili e-adresu %1$s. Za nastavak se prijavite putem usluge %2$s.</string>
     <string name="fui_welcome_back_password_prompt_body">Za prijavu ste već upotrijebili e-adresu %1$s. Unesite zaporku za taj račun.</string>
-    <string msgid="368094699078615544" name="s1">"Spremi sliku"</string>
-    <string msgid="4550830452390689489" name="s2">"Želite li dopustiti oglasu da spremi sliku u galeriju slika?"</string>
-    <string msgid="2435407834265420668" name="s3">"Prihvati"</string>
-    <string msgid="9167523597401839819" name="s4">"Odbij"</string>
-    <string msgid="1566682516266724847" name="s5">"Izradi događaj u kalendaru"</string>
-    <string msgid="5996672174517137271" name="s6">"Želite li dopustiti oglasu da izradi događaj u kalendaru?"</string>
-    <string msgid="7163549807207034258" name="s7">"Testni oglas"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Pretraživanje"</string>
     <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

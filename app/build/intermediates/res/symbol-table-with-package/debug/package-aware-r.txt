@@ -58,9 +58,6 @@ attr actionOverflowMenuStyle
 attr actionProviderClass
 attr actionViewClass
 attr activityChooserViewStyle
-attr adSize
-attr adSizes
-attr adUnitId
 attr alertDialogButtonGroupStyle
 attr alertDialogCenterButtons
 attr alertDialogStyle
@@ -1392,6 +1389,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string address
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -1418,12 +1416,14 @@ string common_signin_button_text
 string common_signin_button_text_long
 string default_web_client_id
 string email
+string enter_your_name
 string error_connection
 string ethnicity
 string facebook_application_id
 string facebook_login_protocol_scheme
 string fax
 string fcm_fallback_notification_channel_label
+string firebase_database_url
 string firebase_web_host
 string fui_accessibility_logo
 string fui_auto_verified
@@ -1492,8 +1492,13 @@ string fui_welcome_back_email_header
 string fui_welcome_back_idp_header
 string fui_welcome_back_idp_prompt
 string fui_welcome_back_password_prompt_body
+string gcm_defaultSenderId
 string github_client_id
 string github_client_secret
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string language
 string log_in
 string medical_history
@@ -1504,14 +1509,8 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string phone
+string project_id
 string register
-string s1
-string s2
-string s3
-string s4
-string s5
-string s6
-string s7
 string search_menu_title
 string sign_in_error
 string slogan
@@ -1865,7 +1864,6 @@ style Theme_Design_Light
 style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
-style Theme_IAPTheme
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark
@@ -1973,7 +1971,6 @@ styleable ActionMenuItemView android_minWidth
 styleable ActionMenuView
 styleable ActionMode background backgroundSplit closeItemLayout height subtitleTextStyle titleTextStyle
 styleable ActivityChooserView expandActivityOverflowButtonDrawable initialActivityCount
-styleable AdsAttrs adSize adSizes adUnitId
 styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listItemLayout listLayout multiChoiceItemLayout showTitle singleChoiceItemLayout
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable AnimatedStateListDrawableItem android_id android_drawable
