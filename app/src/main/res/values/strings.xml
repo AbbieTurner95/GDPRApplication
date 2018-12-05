@@ -13,10 +13,11 @@
     <string name="fax">Fax</string>
     <string name="language">Language</string>
     <string name="ethnicity">Ethnicity</string>
-    <string name="medical_history">Medical History</string>
-    <string name="work_place">Work Place</string>
-    <string name="work_hours">Work Hours</string>
+    <string name="medical_history">Medical Conditions</string>
+    <string name="work_place">Place of work.</string>
+    <string name="work_hours">Work Hours per week</string>
     <string name="register">Register</string>
-    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_name">Full name</string>
     <string name="address">Address</string>
+    <string name="register_securely_today">Register Securely Today!</string>
 </resources>

@@ -82,9 +82,8 @@ public class LoginActivity extends AppCompatActivity {
                                          .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK));
                                          finish();
                                      } else {
-                                         progressDialog.dismiss();
-                                         Toasty.error(context, "Incorrect email or password, try again!", Toast.LENGTH_LONG, true).show();
-                                     }
+                                         progressDialog.hide();
+                                         Toasty.error(getApplicationContext(),"Incorrect email or password, please try again!",Toast.LENGTH_SHORT,true).show();                                     }
                             }
                         });
             }
