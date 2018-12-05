@@ -1,6 +1,7 @@
 package com.example.abbieturner.gdprapplication.UI.Activity;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -35,9 +36,9 @@ public class LoginActivity extends AppCompatActivity {
     @BindView(R.id.btn_login)
     Button login;
     private ProgressDialog progressDialog;
-    //FireBase
-    private FirebaseAuth mAuth;
 
+    private FirebaseAuth mAuth;
+    private Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +67,6 @@ public class LoginActivity extends AppCompatActivity {
         if (Utils.isNetworkAvailable(this)){
             if (Utils.checkError(etMail) &&Utils.checkError(etPass)&&Utils.checkEmail(etMail)){
 
-                //start progress dialog
                 progressDialog.setTitle("Start Login");
                 progressDialog.setMessage("please wait ...");
                 progressDialog.setCanceledOnTouchOutside(false);
@@ -81,6 +81,9 @@ public class LoginActivity extends AppCompatActivity {
                                          startActivity(new Intent(getApplicationContext(),MainActivity.class)
                                          .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK));
                                          finish();
+                                     } else {
+                                         progressDialog.dismiss();
+                                         Toasty.error(context, "Incorrect email or password, try again!", Toast.LENGTH_LONG, true).show();
                                      }
                             }
                         });

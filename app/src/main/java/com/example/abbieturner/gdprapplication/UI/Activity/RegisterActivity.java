@@ -84,7 +84,6 @@ public class RegisterActivity extends AppCompatActivity {
                     &&Utils.checkError(etEthn)&&Utils.checkError(etMedical)&&Utils.checkError(etWorkHour)
                     &&Utils.checkError(etWorkPlace)&&Utils.checkPhoneSize(etPhone)&&Utils.checkEmail(etEmail)){
 
-                //start progress dialog
                 progressDialog.setTitle("Start Registering");
                 progressDialog.setMessage("please wait ...");
                 progressDialog.setCanceledOnTouchOutside(false);
