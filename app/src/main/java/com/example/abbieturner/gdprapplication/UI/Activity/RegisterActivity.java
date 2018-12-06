@@ -85,7 +85,7 @@ public class RegisterActivity extends AppCompatActivity {
                     &&Utils.checkError(etWorkPlace)&&Utils.checkPhoneSize(etPhone)&&Utils.checkEmail(etEmail)){
 
                 progressDialog.setTitle("Start Registering");
-                progressDialog.setMessage("please wait ...");
+                progressDialog.setMessage("Please wait ...");
                 progressDialog.setCanceledOnTouchOutside(false);
                 progressDialog.show();
 
@@ -102,7 +102,7 @@ public class RegisterActivity extends AppCompatActivity {
                         });
             }
         } else {
-            Toasty.warning(this,"Check internet connection",Toast.LENGTH_SHORT,true).show();
+            Toasty.warning(this,"Check Internet Connection",Toast.LENGTH_SHORT,true).show();
         }
     }
 
@@ -117,13 +117,15 @@ public class RegisterActivity extends AppCompatActivity {
         hashMap.put("ethnicity",etEthn.getText().toString());
         hashMap.put("workHour",etWorkHour.getText().toString());
         hashMap.put("workPlace",etWorkPlace.getText().toString());
+        hashMap.put("admin",false);
 
         mRootRef.child("users").push().updateChildren(hashMap, new DatabaseReference.CompletionListener() {
             @Override
             public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
                 progressDialog.dismiss();
+
                 startActivity(new Intent(getApplicationContext(),LoginActivity.class)
-                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK));
+                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK));
                 finish();
             }
         });

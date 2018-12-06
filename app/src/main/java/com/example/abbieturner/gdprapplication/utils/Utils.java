@@ -29,14 +29,15 @@ public class Utils {
 
     public static final boolean checkEmail(EditText email) {
         if (!isEmailValid(email.getText().toString())) {
-            email.setError("Check e-mail address is correct.");
+            email.setError("Please check e-mail address is correct.");
             return false;
         }
         return true;
     }
+
     public static final boolean checkError(EditText editText) {
         if (!isValid(editText.getText().toString())) {
-            editText.setError("Fill this empty field.");
+            editText.setError("Please fill out this empty field.");
             return false;
         }
         return true;
@@ -44,7 +45,7 @@ public class Utils {
 
     public static boolean checkPhoneSize(EditText mPhone) {
         if (mPhone.getText().toString().length() < 6) {
-            mPhone.setError("Phone size must be more that 6 numbers.");
+            mPhone.setError("Phone size must be 11 characters.");
             return false;
         }
         return true;

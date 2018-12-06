@@ -16,8 +16,15 @@
     <string name="medical_history">Medical Conditions</string>
     <string name="work_place">Place of work.</string>
     <string name="work_hours">Work Hours per week</string>
-    <string name="register">Register</string>
+    <string name="register">Register Here!</string>
     <string name="enter_your_name">Full name</string>
     <string name="address">Address</string>
     <string name="register_securely_today">Register Securely Today!</string>
+    <string name="logo_for_gdpr">logo for gdpr</string>
+    <string name="copyright_sign">copyright sign</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="visit_our_website">Visit our Website</string>
+    <string name="click_for_help">Click for Help</string>
 </resources>
