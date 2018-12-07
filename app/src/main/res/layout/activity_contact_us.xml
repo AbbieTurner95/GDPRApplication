@@ -16,6 +16,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/contactbck"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,106 +40,136 @@
         app:layout_constraintVertical_bias="0.857" />
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.061"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:padding="@dimen/padd_five"
-        android:gravity="left"
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/fui_ic_phone_white_24dp"
-            android:paddingEnd="18dp"/>
-
-        <TextView
-            android:fontFamily="@font/big_noodle"
-            android:textColor="@android:color/background_light"
-            android:layout_gravity="center"
-            android:textSize="@dimen/eighteen_TS"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="07527433503" />
-
-    </LinearLayout>
+        app:layout_constraintVertical_bias="0.061">
 
 
         <LinearLayout
-            android:gravity="left"
-            android:padding="@dimen/padd_five"
-            android:orientation="horizontal"
+            android:id="@+id/contactus"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="@dimen/padd_five">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="18dp"
+                android:src="@drawable/fui_ic_phone_white_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/big_noodle"
+                android:text="07527433503"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/sixteen_TS" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="@dimen/padd_five">
 
 
             <ImageView
-                android:paddingEnd="18dp"
-                android:layout_gravity="center"
-                android:src="@drawable/fui_ic_mail_white_24dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="18dp"
+                android:src="@drawable/fui_ic_mail_white_24dp" />
 
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:fontFamily="@font/big_noodle"
-                android:textColor="@android:color/background_light"
                 android:text="GDPRinfo@outlook.co.uk"
-                android:textSize="@dimen/eighteen_TS"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/sixteen_TS" />
 
 
         </LinearLayout>
-
 
 
         <LinearLayout
-
-            android:gravity="left"
-            android:padding="@dimen/padd_five"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="@dimen/padd_five">
 
 
             <ImageView
-                android:paddingEnd="18dp"
-                android:layout_gravity="center"
-                android:src="@drawable/fui_ic_facebook_white_22dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="18dp"
+                android:src="@drawable/fui_ic_facebook_white_22dp" />
 
 
             <TextView
-                android:fontFamily="@font/big_noodle"
-                android:textColor="@android:color/background_light"
-                android:layout_gravity="center"
-                android:textSize="@dimen/eighteen_TS"
-                android:text="GDPR Application Sheffield"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/big_noodle"
+                android:text="GDPR Application Sheffield"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/sixteen_TS" />
 
         </LinearLayout>
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="@dimen/padd_five">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="@dimen/eighteen_TS"
+                android:src="@drawable/fui_ic_twitter_bird_white_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/big_noodle"
+                android:text="GDPRAPPSSHEFF"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/sixteen_TS" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/google_maps"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
 </android.support.constraint.ConstraintLayout>
