@@ -4,7 +4,6 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-
         <item
             android:id="@+id/nav_contact"
             android:icon="@drawable/ic_phone_in_talk_black_24dp"
@@ -15,11 +14,10 @@
             android:icon="@drawable/ic_language_black_24dp"
             android:title="@string/visit_our_website" />
 
-
         <item
             android:id="@+id/nav_help"
             android:icon="@drawable/ic_help_black_24dp"
             android:title="@string/click_for_help" />
-
     </group>
+
 </menu>

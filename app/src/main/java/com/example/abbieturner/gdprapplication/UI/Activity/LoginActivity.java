@@ -1,7 +1,6 @@
 package com.example.abbieturner.gdprapplication.UI.Activity;
 
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -145,7 +144,8 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
         int id = item.getItemId();
 
         if (id == R.id.nav_contact) {
-            //
+            Intent intent = new Intent(this, ContactUsActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_website) {
             //
         } else if (id == R.id.nav_help) {

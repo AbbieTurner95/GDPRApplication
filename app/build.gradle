@@ -50,5 +50,5 @@ dependencies {
 
     //Google PlayServices
     // implementation 'com.google.android.gms:play-services-ads:17.1.1'
-   // implementation 'com.google.firebase:firebase-auth:16.0.1:16.0.5'
+    // implementation 'com.google.firebase:firebase-auth:16.0.1:16.0.5'
 }

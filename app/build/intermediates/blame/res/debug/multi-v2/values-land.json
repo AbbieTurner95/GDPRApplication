@@ -14,22 +14,22 @@
                     }
                 },
                 {
-                    "source": "/Users/abbieturner/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/6ab3984c90c952f51b60dd6412c26846/res/values-land/values-land.xml",
+                    "source": "/Users/abbieturner/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/62d59454c55a6e13a6f3114082146e8a/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
                         "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "232"
+                        "endColumns": "10",
+                        "endOffsets": "222"
                     },
                     "to": {
                         "startLines": "5",
                         "startColumns": "4",
                         "startOffsets": "264",
                         "endLines": "8",
-                        "endColumns": "12",
-                        "endOffsets": "441"
+                        "endColumns": "10",
+                        "endOffsets": "431"
                     }
                 }
             ]
