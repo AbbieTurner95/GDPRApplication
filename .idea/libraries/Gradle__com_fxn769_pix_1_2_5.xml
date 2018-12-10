@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.fxn769:pix-1.2.5">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pix-1.2.5.aar/480b3c0ab0c6c4dcc07cc33327b4c3ca/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pix-1.2.5.aar/480b3c0ab0c6c4dcc07cc33327b4c3ca/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fxn769/pix/1.2.5/b1bea2fc8359b9455a0fc113afae6ca791de2d59/pix-1.2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

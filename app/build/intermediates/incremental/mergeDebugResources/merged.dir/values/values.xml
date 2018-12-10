@@ -197,6 +197,9 @@
     <color name="colorAccent">#e6a400</color>
     <color name="colorPrimary">#011661</color>
     <color name="colorPrimaryDark">#130049</color>
+    <color name="colorPrimaryLightPix">#80075e54</color>
+    <color name="colorPrimaryPix">#075e54</color>
+    <color name="colorSecond">#46ACE4</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
     <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
     <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
@@ -267,6 +270,7 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="rippelColor">#FFFFFF</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
@@ -962,6 +966,22 @@
       
       <enum name="end" value="1"/>
     </attr><attr format="dimension" name="fabCradleMargin"/><attr format="dimension" name="fabCradleRoundedCornerRadius"/><attr format="dimension" name="fabCradleVerticalOffset"/><attr format="boolean" name="hideOnScroll"/></declare-styleable>
+    <declare-styleable name="BottomNavigation">
+        <attr format="color" name="activeColor"/>
+        <attr format="color" name="inActiveColor"/>
+        <attr format="boolean" name="isScrollable"/>
+        <attr format="reference" name="resMenu"/>
+        <attr format="color" name="backgroundNavigation"/>
+        <attr format="dimension" name="textSize"/>
+        <attr format="boolean" name="enableTintColor"/>
+        <attr format="reference" name="textFontFamily"/>
+        <attr format="integer|reference" name="defaultSelectedPosition"/>
+        <attr format="enum" name="mode">
+            <enum name="viewPager" value="0"/>
+            <enum name="normal" value="1"/>
+        </attr>
+        <attr format="boolean" name="hasNotification"/>
+    </declare-styleable>
     <declare-styleable name="BottomNavigationView"><attr name="menu"/><attr name="labelVisibilityMode">
       
       <enum name="auto" value="-1"/>
@@ -1737,6 +1757,7 @@
         <attr format="reference" name="fastScrollHorizontalThumbDrawable"/>
         <attr format="reference" name="fastScrollHorizontalTrackDrawable"/>
     </declare-styleable>
+    <declare-styleable name="RippleView"><attr format="integer" name="rv_alpha"/><attr format="integer" name="rv_framerate"/><attr format="integer" name="rv_rippleDuration"/><attr format="integer" name="rv_zoomDuration"/><attr format="color" name="rv_color"/><attr format="boolean" name="rv_centered"/><attr format="enum" name="rv_type"><enum name="simpleRipple" value="0"/><enum name="doubleRipple" value="1"/><enum name="rectangle" value="2"/></attr><attr format="dimension" name="rv_ripplePadding"/><attr format="boolean" name="rv_zoom"/><attr format="float" name="rv_zoomScale"/></declare-styleable>
     <declare-styleable name="ScrimInsetsFrameLayout"><attr format="color|reference" name="insetForeground"/></declare-styleable>
     <declare-styleable name="ScrollingViewBehavior_Layout"><attr format="dimension" name="behavior_overlapTop"/></declare-styleable>
     <declare-styleable name="SearchView">
@@ -2185,6 +2206,7 @@
     <dimen name="compat_control_corner_material">2dp</dimen>
     <dimen name="compat_notification_large_icon_max_height">320dp</dimen>
     <dimen name="compat_notification_large_icon_max_width">320dp</dimen>
+    <dimen name="curves">3dp</dimen>
     <dimen name="design_appbar_elevation">4dp</dimen>
     <dimen name="design_bottom_navigation_active_item_max_width">168dp</dimen>
     <dimen name="design_bottom_navigation_active_item_min_width">96dp</dimen>
@@ -2235,10 +2257,14 @@
     <dimen name="elev_four">4sp</dimen>
     <dimen name="elev_six">6dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fastscroll_bubble_radius">16dp</dimen>
+    <dimen name="fastscroll_bubble_size">56dp</dimen>
     <dimen name="fastscroll_default_thickness">8dp</dimen>
     <dimen name="fastscroll_margin">0dp</dimen>
     <dimen name="fastscroll_minimum_range">50dp</dimen>
+    <dimen name="fastscroll_scrollbar_padding_end">12dp</dimen>
     <dimen name="fav_iv_top_padding">100dp</dimen>
+    <dimen name="focus_diameter">65dp</dimen>
     <dimen name="fui_auth_method_button_drawablePadding">12dp</dimen>
     <dimen name="fui_auth_method_button_margin">4dp</dimen>
     <dimen name="fui_auth_method_button_width">208dp</dimen>
@@ -2251,6 +2277,16 @@
     <dimen name="fui_heading_padding_bottom">12dp</dimen>
     <dimen name="fui_min_height_target">48dp</dimen>
     <dimen name="fui_wrapper_padding_horiz">16dp</dimen>
+    <dimen name="h0">40dp</dimen>
+    <dimen name="h1">36dp</dimen>
+    <dimen name="h2">30dp</dimen>
+    <dimen name="h3">24dp</dimen>
+    <dimen name="h4">18dp</dimen>
+    <dimen name="h5">16dp</dimen>
+    <dimen name="h6">14dp</dimen>
+    <dimen name="h7">13dp</dimen>
+    <dimen name="h8">12dp</dimen>
+    <dimen name="h9">7dp</dimen>
     <dimen name="height_appbar">230dp</dimen>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
@@ -2265,6 +2301,8 @@
     <dimen name="ll_height">56dp</dimen>
     <dimen name="main_margin">10dp</dimen>
     <dimen name="mainheight">300dp</dimen>
+    <dimen name="margin_top">0dp</dimen>
+    <dimen name="margin_top_nve">0dp</dimen>
     <dimen name="margin_top_ten">10dp</dimen>
     <dimen name="mtrl_bottomappbar_fabOffsetEndMode">60dp</dimen>
     <dimen name="mtrl_bottomappbar_fab_cradle_margin">5dp</dimen>
@@ -2338,11 +2376,13 @@
     <dimen name="padding_eight">8dp</dimen>
     <dimen name="rest_main_height">80dp</dimen>
     <dimen name="rest_main_width">80dp</dimen>
+    <dimen name="rounded_edges_dialog">6dp</dimen>
     <dimen name="sixteen_TS">16sp</dimen>
     <dimen name="subtitle_corner_radius">2dp</dimen>
     <dimen name="subtitle_outline_width">2dp</dimen>
     <dimen name="subtitle_shadow_offset">2dp</dimen>
     <dimen name="subtitle_shadow_radius">2dp</dimen>
+    <dimen name="tab_bar">45dp</dimen>
     <dimen name="thirty_TS">30sp</dimen>
     <dimen name="tooltip_corner_radius">2dp</dimen>
     <dimen name="tooltip_horizontal_padding">16dp</dimen>
@@ -2352,8 +2392,10 @@
     <dimen name="tooltip_vertical_padding">6.5dp</dimen>
     <dimen name="tooltip_y_offset_non_touch">0dp</dimen>
     <dimen name="tooltip_y_offset_touch">16dp</dimen>
+    <dimen name="top_bar">45dp</dimen>
     <dimen name="twentyeight_TS">28sp</dimen>
     <dimen name="twentyfive_TS">25sp</dimen>
+    <dimen name="vehicle_specs_width">100dp</dimen>
     <dimen name="view_height">150dp</dimen>
     <dimen name="widget_margin">8dp</dimen>
     <dimen name="widget_min_height">60dp</dimen>
@@ -2380,6 +2422,9 @@
     <item name="snackbar_action" type="id"/>
     <item name="snackbar_text" type="id"/>
     <item name="split_action_bar" type="id"/>
+    <item name="tagIcon" type="id"/>
+    <item name="tagPreventTouch" type="id"/>
+    <item name="tagTitle" type="id"/>
     <item name="tag_transition_group" type="id"/>
     <item name="tag_unhandled_key_event_manager" type="id"/>
     <item name="tag_unhandled_key_listeners" type="id"/>
@@ -2418,6 +2463,7 @@
         <item quantity="other" translation_description="Inline error for weak password">Password not strong enough. Use at least %1$d characters and a mix of letters and numbers</item>
     </plurals>
     <string name="OK">OK</string>
+    <string name="_07527433503">07527433503</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_menu_overflow_description">More options</string>
@@ -2485,6 +2531,7 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="contact_us">Contact Us</string>
+    <string name="contact_us_background">contact us background</string>
     <string name="copyright_sign">copyright sign</string>
     <string name="default_web_client_id" translatable="false">967349496854-rfi4p0ohsv3lokrusv6e3avmvj2ra9mr.apps.googleusercontent.com</string>
     <string name="email">Email</string>
@@ -2499,6 +2546,7 @@
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="firebase_database_url" translatable="false">https://gdprapplication.firebaseio.com</string>
     <string name="firebase_web_host" translatable="false">CHANGE-ME</string>
+    <string name="forgot_password">Forgot Password?</string>
     <string name="fui_accessibility_logo" translation_description="Content description for app logo">App logo</string>
     <string name="fui_auto_verified" translation_description="Popup informing the user that their phone number was automatically verified">Phone number automatically verified</string>
     <string name="fui_button_text_save" translation_description="Button text to save input form">Save</string>
@@ -2574,6 +2622,9 @@
         to sign in. Enter your password for that account.
     </string>
     <string name="gcm_defaultSenderId" translatable="false">967349496854</string>
+    <string name="gdpr_application_sheffield">GDPR Application Sheffield</string>
+    <string name="gdprappssheff">GDPRAPPSSHEFF</string>
+    <string name="gdprinfo_outlook_co_uk">GDPRinfo@outlook.co.uk</string>
     <string name="github_client_id" translatable="false">CHANGE-ME</string>
     <string name="github_client_secret" translatable="false">CHANGE-ME</string>
     <string name="google_api_key" translatable="false">AIzaSyCXL3sQl_HRmhSHJgRRwayEB3TdkXJ2hPM</string>
@@ -2585,6 +2636,7 @@
     <string name="log_in">Log In</string>
     <string name="logo_for_gdpr">logo for gdpr</string>
     <string name="medical_history">Medical Conditions</string>
+    <string name="message_to_drag_up">Drag images up for gallery</string>
     <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -2595,10 +2647,17 @@
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="phone">Phone</string>
+    <string name="pix_last_month">Last Month</string>
+    <string name="pix_last_week">Last Week</string>
+    <string name="pix_ok">OK</string>
+    <string name="pix_recent">Recent</string>
+    <string name="pix_selected">Selected</string>
+    <string name="pix_tap_to_select">Tap photo to select</string>
     <string name="project_id" translatable="false">gdprapplication</string>
     <string name="register">Register Here!</string>
     <string name="register_securely_today">Register Securely Today!</string>
     <string name="search_menu_title">Search</string>
+    <string name="selection_limiter_pix">Cant select more than %d items.</string>
     <string name="sign_in_error">Sign in error - please try again!</string>
     <string name="slogan">Because your company cares.</string>
     <string name="status_bar_notification_info_overflow">999+</string>
@@ -4054,6 +4113,14 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
+    <style name="Dexter.Internal.Theme.Transparent" parent="android:Theme">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
     <style name="FirebaseUI" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -4266,6 +4333,9 @@
         <item name="android:layout_marginBottom">16dp</item>
         <item name="android:layout_marginLeft">@dimen/fui_wrapper_padding_horiz</item>
         <item name="android:layout_marginRight">@dimen/fui_wrapper_padding_horiz</item>
+    </style>
+    <style name="PixAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:screenOrientation">portrait</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme.Holo">
         <item name="android:windowNoTitle">true</item>
