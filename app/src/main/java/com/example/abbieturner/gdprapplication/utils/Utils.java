@@ -50,29 +50,9 @@ public class Utils {
 
     public static boolean checkPhoneSize(EditText mPhone) {
         if (mPhone.getText().toString().length() < 6) {
-            mPhone.setError("Phone size must be 11 characters.");
+            mPhone.setError("Phone number must be 11 characters.");
             return false;
         }
         return true;
-    }
-
-    public static void goToImageSettings(final Context context) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(context)
-                .setMessage("we want permission to can upload image")
-                .setPositiveButton("settings", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
-                                Uri.fromParts("package", context.getPackageName(), null));
-                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        context.startActivity(intent);
-                    }
-                }).setNegativeButton("cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                });
-        builder.show();
     }
 }

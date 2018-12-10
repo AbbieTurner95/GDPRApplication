@@ -2228,6 +2228,10 @@
         "source": "/Users/abbieturner/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f0ce22d98be02427cfa49697d880a42e/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
+        "merged": "/Users/abbieturner/Documents/GitHub/GDPRApplication/app/build/intermediates/res/merged/debug/drawable_person_placeholder.png.flat",
+        "source": "/Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/res/drawable/person_placeholder.png"
+    },
+    {
         "merged": "/Users/abbieturner/Documents/GitHub/GDPRApplication/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_help_black_24dp.xml.flat",
         "source": "/Users/abbieturner/Documents/GitHub/GDPRApplication/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_help_black_24dp.xml"
     },

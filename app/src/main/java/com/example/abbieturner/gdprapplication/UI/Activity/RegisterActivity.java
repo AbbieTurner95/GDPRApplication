@@ -21,6 +21,7 @@ import com.example.abbieturner.gdprapplication.utils.Utils;
 import com.fxn.pix.Pix;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -105,32 +106,9 @@ public class RegisterActivity extends AppCompatActivity {
         img_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startImagePicker();
+                Pix.start(RegisterActivity.this, PIC_IMAGE_PICKER);
             }
         });
-    }
-
-    private void startImagePicker() {
-        Dexter.withActivity(this)
-                .withPermissions(Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                        Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO)
-                .withListener(new MultiplePermissionsListener() {
-                    @Override
-                    public void onPermissionsChecked(MultiplePermissionsReport report) {
-                        if (report.areAllPermissionsGranted()) {
-                            Pix.start(RegisterActivity.this, PIC_IMAGE_PICKER);
-                        } else if (report.isAnyPermissionPermanentlyDenied()) {
-                            Utils.goToImageSettings(RegisterActivity.this);
-                        }
-                    }
-
-                    @Override
-                    public void onPermissionRationaleShouldBeShown(List<PermissionRequest> permissions, PermissionToken token) {
-                        token.continuePermissionRequest();
-                    }
-                })
-                .onSameThread()
-                .check();
     }
 
     private void startRegister() {
@@ -144,7 +122,6 @@ public class RegisterActivity extends AppCompatActivity {
                 progressDialog.setMessage("Please wait ...");
                 progressDialog.setCanceledOnTouchOutside(false);
                 progressDialog.show();
-
 
                 mAuth.createUserWithEmailAndPassword(etEmail.getText().toString(),
                         etPass.getText().toString())
@@ -172,28 +149,21 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void uploadUserDataToFirebase() {
         if (photoUri != null) {
-            mStorageReference.child("users" + "-" + mAuth.getCurrentUser().getUid() + ".jpg")
+            final StorageReference spaceRef = mStorageReference.child("users");
+            spaceRef.child(mAuth.getCurrentUser().getUid() + ".jpg")
                     .putFile(photoUri)
-                    .continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+                    .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override
-                        public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
-                            if (!task.isSuccessful()) {
-                                throw task.getException();
-                            }
-                            return mStorageReference.getDownloadUrl();
+                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                            spaceRef.child(mAuth.getCurrentUser().getUid() + ".jpg")
+                                    .getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                @Override
+                                public void onSuccess(Uri uri) {
+                                    finishRegistration(uri);
+                                }
+                            });
                         }
-                    }).addOnCompleteListener(new OnCompleteListener<Uri>() {
-                @Override
-                public void onComplete(@NonNull Task<Uri> task) {
-                    if (task.isSuccessful()) {
-                        Uri downloadUri = task.getResult();
-                        finishRegistration(downloadUri);
-                    } else {
-                        Log.e(getClass().getSimpleName(), task.getResult().toString());
-                    }
-                }
-            });
-
+                    });
         } else {
             finishRegistration(null);
         }
@@ -224,8 +194,7 @@ public class RegisterActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
                         progressDialog.dismiss();
-
-                        Toasty.success(getApplicationContext(), "Registered successful! Please check your email to verify your account."
+                        Toasty.success(getApplicationContext(), "Register Successful! Please check your email to verify your account."
                                 , Toast.LENGTH_SHORT, true).show();
                         startActivity(new Intent(getApplicationContext(), LoginActivity.class)
                                 .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));

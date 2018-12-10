@@ -1270,6 +1270,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable person_placeholder
 drawable rectangle_box
 drawable ring
 drawable ripple
@@ -1430,6 +1431,7 @@ id image
 id imageView
 id imageView3
 id img_count
+id img_profile
 id info
 id instantRecyclerView
 id invisible
