@@ -19,13 +19,10 @@ public class ContactUsActivity extends AppCompatActivity implements OnMapReadyCa
 
     @BindView(R.id.google_maps)
     MapView mapView;
-
     private String lat = "53.370491";
     private String loc = "-1.321860";
-
     private GoogleMap gmap;
     private static final String MAP_VIEW_BUNDLE_KEY = "MapViewBundleKey";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +36,6 @@ public class ContactUsActivity extends AppCompatActivity implements OnMapReadyCa
         }
         mapView.onCreate(mapViewBundle);
         mapView.getMapAsync(this);
-
     }
 
     @Override

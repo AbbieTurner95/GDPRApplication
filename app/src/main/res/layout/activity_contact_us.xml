@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#46ACE4"
+    android:background="@color/colorSecond"
     tools:context=".UI.Activity.ContactUsActivity">
 
 
@@ -12,7 +12,7 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="250dp"
-        android:contentDescription="contact us background"
+        android:contentDescription="@string/contact_us_background"
         android:scaleType="centerCrop"
         android:src="@drawable/contactbck"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,22 +22,21 @@
 
 
     <TextView
-        android:fontFamily="@font/big_noodle_italic"
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:gravity="left"
-        android:text="Contact Us"
-        android:textColor="@color/colorPrimary"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/big_noodle_italic"
+        android:gravity="center"
+        android:text="@string/contact_us"
+        android:textColor="@android:color/white"
         android:textSize="@dimen/twentyfive_TS"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.857" />
+        app:layout_constraintVertical_bias="0.903" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -71,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/big_noodle"
-                android:text="07527433503"
+                android:text="@string/_07527433503"
                 android:textColor="@android:color/background_light"
                 android:textSize="@dimen/sixteen_TS" />
 
@@ -99,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/big_noodle"
-                android:text="GDPRinfo@outlook.co.uk"
+                android:text="@string/gdprinfo_outlook_co_uk"
                 android:textColor="@android:color/background_light"
                 android:textSize="@dimen/sixteen_TS" />
 
@@ -128,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/big_noodle"
-                android:text="GDPR Application Sheffield"
+                android:text="@string/gdpr_application_sheffield"
                 android:textColor="@android:color/background_light"
                 android:textSize="@dimen/sixteen_TS" />
 
@@ -155,7 +154,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/big_noodle"
-                android:text="GDPRAPPSSHEFF"
+                android:text="@string/gdprappssheff"
                 android:textColor="@android:color/background_light"
                 android:textSize="@dimen/sixteen_TS" />
 
@@ -167,6 +166,7 @@
         android:id="@+id/google_maps"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

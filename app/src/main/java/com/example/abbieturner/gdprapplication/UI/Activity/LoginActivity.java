@@ -46,7 +46,8 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
     NavigationView navigationView;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
-
+    @BindView(R.id.tv_forget_password)
+    TextView tv_forget_password;
 
     private ProgressDialog progressDialog;
     private FirebaseAuth mAuth;
@@ -83,6 +84,14 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
                 startLogin();
             }
         });
+
+        tv_forget_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ForgotPasswordActivity.class));
+            }
+        });
+
     }
 
     private void startLogin() {
