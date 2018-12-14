@@ -29,7 +29,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     //Libraries
-    
+    def lifecycle_version = "1.1.1"
+
     //ButterKnife
     implementation 'com.jakewharton:butterknife:9.0.0-rc1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
@@ -40,7 +41,6 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:16.0.6'
     implementation 'com.google.firebase:firebase-auth:16.0.5'
     implementation 'com.google.firebase:firebase-storage:16.0.5'
-
     implementation 'com.firebaseui:firebase-ui-auth:4.2.1'
     implementation 'com.google.firebase:firebase-database:16.0.5'
     implementation 'com.google.firebase:firebase-messaging:17.3.4'
@@ -52,6 +52,11 @@ dependencies {
     implementation 'com.github.harrylefit:bottomnavigation:1.1.6.1'
     implementation 'com.karumi:dexter:5.0.0'
     implementation 'com.fxn769:pix:1.2.5'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+
+    //viewModel
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
 
     //Google PlayServices
     implementation 'com.google.android.gms:play-services-maps:16.0.0'

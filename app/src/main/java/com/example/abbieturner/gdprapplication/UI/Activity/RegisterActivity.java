@@ -106,9 +106,32 @@ public class RegisterActivity extends AppCompatActivity {
         img_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Pix.start(RegisterActivity.this, PIC_IMAGE_PICKER);
+                startImagePicker();
             }
         });
+    }
+
+    private void startImagePicker() {
+        Dexter.withActivity(this)
+                .withPermissions(Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                        Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO)
+                .withListener(new MultiplePermissionsListener() {
+                    @Override
+                    public void onPermissionsChecked(MultiplePermissionsReport report) {
+                        if (report.areAllPermissionsGranted()) {
+                            Pix.start(RegisterActivity.this, PIC_IMAGE_PICKER);
+                        } else if (report.isAnyPermissionPermanentlyDenied()) {
+                            Utils.goToImageSettings(RegisterActivity.this);
+                        }
+                    }
+
+                    @Override
+                    public void onPermissionRationaleShouldBeShown(List<PermissionRequest> permissions, PermissionToken token) {
+                        token.continuePermissionRequest();
+                    }
+                })
+                .onSameThread()
+                .check();
     }
 
     private void startRegister() {

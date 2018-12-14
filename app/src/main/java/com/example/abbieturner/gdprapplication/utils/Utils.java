@@ -1,5 +1,6 @@
 package com.example.abbieturner.gdprapplication.utils;
 
+
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -40,6 +41,15 @@ public class Utils {
         return true;
     }
 
+    public static boolean checkMatch(EditText pass, EditText confirm_pass){
+        if(!pass.getText().toString().matches(confirm_pass.getText().toString())){
+            confirm_pass.setError("Confirm password is not matched!");
+        } else {
+            return true;
+        }
+        return false;
+    }
+
     public static final boolean checkError(EditText editText) {
         if (!isValid(editText.getText().toString())) {
             editText.setError("Please fill out this empty field.");
@@ -54,5 +64,25 @@ public class Utils {
             return false;
         }
         return true;
+    }
+
+    public static void goToImageSettings(final Context context){
+        AlertDialog.Builder builder = new AlertDialog.Builder(context)
+                .setMessage("App needs permission to upload images.")
+                .setPositiveButton("Settings", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                                Uri.fromParts("package", context.getPackageName(), null));
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    }
+                }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                });
+        builder.show();
     }
 }

@@ -2,6 +2,7 @@ package com.example.abbieturner.gdprapplication.UI.Activity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -30,7 +31,7 @@ import butterknife.ButterKnife;
 import es.dmoral.toasty.Toasty;
 
 
-public class LoginActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+public class LoginActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     @BindView(R.id.et_mail)
     EditText etMail;
@@ -68,6 +69,10 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
         navigationView.setNavigationItemSelectedListener(this);
 
         mAuth = FirebaseAuth.getInstance();
+
+        if (mAuth.getCurrentUser() != null) {
+            startActivity(new Intent(this, MainActivity.class));
+        }
 
         progressDialog = new ProgressDialog(this);
 
@@ -108,21 +113,29 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    progressDialog.dismiss();
-
-                                    startActivity(new Intent(getApplicationContext(), MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
-                                    finish();
-
-                                } else {
-                                    progressDialog.hide();
-
-                                    Toasty.error(getApplicationContext(), "Incorrect email or password, please try again!", Toast.LENGTH_SHORT, true).show();
+                                    if (task.getResult().getUser().isEmailVerified()) {
+                                        progressDialog.dismiss();
+                                        startActivity(new Intent(getApplicationContext(), MainActivity.class)
+                                                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
+                                        finish();
+                                    } else {
+                                        mAuth.getCurrentUser().sendEmailVerification()
+                                                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                    @Override
+                                                    public void onComplete(@NonNull Task<Void> task) {
+                                                        if (task.isSuccessful()) {
+                                                            progressDialog.hide();
+                                                            Toasty.warning(getApplicationContext(), "Your email has not been verified, Please check your email again! ", Toast.LENGTH_SHORT, true).show();
+                                                        }
+                                                    }
+                                                });
+                                    }
                                 }
                             }
                         });
             }
         } else {
-            Toasty.warning(this, "Check Internet Connection", Toast.LENGTH_SHORT, true).show();
+            Toasty.warning(this, "Check internet connection", Toast.LENGTH_SHORT, true).show();
         }
     }
 
@@ -156,27 +169,15 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
             Intent intent = new Intent(this, ContactUsActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_website) {
-            //
+            String url = "https://eugdpr.org";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
         } else if (id == R.id.nav_help) {
-            //
+
         }
 
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
