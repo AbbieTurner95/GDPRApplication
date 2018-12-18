@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Ethnicitys">
+        <item>White - English </item>
+        <item>White - Welsh </item>
+        <item>White - Scottish </item>
+        <item>White - Northern Irish </item>
+        <item>White - Irish </item>
+        <item>White - Gypsy/Traveller </item>
+        <item>White - Any other white background </item>
+        <item>White and Black Caribbean </item>
+        <item>White and Black African  </item>
+        <item>Any other Mixed or Multiple background </item>
+        <item> Indian </item>
+        <item> Pakistani </item>
+        <item> Bangladeshi </item>
+        <item> Chinese </item>
+        <item> Any other Asian background </item>
+        <item> African </item>
+        <item> African American  </item>
+        <item> Caribbean </item>
+        <item> Any other Black background </item>
+        <item> Arab </item>
+        <item> Hispanic </item>
+        <item> Latino </item>
+        <item> Native American  </item>
+        <item> Pacific Islander   </item>
+        <item> Any other ethnic group  </item>
+    </string-array>
+</resources>

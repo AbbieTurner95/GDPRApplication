@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -69,7 +68,7 @@ public class ChangeMailDialog extends DialogFragment {
     private void startChangingEmail() {
         if (Utils.isNetworkAvailable(getActivity())) {
             if (Utils.checkError(et_mail) && Utils.checkError(et_pass) && Utils.checkEmail(et_mail)) {
-                progressDialog.setTitle("Change Mail");
+                progressDialog.setTitle("Changing Email");
                 progressDialog.setMessage("Please wait ....");
                 progressDialog.setCanceledOnTouchOutside(false);
                 progressDialog.show();

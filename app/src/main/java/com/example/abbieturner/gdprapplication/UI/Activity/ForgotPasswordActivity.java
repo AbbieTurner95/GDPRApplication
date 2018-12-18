@@ -51,10 +51,11 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     private void startResetPassword() {
         if (Utils.checkEmail(et_mail) && Utils.checkError(et_mail)) {
 
-            progressDialog.setTitle("Start Registering");
+            progressDialog.setTitle("Updating Password");
             progressDialog.setMessage("Please wait ...");
             progressDialog.setCanceledOnTouchOutside(false);
             progressDialog.show();
+
             mAuth.sendPasswordResetEmail(et_mail.getText().toString())
                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override

@@ -16,11 +16,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.afollestad.materialdialogs.DialogAction;
+import com.afollestad.materialdialogs.MaterialDialog;
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.utils.Utils;
+import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -174,9 +178,29 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
             i.setData(Uri.parse(url));
             startActivity(i);
         } else if (id == R.id.nav_help) {
-
+            new MaterialStyledDialog.Builder(this)
+                    .setTitle("Having trouble with the app?")
+                    .setDescription("Send us an email and we aim to get back within 24 hours.")
+                    .setHeaderDrawable(R.drawable.emailpic)
+                    .setHeaderScaleType(ImageView.ScaleType.FIT_CENTER)
+                    .setPositiveText("Email")
+                    .setNegativeText("Cancel")
+                    .onNegative(new MaterialDialog.SingleButtonCallback() {
+                        @Override
+                        public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                        }
+                    })
+                    .onPositive(new MaterialDialog.SingleButtonCallback() {
+                        @Override
+                        public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                            Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                                    "mailto","abbieturner95@hotmail.com", null));
+                            emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Trouble Using App.");
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, "");
+                            startActivity(Intent.createChooser(emailIntent, "Sending email..."));
+                        }
+                    }).show();
         }
-
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }

@@ -9,6 +9,8 @@ import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.provider.Settings;
 import android.widget.EditText;
+import android.widget.Spinner;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -57,7 +59,6 @@ public class Utils {
         }
         return true;
     }
-
     public static boolean checkPhoneSize(EditText mPhone) {
         if (mPhone.getText().toString().length() < 6) {
             mPhone.setError("Phone number must be 11 characters.");

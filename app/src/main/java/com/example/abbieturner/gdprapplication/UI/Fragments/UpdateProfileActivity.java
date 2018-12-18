@@ -14,9 +14,11 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.abbieturner.gdprapplication.Models.User;
@@ -63,9 +65,9 @@ public class UpdateProfileActivity extends AppCompatActivity {
     @BindView(R.id.et_fax)
     EditText etFax;
     @BindView(R.id.et_lang)
-    EditText etLang;
+    Spinner etLang;
     @BindView(R.id.et_ethnicity)
-    EditText etEthn;
+    Spinner etEthn;
     @BindView(R.id.et_medical)
     EditText etMedical;
     @BindView(R.id.et_work_hour)
@@ -139,8 +141,8 @@ public class UpdateProfileActivity extends AppCompatActivity {
     private void startUpdating() {
         if (Utils.isNetworkAvailable(this)) {
             if (Utils.checkError(etName) && Utils.checkError(etAddress) && Utils.checkError(etPhone)
-                    && Utils.checkError(etFax) && Utils.checkError(etLang)
-                    && Utils.checkError(etEthn) && Utils.checkError(etMedical) && Utils.checkError(etWorkHour)
+                    && Utils.checkError(etFax) && Utils.checkError(etMedical)
+                    && Utils.checkError(etWorkHour)
                     && Utils.checkError(etWorkPlace) && Utils.checkPhoneSize(etPhone)) {
 
                 startWait("Updating data");
@@ -150,9 +152,9 @@ public class UpdateProfileActivity extends AppCompatActivity {
                 hashMap.put("phone", etPhone.getText().toString());
                 hashMap.put("fax", etFax.getText().toString());
                 hashMap.put("admin", false);
-                hashMap.put("lang", etLang.getText().toString());
+                hashMap.put("lang", etLang.toString());
                 hashMap.put("medical", etMedical.getText().toString());
-                hashMap.put("ethnicity", etEthn.getText().toString());
+                hashMap.put("ethnicity", etEthn.toString());
                 hashMap.put("workHour", etWorkHour.getText().toString());
                 hashMap.put("workPlace", etWorkPlace.getText().toString());
 
@@ -174,14 +176,28 @@ public class UpdateProfileActivity extends AppCompatActivity {
     }
 
     private void BindDataToUI(User user) {
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.Ethnicitys, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        etEthn.setAdapter(adapter);
+        if (user.getEthnicity() != null) {
+            int spinnerPosition = adapter.getPosition(user.getEthnicity() );
+            etEthn.setSelection(spinnerPosition);
+        }
+
+        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.Languages, android.R.layout.simple_spinner_item);
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        etLang.setAdapter(adapter1);
+        if (user.getLang() != null) {
+            int spinnerPosition = adapter.getPosition(user.getLang() );
+            etLang.setSelection(spinnerPosition);
+        }
+
         Picasso.get().load(user.getProfile()).placeholder(R.drawable.person_placeholder).into(img_profile);
         etName.setText(user.getName());
         etAddress.setText(user.getAddress());
         etPhone.setText(user.getPhone());
         etFax.setText(user.getFax());
-        etLang.setText(user.getLang());
         etMedical.setText(user.getMedical());
-        etEthn.setText(user.getEthnicity());
         etWorkPlace.setText(user.getWorkPlace());
         etWorkHour.setText(user.getWorkHour());
 

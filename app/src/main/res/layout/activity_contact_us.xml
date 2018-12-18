@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorSecond"
+    android:background="@android:color/white"
     tools:context=".UI.Activity.ContactUsActivity">
 
 
@@ -13,8 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="250dp"
         android:contentDescription="@string/contact_us_background"
-        android:scaleType="centerCrop"
-        android:src="@drawable/contactbck"
+        android:scaleType="fitCenter"
+        android:src="@drawable/contactpic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,8 +24,8 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:layout_height="34dp"
+        android:background="@color/colorPrimaryDark"
         android:fontFamily="@font/big_noodle_italic"
         android:gravity="center"
         android:text="@string/contact_us"
@@ -36,18 +36,19 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.903" />
+        app:layout_constraintVertical_bias="0.9" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.061">
+        app:layout_constraintVertical_bias="0.0">
 
 
         <LinearLayout
@@ -165,8 +166,7 @@
     <com.google.android.gms.maps.MapView
         android:id="@+id/google_maps"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="156dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

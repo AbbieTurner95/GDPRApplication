@@ -4,17 +4,17 @@ ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/Andr
 INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-46:12
 INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-46:12
 INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-46:12
+MERGED from [com.android.support:multidex:1.0.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e0ec370969575774d1c3fc619f18f86c/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.Shashank02051997:FancyAlertDialog-Android:0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/FancyAlertDialog-Android-0.1.aar/8e4c1617332abbba69fe7936c57806b7/AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.harrylefit:bottomnavigation:1.1.6.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/bottomnavigation-1.1.6.1.aar/fa59d8e5c073abe20b9cba4b70381936/AndroidManifest.xml:2:1-11:12
 MERGED from [com.karumi:dexter:5.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/dexter-5.0.0.aar/f3f4e2957a635df5133ddbb07529cc64/AndroidManifest.xml:17:1-32:12
 MERGED from [com.fxn769:pix:1.2.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/pix-1.2.5.aar/480b3c0ab0c6c4dcc07cc33327b4c3ca/AndroidManifest.xml:2:1-26:12
+MERGED from [com.github.javiersantos:MaterialStyledDialogs:2.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/MaterialStyledDialogs-2.1.aar/546b924402e8c0a71516b7b264b7e9c9/AndroidManifest.xml:2:1-11:12
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/core-0.9.0.2.aar/65413edf82bc7b738544559393e1bc22/AndroidManifest.xml:2:1-15:12
 MERGED from [com.firebaseui:firebase-ui-auth:4.2.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.2.1.aar/9752b2a6bd0adcd1841944c39aebd02c/AndroidManifest.xml:2:1-93:12
-MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/library-1.4.2.aar/c27e4bb25215863252b0aa53532b7214/AndroidManifest.xml:6:1-16:12
 MERGED from [com.android.support:design:28.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/62d59454c55a6e13a6f3114082146e8a/AndroidManifest.xml:17:1-24:12
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/library-1.4.2.aar/c27e4bb25215863252b0aa53532b7214/AndroidManifest.xml:6:1-16:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f0ce22d98be02427cfa49697d880a42e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/89b272a71b935a66f83244064e1d455c/AndroidManifest.xml:2:1-11:12
-MERGED from [com.jakewharton:butterknife:9.0.0-rc1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/butterknife-9.0.0-rc1.aar/c6f0fb229a6478bb6c9cb20c63d9991e/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.firebase:firebase-database:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.5.aar/5f1631e17e63423c8eadd537fdedd463/AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.firebase:firebase-messaging:17.3.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/1805e6f20cbef4dabab5e4bbc31a0948/AndroidManifest.xml:17:1-37:12
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/6dd9a109df3d5e241aa05a18d5c64220/AndroidManifest.xml:17:1-32:12
@@ -22,11 +22,12 @@ MERGED from [com.google.firebase:firebase-core:16.0.6] /Users/abbieturner/.gradl
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/6f5de7728b8f1316d6929b3ec9225ffd/AndroidManifest.xml:17:1-34:12
 MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/daf5182c4ee7089efe974c1f803f451f/AndroidManifest.xml:17:1-55:12
 MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/231a3b66309d830ee21f6ddafb8a7cd0/AndroidManifest.xml:15:1-26:12
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/cae78086ca3f83c278558e27c99a1726/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/4f13835ed2f6204c5ba87a5029fd4e50/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/905109d9a1883c7e246b83901e647fc1/AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-16.0.0.aar/0097ec454352b59fbbf651b1b01531d6/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-16.0.0.aar/91ff6917760b237c67e527efe06c2de5/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/cae78086ca3f83c278558e27c99a1726/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/4f13835ed2f6204c5ba87a5029fd4e50/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-measurement-api:16.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.4.aar/fd4c74dfaed657980e7c826cd8a179af/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/2b4b01f421f60441831da16c3a9894ca/AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/323b3358eb751e5bab4e662d1d4da460/AndroidManifest.xml:17:1-59:12
@@ -40,6 +41,8 @@ MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/abbieturn
 MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/cda1917d884bd78c03e31473bb5f48b2/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/3a2d9d036b12e7bcb7a0b692426daeda/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:28.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/8200037ae46c5a839afded7416b3ecaf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/89b272a71b935a66f83244064e1d455c/AndroidManifest.xml:2:1-11:12
+MERGED from [com.jakewharton:butterknife:9.0.0-rc1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/butterknife-9.0.0-rc1.aar/c6f0fb229a6478bb6c9cb20c63d9991e/AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/02ae84f61c7c64bad95a109b95694f2b/AndroidManifest.xml:2:1-13:12
 MERGED from [com.github.GrenderG:Toasty:1.3.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/Toasty-1.3.0.aar/6da338b86b1efe7393b49663b942cb9f/AndroidManifest.xml:2:1-11:12
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/71cac851eaa0e9c8fbdcfa62d1eb765a/AndroidManifest.xml:2:1-14:12
@@ -171,14 +174,12 @@ MERGED from [com.karumi:dexter:5.0.0] /Users/abbieturner/.gradle/caches/transfor
 MERGED from [com.karumi:dexter:5.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/dexter-5.0.0.aar/f3f4e2957a635df5133ddbb07529cc64/AndroidManifest.xml:26:5-30:19
 MERGED from [com.fxn769:pix:1.2.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/pix-1.2.5.aar/480b3c0ab0c6c4dcc07cc33327b4c3ca/AndroidManifest.xml:16:5-24:19
 MERGED from [com.fxn769:pix:1.2.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/pix-1.2.5.aar/480b3c0ab0c6c4dcc07cc33327b4c3ca/AndroidManifest.xml:16:5-24:19
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/core-0.9.0.2.aar/65413edf82bc7b738544559393e1bc22/AndroidManifest.xml:13:5-20
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/core-0.9.0.2.aar/65413edf82bc7b738544559393e1bc22/AndroidManifest.xml:13:5-20
 MERGED from [com.firebaseui:firebase-ui-auth:4.2.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.2.1.aar/9752b2a6bd0adcd1841944c39aebd02c/AndroidManifest.xml:15:5-91:19
 MERGED from [com.firebaseui:firebase-ui-auth:4.2.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.2.1.aar/9752b2a6bd0adcd1841944c39aebd02c/AndroidManifest.xml:15:5-91:19
 MERGED from [com.android.support:design:28.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/62d59454c55a6e13a6f3114082146e8a/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/62d59454c55a6e13a6f3114082146e8a/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/89b272a71b935a66f83244064e1d455c/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/89b272a71b935a66f83244064e1d455c/AndroidManifest.xml:9:5-20
-MERGED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:23:5-40:19
-MERGED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.firebase:firebase-messaging:17.3.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/1805e6f20cbef4dabab5e4bbc31a0948/AndroidManifest.xml:22:5-35:19
 MERGED from [com.google.firebase:firebase-messaging:17.3.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/1805e6f20cbef4dabab5e4bbc31a0948/AndroidManifest.xml:22:5-35:19
 MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/6dd9a109df3d5e241aa05a18d5c64220/AndroidManifest.xml:30:5-20
@@ -189,10 +190,12 @@ MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Us
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/6f5de7728b8f1316d6929b3ec9225ffd/AndroidManifest.xml:26:5-32:19
 MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/daf5182c4ee7089efe974c1f803f451f/AndroidManifest.xml:28:5-53:19
 MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/daf5182c4ee7089efe974c1f803f451f/AndroidManifest.xml:28:5-53:19
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/4f13835ed2f6204c5ba87a5029fd4e50/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/4f13835ed2f6204c5ba87a5029fd4e50/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/905109d9a1883c7e246b83901e647fc1/AndroidManifest.xml:22:5-37:19
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/905109d9a1883c7e246b83901e647fc1/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/4f13835ed2f6204c5ba87a5029fd4e50/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/4f13835ed2f6204c5ba87a5029fd4e50/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-measurement-api:16.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.4.aar/fd4c74dfaed657980e7c826cd8a179af/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-measurement-api:16.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.4.aar/fd4c74dfaed657980e7c826cd8a179af/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/2b4b01f421f60441831da16c3a9894ca/AndroidManifest.xml:28:5-38:19
@@ -217,6 +220,8 @@ MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/
 MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/cda1917d884bd78c03e31473bb5f48b2/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/3a2d9d036b12e7bcb7a0b692426daeda/AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/3a2d9d036b12e7bcb7a0b692426daeda/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/89b272a71b935a66f83244064e1d455c/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/89b272a71b935a66f83244064e1d455c/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/02ae84f61c7c64bad95a109b95694f2b/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/02ae84f61c7c64bad95a109b95694f2b/AndroidManifest.xml:11:5-20
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/71cac851eaa0e9c8fbdcfa62d1eb765a/AndroidManifest.xml:7:5-12:19
@@ -309,6 +314,8 @@ uses-sdk
 INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml
 INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:multidex:1.0.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e0ec370969575774d1c3fc619f18f86c/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e0ec370969575774d1c3fc619f18f86c/AndroidManifest.xml:20:5-43
 MERGED from [com.github.Shashank02051997:FancyAlertDialog-Android:0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/FancyAlertDialog-Android-0.1.aar/8e4c1617332abbba69fe7936c57806b7/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.Shashank02051997:FancyAlertDialog-Android:0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/FancyAlertDialog-Android-0.1.aar/8e4c1617332abbba69fe7936c57806b7/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.harrylefit:bottomnavigation:1.1.6.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/bottomnavigation-1.1.6.1.aar/fa59d8e5c073abe20b9cba4b70381936/AndroidManifest.xml:7:5-9:41
@@ -317,20 +324,18 @@ MERGED from [com.karumi:dexter:5.0.0] /Users/abbieturner/.gradle/caches/transfor
 MERGED from [com.karumi:dexter:5.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/dexter-5.0.0.aar/f3f4e2957a635df5133ddbb07529cc64/AndroidManifest.xml:22:5-24:41
 MERGED from [com.fxn769:pix:1.2.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/pix-1.2.5.aar/480b3c0ab0c6c4dcc07cc33327b4c3ca/AndroidManifest.xml:7:5-9:41
 MERGED from [com.fxn769:pix:1.2.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/pix-1.2.5.aar/480b3c0ab0c6c4dcc07cc33327b4c3ca/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.javiersantos:MaterialStyledDialogs:2.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/MaterialStyledDialogs-2.1.aar/546b924402e8c0a71516b7b264b7e9c9/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.javiersantos:MaterialStyledDialogs:2.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/MaterialStyledDialogs-2.1.aar/546b924402e8c0a71516b7b264b7e9c9/AndroidManifest.xml:7:5-9:41
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/core-0.9.0.2.aar/65413edf82bc7b738544559393e1bc22/AndroidManifest.xml:8:5-11:75
+MERGED from [com.afollestad.material-dialogs:core:0.9.0.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/core-0.9.0.2.aar/65413edf82bc7b738544559393e1bc22/AndroidManifest.xml:8:5-11:75
 MERGED from [com.firebaseui:firebase-ui-auth:4.2.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.2.1.aar/9752b2a6bd0adcd1841944c39aebd02c/AndroidManifest.xml:8:5-10:41
 MERGED from [com.firebaseui:firebase-ui-auth:4.2.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.2.1.aar/9752b2a6bd0adcd1841944c39aebd02c/AndroidManifest.xml:8:5-10:41
-MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/library-1.4.2.aar/c27e4bb25215863252b0aa53532b7214/AndroidManifest.xml:12:5-14:41
-MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/library-1.4.2.aar/c27e4bb25215863252b0aa53532b7214/AndroidManifest.xml:12:5-14:41
 MERGED from [com.android.support:design:28.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/62d59454c55a6e13a6f3114082146e8a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:28.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/62d59454c55a6e13a6f3114082146e8a/AndroidManifest.xml:20:5-44
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/library-1.4.2.aar/c27e4bb25215863252b0aa53532b7214/AndroidManifest.xml:12:5-14:41
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/library-1.4.2.aar/c27e4bb25215863252b0aa53532b7214/AndroidManifest.xml:12:5-14:41
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f0ce22d98be02427cfa49697d880a42e/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f0ce22d98be02427cfa49697d880a42e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/89b272a71b935a66f83244064e1d455c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/89b272a71b935a66f83244064e1d455c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.jakewharton:butterknife:9.0.0-rc1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/butterknife-9.0.0-rc1.aar/c6f0fb229a6478bb6c9cb20c63d9991e/AndroidManifest.xml:5:5-44
-MERGED from [com.jakewharton:butterknife:9.0.0-rc1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/butterknife-9.0.0-rc1.aar/c6f0fb229a6478bb6c9cb20c63d9991e/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:21:5-44
-MERGED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-database:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.5.aar/5f1631e17e63423c8eadd537fdedd463/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-database:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.5.aar/5f1631e17e63423c8eadd537fdedd463/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-messaging:17.3.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/1805e6f20cbef4dabab5e4bbc31a0948/AndroidManifest.xml:20:5-44
@@ -345,16 +350,18 @@ MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/abbieturner/.
 MERGED from [com.google.firebase:firebase-analytics:16.0.6] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.6.aar/daf5182c4ee7089efe974c1f803f451f/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/231a3b66309d830ee21f6ddafb8a7cd0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/231a3b66309d830ee21f6ddafb8a7cd0/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/cae78086ca3f83c278558e27c99a1726/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/cae78086ca3f83c278558e27c99a1726/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/4f13835ed2f6204c5ba87a5029fd4e50/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/4f13835ed2f6204c5ba87a5029fd4e50/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/905109d9a1883c7e246b83901e647fc1/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/905109d9a1883c7e246b83901e647fc1/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-16.0.0.aar/0097ec454352b59fbbf651b1b01531d6/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-16.0.0.aar/0097ec454352b59fbbf651b1b01531d6/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-16.0.0.aar/91ff6917760b237c67e527efe06c2de5/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-16.0.0.aar/91ff6917760b237c67e527efe06c2de5/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/cae78086ca3f83c278558e27c99a1726/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/cae78086ca3f83c278558e27c99a1726/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/4f13835ed2f6204c5ba87a5029fd4e50/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/4f13835ed2f6204c5ba87a5029fd4e50/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:16.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.4.aar/fd4c74dfaed657980e7c826cd8a179af/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:16.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.4.aar/fd4c74dfaed657980e7c826cd8a179af/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.4.aar/2b4b01f421f60441831da16c3a9894ca/AndroidManifest.xml:20:5-44
@@ -381,6 +388,10 @@ MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/abbiet
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/3a2d9d036b12e7bcb7a0b692426daeda/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:28.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/8200037ae46c5a839afded7416b3ecaf/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:28.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/8200037ae46c5a839afded7416b3ecaf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/89b272a71b935a66f83244064e1d455c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/89b272a71b935a66f83244064e1d455c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton:butterknife:9.0.0-rc1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/butterknife-9.0.0-rc1.aar/c6f0fb229a6478bb6c9cb20c63d9991e/AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton:butterknife:9.0.0-rc1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/butterknife-9.0.0-rc1.aar/c6f0fb229a6478bb6c9cb20c63d9991e/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/02ae84f61c7c64bad95a109b95694f2b/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/02ae84f61c7c64bad95a109b95694f2b/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.GrenderG:Toasty:1.3.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/Toasty-1.3.0.aar/6da338b86b1efe7393b49663b942cb9f/AndroidManifest.xml:7:5-9:41
@@ -467,6 +478,8 @@ MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/abb
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/f0a313ea748545ae8f6b5ddcb650c48c/AndroidManifest.xml:5:5-44
 INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml
 INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.afollestad.material-dialogs:core:0.9.0.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/core-0.9.0.2.aar/65413edf82bc7b738544559393e1bc22/AndroidManifest.xml:11:9-72
 	android:targetSdkVersion
 		INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml
@@ -635,38 +648,6 @@ ADDED from [com.firebaseui:firebase-ui-auth:4.2.1] /Users/abbieturner/.gradle/ca
 		ADDED from [com.firebaseui:firebase-ui-auth:4.2.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.2.1.aar/9752b2a6bd0adcd1841944c39aebd02c/AndroidManifest.xml:90:13-35
 	android:name
 		ADDED from [com.firebaseui:firebase-ui-auth:4.2.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.2.1.aar/9752b2a6bd0adcd1841944c39aebd02c/AndroidManifest.xml:87:13-79
-activity#com.google.firebase.auth.internal.FederatedSignInActivity
-ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:24:9-31:50
-	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:26:13-46
-	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:28:13-44
-	android:exported
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:27:13-36
-	android:permission
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:29:13-102
-	android:theme
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:30:13-72
-	tools:replace
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:31:13-47
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:25:13-85
-service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:33:9-39:19
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/6f5de7728b8f1316d6929b3ec9225ffd/AndroidManifest.xml:27:9-31:19
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/6f5de7728b8f1316d6929b3ec9225ffd/AndroidManifest.xml:27:9-31:19
-MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/323b3358eb751e5bab4e662d1d4da460/AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/323b3358eb751e5bab4e662d1d4da460/AndroidManifest.xml:29:9-35:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:35:13-37
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:34:13-84
-meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
-ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:36:13-38:85
-	android:value
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:38:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:16.0.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/e2b8c95e69166fa6bd604082b4529168/AndroidManifest.xml:37:17-109
 service#com.google.firebase.messaging.FirebaseMessagingService
 ADDED from [com.google.firebase:firebase-messaging:17.3.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-messaging-17.3.4.aar/1805e6f20cbef4dabab5e4bbc31a0948/AndroidManifest.xml:28:9-34:19
 	android:exported
@@ -697,6 +678,16 @@ MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/abbieturner/.gradle
 MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/323b3358eb751e5bab4e662d1d4da460/AndroidManifest.xml:24:5-68
 	android:name
 		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/6f5de7728b8f1316d6929b3ec9225ffd/AndroidManifest.xml:24:22-65
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/6f5de7728b8f1316d6929b3ec9225ffd/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/323b3358eb751e5bab4e662d1d4da460/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/323b3358eb751e5bab4e662d1d4da460/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/6f5de7728b8f1316d6929b3ec9225ffd/AndroidManifest.xml:27:18-89
 meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
 ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.4.aar/6f5de7728b8f1316d6929b3ec9225ffd/AndroidManifest.xml:28:13-30:85
 	android:value
@@ -771,6 +762,28 @@ ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/abbieturner
 		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/905109d9a1883c7e246b83901e647fc1/AndroidManifest.xml:36:13-107
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-auth-16.0.1.aar/905109d9a1883c7e246b83901e647fc1/AndroidManifest.xml:34:13-89
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:24:9-31:50
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:26:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:28:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:27:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:29:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:30:13-72
+	tools:replace
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:31:13-47
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:25:13-85
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/9a2e0e6436cced2f16c739814de2e606/AndroidManifest.xml:37:17-109
 uses-permission#com.google.android.c2dm.permission.RECEIVE
 ADDED from [com.google.firebase:firebase-iid:17.0.4] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.4.aar/323b3358eb751e5bab4e662d1d4da460/AndroidManifest.xml:26:5-82
 	android:name

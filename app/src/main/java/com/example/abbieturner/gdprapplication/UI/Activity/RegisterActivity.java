@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.abbieturner.gdprapplication.R;
@@ -60,10 +61,12 @@ public class RegisterActivity extends AppCompatActivity {
     EditText etEmail;
     @BindView(R.id.et_fax)
     EditText etFax;
+
     @BindView(R.id.et_lang)
-    EditText etLang;
+    Spinner etLang;
     @BindView(R.id.et_ethnicity)
-    EditText etEthn;
+    Spinner etEthn;
+
     @BindView(R.id.et_medical)
     EditText etMedical;
     @BindView(R.id.et_work_hour)
@@ -137,8 +140,8 @@ public class RegisterActivity extends AppCompatActivity {
     private void startRegister() {
         if (Utils.isNetworkAvailable(this)) {
             if (Utils.checkError(etName) && Utils.checkError(etAddress) && Utils.checkError(etPhone)
-                    && Utils.checkError(etEmail) && Utils.checkError(etFax) && Utils.checkError(etLang)
-                    && Utils.checkError(etEthn) && Utils.checkError(etMedical) && Utils.checkError(etWorkHour)
+                    && Utils.checkError(etEmail) && Utils.checkError(etFax)
+                    && Utils.checkError(etMedical) && Utils.checkError(etWorkHour)
                     && Utils.checkError(etWorkPlace) && Utils.checkPhoneSize(etPhone) && Utils.checkEmail(etEmail)) {
 
                 progressDialog.setTitle("Start Registering");
@@ -206,9 +209,9 @@ public class RegisterActivity extends AppCompatActivity {
             hashMap.put("profile", "default");
         }
 
-        hashMap.put("lang", etLang.getText().toString());
+        hashMap.put("lang", etLang.toString());
         hashMap.put("medical", etMedical.getText().toString());
-        hashMap.put("ethnicity", etEthn.getText().toString());
+        hashMap.put("ethnicity", etEthn.toString());
         hashMap.put("workHour", etWorkHour.getText().toString());
         hashMap.put("workPlace", etWorkPlace.getText().toString());
 
