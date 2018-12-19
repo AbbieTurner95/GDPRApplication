@@ -36,6 +36,7 @@
 
 
         <Button
+            android:id="@+id/about_btn"
             style="@android:style/Widget.DeviceDefault.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,6 +47,7 @@
 
 
         <Button
+            android:id="@+id/faqs_btn"
             style="@android:style/Widget.DeviceDefault.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,6 +57,7 @@
             tools:layout_editor_absoluteY="309dp" />
 
         <Button
+            android:id="@+id/why_btn"
             style="@android:style/Widget.DeviceDefault.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -64,6 +67,7 @@
             tools:layout_editor_absoluteY="374dp" />
 
         <Button
+            android:id="@+id/contactus_btn"
             style="@android:style/Widget.DeviceDefault.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

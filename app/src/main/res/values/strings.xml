@@ -37,7 +37,6 @@
     <string name="enter_old_password">Enter Old Password</string>
     <string name="enter_new_password">Enter New Password</string>
     <string name="confirm_new_password">Confirm New Password</string>
-    <string name="change_password">Change Password</string>
     <string name="enter_your_new_email">Enter your new Email</string>
     <string name="enter_your_password">Enter Your Password</string>
     <string name="change_email">Change Email</string>
@@ -48,7 +47,6 @@
     <string name="faqs">FAQs</string>
     <string name="about_gdpr">About GDPR</string>
     <string name="why_have_i_been_asked_to_get_this_app">Why have I been asked to get this app?</string>
-    <string name="change_email">Change Email</string>
     <string name="change_password">Change Password</string>
     <string name="update_profile_data">Update Profile Data</string>
 </resources>

@@ -1169,6 +1169,7 @@ dimen tooltip_y_offset_touch
 dimen top_bar
 dimen twentyeight_TS
 dimen twentyfive_TS
+dimen twentyfive_dp
 dimen vehicle_specs_width
 dimen view_height
 dimen widget_margin
@@ -1289,6 +1290,7 @@ drawable common_google_signin_btn_text_light_normal_background
 drawable contactpic
 drawable curved_shape
 drawable curved_shape2
+drawable datapic
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1347,6 +1349,7 @@ drawable ic_star_border_black_24dp
 drawable ic_unfold_more_black_24dp
 drawable ic_warning_outline_white
 drawable ic_warning_white_48dp
+drawable infopic
 drawable lock
 drawable md_btn_selected
 drawable md_btn_selected_dark
@@ -1393,6 +1396,7 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
+id about_btn
 id action0
 id action_bar
 id action_bar_activity_content
@@ -1466,6 +1470,7 @@ id collapseActionView
 id confirmation_code
 id confirmation_code_layout
 id contactus
+id contactus_btn
 id container
 id content
 id contentPanel
@@ -1515,6 +1520,7 @@ id et_work_place
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id faqs_btn
 id fastscroll_bubble
 id fastscroll_handle
 id fastscroll_scrollbar
@@ -1771,6 +1777,7 @@ id visible
 id welcome_back_idp_button
 id welcome_back_idp_prompt
 id welcome_back_password_body
+id why_btn
 id wide
 id withText
 id wrap
@@ -1970,6 +1977,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string about_gdpr
 string address
 string app_name
 string appbar_scrolling_view_behavior
@@ -2017,6 +2025,7 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string facebook_application_id
 string facebook_login_protocol_scheme
+string faqs
 string fax
 string fcm_fallback_notification_channel_label
 string firebase_database_url
@@ -2100,6 +2109,7 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
+string information
 string language
 string library_materialstyleddialogs_author
 string library_materialstyleddialogs_authorWebsite
@@ -2144,7 +2154,9 @@ string toast_message
 string twitter_consumer_key
 string twitter_consumer_secret
 string update_data
+string update_profile_data
 string visit_our_website
+string why_have_i_been_asked_to_get_this_app
 string work_hours
 string work_place
 style AlertDialog_AppCompat

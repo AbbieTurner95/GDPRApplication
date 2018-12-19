@@ -39,7 +39,6 @@
         <activity android:name=".UI.Activity.RegisterActivity" />
         <activity android:name=".UI.Activity.ContactUsActivity"/>
         <activity android:name=".UI.Activity.ForgotPasswordActivity" />
-        <activity android:name=".UI.Fragments.UpdateProfileActivity"/>
 
     </application>
 

@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.abbieturner.gdprapplication.R;
+import com.example.abbieturner.gdprapplication.UI.Activity.UpdateProfileActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

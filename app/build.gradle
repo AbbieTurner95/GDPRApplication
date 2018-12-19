@@ -57,8 +57,9 @@ dependencies {
     implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
     implementation 'com.github.javiersantos:MaterialStyledDialogs:2.1'
 
-    //ViewModel
+    //
     implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+    implementation 'com.google.code.gson:gson:2.8.5'
 
     //Google PlayServices
     implementation 'com.google.android.gms:play-services-maps:16.0.0'
