@@ -11,6 +11,9 @@ import android.widget.Button;
 
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.Activity.ContactUsActivity;
+import com.example.abbieturner.gdprapplication.UI.Activity.InfoAboutActivity;
+import com.example.abbieturner.gdprapplication.UI.Activity.InfoFAQActivity;
+import com.example.abbieturner.gdprapplication.UI.Activity.InfoWhyActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -49,21 +52,24 @@ public class InfoFragment extends Fragment {
         about_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //about us fragment
+                Intent intent = new Intent(context, InfoAboutActivity.class);
+                startActivity(intent);
             }
         });
 
         why_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //why fragment
+                Intent intent = new Intent(context, InfoWhyActivity.class);
+                startActivity(intent);
             }
         });
 
         faqs_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //faqs fragment
+                Intent intent = new Intent(context, InfoFAQActivity.class);
+                startActivity(intent);
             }
         });
 

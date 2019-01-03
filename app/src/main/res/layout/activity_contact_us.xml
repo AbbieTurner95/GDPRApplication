@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
-        android:layout_height="250dp"
+        android:layout_height="152dp"
         android:contentDescription="@string/contact_us_background"
         android:scaleType="fitCenter"
         android:src="@drawable/contactpic"
@@ -73,7 +73,7 @@
                 android:fontFamily="@font/big_noodle"
                 android:text="@string/_07527433503"
                 android:textColor="@android:color/background_light"
-                android:textSize="@dimen/sixteen_TS" />
+                android:textSize="@dimen/eighteen_TS" />
 
         </LinearLayout>
 
@@ -101,7 +101,7 @@
                 android:fontFamily="@font/big_noodle"
                 android:text="@string/gdprinfo_outlook_co_uk"
                 android:textColor="@android:color/background_light"
-                android:textSize="@dimen/sixteen_TS" />
+                android:textSize="@dimen/eighteen_TS" />
 
 
         </LinearLayout>
@@ -130,7 +130,7 @@
                 android:fontFamily="@font/big_noodle"
                 android:text="@string/gdpr_application_sheffield"
                 android:textColor="@android:color/background_light"
-                android:textSize="@dimen/sixteen_TS" />
+                android:textSize="@dimen/eighteen_TS" />
 
         </LinearLayout>
 
@@ -157,7 +157,7 @@
                 android:fontFamily="@font/big_noodle"
                 android:text="@string/gdprappssheff"
                 android:textColor="@android:color/background_light"
-                android:textSize="@dimen/sixteen_TS" />
+                android:textSize="@dimen/eighteen_TS" />
 
         </LinearLayout>
 
@@ -166,7 +166,7 @@
     <com.google.android.gms.maps.MapView
         android:id="@+id/google_maps"
         android:layout_width="0dp"
-        android:layout_height="156dp"
+        android:layout_height="233dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

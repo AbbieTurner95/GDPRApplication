@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-45:12
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-44:12
 MERGED from [com.android.support:multidex:1.0.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e0ec370969575774d1c3fc619f18f86c/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.Shashank02051997:FancyAlertDialog-Android:0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/FancyAlertDialog-Android-0.1.aar/8e4c1617332abbba69fe7936c57806b7/AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.harrylefit:bottomnavigation:1.1.6.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/bottomnavigation-1.1.6.1.aar/fa59d8e5c073abe20b9cba4b70381936/AndroidManifest.xml:2:1-11:12
@@ -85,22 +85,22 @@ MERGED from [com.android.support:cursoradapter:28.0.0] /Users/abbieturner/.gradl
 MERGED from [com.android.support:exifinterface:27.1.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/exifinterface-27.1.1.aar/3b50c6da453c867671f6402f2a9a5387/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/c59303a02bef383c55aca02f6f16d52e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/f0a313ea748545ae8f6b5ddcb650c48c/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-44:12
 	package
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:4:5-54
 		INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-45:12
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-44:12
 		INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-45:12
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-44:12
 		INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:11-69
@@ -145,7 +145,7 @@ MERGED from [com.google.firebase:firebase-iid:17.0.4] /Users/abbieturner/.gradle
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:7:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:8:5-79
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:8:5-80
 MERGED from [com.fxn769:pix:1.2.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/pix-1.2.5.aar/480b3c0ab0c6c4dcc07cc33327b4c3ca/AndroidManifest.xml:12:5-80
 MERGED from [com.fxn769:pix:1.2.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/pix-1.2.5.aar/480b3c0ab0c6c4dcc07cc33327b4c3ca/AndroidManifest.xml:12:5-80
 	android:name
@@ -157,7 +157,7 @@ MERGED from [com.fxn769:pix:1.2.5] /Users/abbieturner/.gradle/caches/transforms-
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:9:22-78
 uses-permission#android.permission.CAMERA
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:10:5-64
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:10:5-65
 MERGED from [com.fxn769:pix:1.2.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/pix-1.2.5.aar/480b3c0ab0c6c4dcc07cc33327b4c3ca/AndroidManifest.xml:11:5-65
 MERGED from [com.fxn769:pix:1.2.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/pix-1.2.5.aar/480b3c0ab0c6c4dcc07cc33327b4c3ca/AndroidManifest.xml:11:5-65
 MERGED from [io.fotoapparat.fotoapparat:library:2.3.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/library-2.3.1.aar/746197d582200c31fc68649fbfbc609e/AndroidManifest.xml:9:5-65
@@ -165,11 +165,11 @@ MERGED from [io.fotoapparat.fotoapparat:library:2.3.1] /Users/abbieturner/.gradl
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:10:22-62
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:11:5-70
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:11:5-71
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:11:22-68
 application
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:14:5-43:19
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:13:5-42:19
 MERGED from [com.karumi:dexter:5.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/dexter-5.0.0.aar/f3f4e2957a635df5133ddbb07529cc64/AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:5.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/dexter-5.0.0.aar/f3f4e2957a635df5133ddbb07529cc64/AndroidManifest.xml:26:5-30:19
 MERGED from [com.fxn769:pix:1.2.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/pix-1.2.5.aar/480b3c0ab0c6c4dcc07cc33327b4c3ca/AndroidManifest.xml:16:5-24:19
@@ -245,67 +245,79 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/abbieturner/
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/adae708817e267d98a0200fb1bda1263/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:19:9-35
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:17:9-41
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:16:9-41
 	tools:ignore
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:21:9-48
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:20:9-48
 	android:roundIcon
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:18:9-54
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:17:9-54
 	android:largeHeap
 		ADDED from [com.fxn769:pix:1.2.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/pix-1.2.5.aar/480b3c0ab0c6c4dcc07cc33327b4c3ca/AndroidManifest.xml:17:9-33
 	android:icon
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:16:9-43
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:15:9-43
 	android:allowBackup
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:20:9-40
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:19:9-40
 meta-data#com.google.android.gms.version
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:23:9-25:69
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:21:9-23:69
 MERGED from [com.firebaseui:firebase-ui-auth:4.2.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.2.1.aar/9752b2a6bd0adcd1841944c39aebd02c/AndroidManifest.xml:16:9-18:69
 MERGED from [com.firebaseui:firebase-ui-auth:4.2.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.2.1.aar/9752b2a6bd0adcd1841944c39aebd02c/AndroidManifest.xml:16:9-18:69
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/3a2d9d036b12e7bcb7a0b692426daeda/AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/3a2d9d036b12e7bcb7a0b692426daeda/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:25:13-66
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:24:13-58
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:22:13-58
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:26:9-28:71
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:24:9-26:71
 	android:value
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:28:13-68
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:26:13-68
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:27:13-58
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:25:13-58
 activity#com.example.abbieturner.gdprapplication.UI.Activity.LoginActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:31:9-37:20
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:28:9-34:20
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:31:19-60
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:28:19-60
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:32:13-36:29
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:33:17-69
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:33:25-66
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:35:17-77
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:35:27-74
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:32:27-74
 activity#com.example.abbieturner.gdprapplication.UI.Activity.MainActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:38:9-62
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:35:9-62
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:38:19-59
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:35:19-59
 activity#com.example.abbieturner.gdprapplication.UI.Activity.RegisterActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:39:9-66
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:36:9-66
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:39:19-63
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:36:19-63
 activity#com.example.abbieturner.gdprapplication.UI.Activity.ContactUsActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:40:9-66
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:37:9-67
+	android:name
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:37:19-64
+activity#com.example.abbieturner.gdprapplication.UI.Activity.ForgotPasswordActivity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:38:9-72
+	android:name
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:38:19-69
+activity#com.example.abbieturner.gdprapplication.UI.Activity.info_why_activity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:39:9-67
+	android:name
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:39:19-64
+activity#com.example.abbieturner.gdprapplication.UI.Activity.info_faq_activity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:40:9-67
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:40:19-64
-activity#com.example.abbieturner.gdprapplication.UI.Activity.ForgotPasswordActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:41:9-72
+activity#com.example.abbieturner.gdprapplication.UI.Activity.info_about_activity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:41:9-78
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:41:19-69
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:41:19-66
 uses-sdk
 INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml

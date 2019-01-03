@@ -5,11 +5,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -19,14 +18,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyA5h5uo1yGow25kbZvtuf9IaPXm_oI-WUc" />
-
 
         <activity android:name=".UI.Activity.LoginActivity">
             <intent-filter>
@@ -37,9 +34,11 @@
         </activity>
         <activity android:name=".UI.Activity.MainActivity" />
         <activity android:name=".UI.Activity.RegisterActivity" />
-        <activity android:name=".UI.Activity.ContactUsActivity"/>
+        <activity android:name=".UI.Activity.ContactUsActivity" />
         <activity android:name=".UI.Activity.ForgotPasswordActivity" />
-
+        <activity android:name=".UI.Activity.InfoWhyActivity" />
+        <activity android:name=".UI.Activity.InfoFAQActivity" />
+        <activity android:name=".UI.Activity.InfoAboutActivity"></activity>
     </application>
 
 </manifest>

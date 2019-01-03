@@ -47,7 +47,6 @@
     <string name="change_password">Change Password</string>
     <string name="update_profile_data">Update Profile Data</string>
     <string name="_07527433503">07527433503</string>
-    <string name="error_connection">ERROR - Connection Error!</string>
     <string name="work_hours">Work Hours per week</string>
     <string name="information">Information</string>
 </resources>
