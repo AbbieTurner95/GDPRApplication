@@ -19,14 +19,19 @@ import butterknife.Unbinder;
 public class InfoFragment extends Fragment {
 
     Unbinder unbinder;
+
     @BindView(R.id.about_btn)
     Button about_btn;
+
     @BindView(R.id.contactus_btn)
     Button contactus_btn;
+
     @BindView(R.id.faqs_btn)
     Button faqs_btn;
+
     @BindView(R.id.why_btn)
     Button why_btn;
+
     Context context;
 
     public InfoFragment() {
@@ -37,13 +42,13 @@ public class InfoFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_main, container, false);
+
         unbinder = ButterKnife.bind(this, view);
 
 
         about_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 //about us fragment
             }
         });
@@ -51,18 +56,14 @@ public class InfoFragment extends Fragment {
         why_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 //why fragment
-
             }
         });
 
         faqs_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 //faqs fragment
-
             }
         });
 
@@ -83,6 +84,4 @@ public class InfoFragment extends Fragment {
         super.onDestroy();
         unbinder.unbind();
     }
-
-
 }

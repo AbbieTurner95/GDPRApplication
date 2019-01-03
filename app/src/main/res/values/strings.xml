@@ -20,7 +20,7 @@
     <string name="enter_your_name">Full name</string>
     <string name="address">Address</string>
     <string name="register_securely_today">Register Securely Today!</string>
-    <string name="logo_for_gdpr">logo for gdpr</string>
+    <string name="logo_for_gdpr">logo for GDPR</string>
     <string name="copyright_sign">copyright sign</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -28,7 +28,6 @@
     <string name="click_for_help">Click for Help</string>
     <string name="contact_us">Contact Us</string>
     <string name="contact_us_background">contact us background</string>
-    <string name="_07527433503">07527433503</string>
     <string name="gdprinfo_outlook_co_uk">GDPRinfo@outlook.co.uk</string>
     <string name="gdpr_application_sheffield">GDPR Application Sheffield</string>
     <string name="gdprappssheff">GDPRAPPSSHEFF</string>
@@ -49,4 +48,6 @@
     <string name="why_have_i_been_asked_to_get_this_app">Why have I been asked to get this app?</string>
     <string name="change_password">Change Password</string>
     <string name="update_profile_data">Update Profile Data</string>
+    <string name="_07527433503">07527433503</string>
+    <string name="error_connection">ERROR - Connection Error!</string>
 </resources>
