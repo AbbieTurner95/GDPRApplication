@@ -15,7 +15,6 @@
     <string name="ethnicity">Ethnicity</string>
     <string name="medical_history">Medical Conditions</string>
     <string name="work_place">Place of work.</string>
-    <string name="work_hours">Work Hours per week</string>
     <string name="register">Register Here!</string>
     <string name="enter_your_name">Full name</string>
     <string name="address">Address</string>
@@ -42,7 +41,6 @@
     <string name="update_data">Update Data</string>
     <string name="reset">Reset</string>
     <string name="please_enter_your_email_address">Please enter your email address :</string>
-    <string name="information">Information</string>
     <string name="faqs">FAQs</string>
     <string name="about_gdpr">About GDPR</string>
     <string name="why_have_i_been_asked_to_get_this_app">Why have I been asked to get this app?</string>
@@ -50,4 +48,6 @@
     <string name="update_profile_data">Update Profile Data</string>
     <string name="_07527433503">07527433503</string>
     <string name="error_connection">ERROR - Connection Error!</string>
+    <string name="work_hours">Work Hours per week</string>
+    <string name="information">Information</string>
 </resources>
