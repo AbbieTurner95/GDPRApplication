@@ -12,4 +12,8 @@ public class InfoFAQActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_faq_activity);
     }
+
+    //faqs on gdpr
+    //faqs on employe data
+
 }

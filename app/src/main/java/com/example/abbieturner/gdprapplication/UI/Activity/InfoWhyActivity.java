@@ -11,5 +11,10 @@ public class InfoWhyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_why_activity);
+
+
+        //change of rules 2018
+        //business wants to comply
+        //new regulations
     }
 }

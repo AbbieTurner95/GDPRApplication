@@ -50,4 +50,6 @@
     <string name="change_password">Cambia la contraseña</string>
     <string name="update_profile_data">Actualizar datos de perfil</string>
     <string name="_07527433503">07527433503</string>
+    <string name="request_data">Solicitar Datos</string>
+    <string name="hows_my_data_being_used">¿Cómo se utilizan mis datos?</string>
 </resources>

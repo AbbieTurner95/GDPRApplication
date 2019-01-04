@@ -50,4 +50,6 @@
     <string name="why_have_i_been_asked_to_get_this_app">Perché mi è stato chiesto di ottenere questa app?</string>
     <string name="change_password">Cambia la password</string>
     <string name="update_profile_data">Aggiorna i dati del profilo</string>
+    <string name="request_data">Richiesta Dati</string>
+    <string name="hows_my_data_being_used">Come vengono utilizzati i miei dati?</string>
 </resources>

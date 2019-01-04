@@ -49,4 +49,6 @@
     <string name="_07527433503">07527433503</string>
     <string name="work_hours">Work Hours per week</string>
     <string name="information">Information</string>
+    <string name="request_data">Request Data</string>
+    <string name="hows_my_data_being_used">Hows my data being used?</string>
 </resources>

@@ -38,7 +38,9 @@
         <activity android:name=".UI.Activity.ForgotPasswordActivity" />
         <activity android:name=".UI.Activity.InfoWhyActivity" />
         <activity android:name=".UI.Activity.InfoFAQActivity" />
-        <activity android:name=".UI.Activity.InfoAboutActivity"></activity>
+        <activity android:name=".UI.Activity.InfoAboutActivity" />
+        <activity android:name=".UI.Activity.UpdateProfileActivity" />
+        <activity android:name=".UI.Activity.HowDataUsedActivity"></activity>
     </application>
 
 </manifest>

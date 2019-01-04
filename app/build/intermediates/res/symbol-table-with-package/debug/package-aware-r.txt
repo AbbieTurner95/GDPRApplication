@@ -731,6 +731,8 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color colorAccent
+color colorAccent2
+color colorAccent3
 color colorPrimary
 color colorPrimaryDark
 color colorPrimaryLightPix
@@ -1268,6 +1270,7 @@ drawable bottom_navigation_colours
 drawable bubble
 drawable circle
 drawable circular_button
+drawable collecting
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1288,6 +1291,7 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable contactpic
+drawable content
 drawable curved_shape
 drawable curved_shape2
 drawable datapic
@@ -1380,6 +1384,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable person_placeholder
+drawable question
 drawable rectangle_box
 drawable ring
 drawable ripple
@@ -1545,6 +1550,7 @@ id heading
 id home
 id homeAsUp
 id horizontal
+id how_data_used_btn
 id hybrid
 id icon
 id icon_group
@@ -1642,6 +1648,7 @@ id radio
 id rectangle
 id recyclerView
 id relativelayout1
+id request_btn
 id resend_barrier
 id resend_code
 id right
@@ -1833,6 +1840,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_contact_us
 layout activity_forgot_password
+layout activity_how_data_used
 layout activity_info_about_activity
 layout activity_info_faq_activity
 layout activity_info_why_activity
@@ -2112,6 +2120,7 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
+string hows_my_data_being_used
 string information
 string language
 string library_materialstyleddialogs_author
@@ -2147,6 +2156,7 @@ string project_id
 string register
 string register_securely_today
 string register_your_account_today
+string request_data
 string reset
 string search_menu_title
 string selection_limiter_pix

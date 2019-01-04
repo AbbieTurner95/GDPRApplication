@@ -12,4 +12,6 @@ public class InfoAboutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_about_activity);
     }
+
+    //about gdpr
 }

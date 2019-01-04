@@ -25,15 +25,14 @@ public class InfoFragment extends Fragment {
 
     @BindView(R.id.about_btn)
     Button about_btn;
-
     @BindView(R.id.contactus_btn)
     Button contactus_btn;
-
     @BindView(R.id.faqs_btn)
     Button faqs_btn;
-
     @BindView(R.id.why_btn)
     Button why_btn;
+    @BindView(R.id.how_data_used_btn)
+    Button how_btn;
 
     Context context;
 
@@ -61,6 +60,14 @@ public class InfoFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, InfoWhyActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        how_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, HowDataUsedActivity.class);
                 startActivity(intent);
             }
         });

@@ -53,9 +53,11 @@
         <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.RegisterActivity" />
         <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.ContactUsActivity" />
         <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.ForgotPasswordActivity" />
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.info_why_activity" />
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.info_faq_activity" />
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.info_about_activity" />
+        <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.InfoWhyActivity" />
+        <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.InfoFAQActivity" />
+        <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.InfoAboutActivity" />
+        <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.UpdateProfileActivity" />
+        <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.HowDataUsedActivity" />
         <activity
             android:name="com.karumi.dexter.DexterActivity"
             android:theme="@style/Dexter.Internal.Theme.Transparent" />
