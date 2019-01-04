@@ -1559,6 +1559,7 @@ id icon_only
 id ifRoom
 id image
 id imageView
+id imageView2
 id imageView3
 id img_count
 id img_profile
@@ -1576,6 +1577,7 @@ id left
 id light
 id line1
 id line3
+id linearLayout
 id linearLayout3
 id listMode
 id list_item
@@ -1665,6 +1667,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id search_badge
 id search_bar
@@ -1746,6 +1749,7 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView2
+id textView3
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1990,6 +1994,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string about_gdpr
+string about_gdpr_text
 string address
 string app_name
 string appbar_scrolling_view_behavior
@@ -2111,7 +2116,9 @@ string fui_welcome_back_idp_header
 string fui_welcome_back_idp_prompt
 string fui_welcome_back_password_prompt_body
 string gcm_defaultSenderId
+string gdpr_and_employee_data
 string gdpr_application_sheffield
+string gdpr_employee_text
 string gdprappssheff
 string gdprinfo_outlook_co_uk
 string github_client_id
@@ -2120,6 +2127,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string graphic_image_for_about_gdpr_page
 string hide_bottom_view_on_scroll_behavior
 string hows_my_data_being_used
 string information
@@ -2170,6 +2178,7 @@ string twitter_consumer_secret
 string update_data
 string update_profile_data
 string visit_our_website
+string what_is_gdpr
 string why_have_i_been_asked_to_get_this_app
 string work_hours
 string work_place

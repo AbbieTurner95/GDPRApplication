@@ -8,8 +8,90 @@
     tools:context=".UI.Activity.InfoAboutActivity">
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
+        android:layout_height="157dp"
+        android:src="@drawable/content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/graphic_image_for_about_gdpr_page" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/content"/>
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/big_noodle"
+        android:gravity="center"
+        android:padding="@dimen/padd_five"
+        android:text="@string/about_gdpr"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/eighteen_TS"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <LinearLayout
+        android:padding="@dimen/padding_eight"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TextView
+            android:padding="@dimen/padd_five"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/what_is_gdpr"
+            android:fontFamily="@font/big_noodle"
+            android:textSize="@dimen/sixteen_TS"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="116dp" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="304dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_gdpr_text" />
+
+        </ScrollView>
+
+        <TextView
+            android:padding="@dimen/padd_five"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sixteen_TS"
+            android:textStyle="bold"
+            android:fontFamily="@font/big_noodle"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:text="@string/gdpr_and_employee_data"/>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gdpr_employee_text"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>

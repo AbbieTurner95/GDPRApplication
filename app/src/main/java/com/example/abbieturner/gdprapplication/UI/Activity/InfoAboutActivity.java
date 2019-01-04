@@ -13,5 +13,5 @@ public class InfoAboutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_info_about_activity);
     }
 
-    //about gdpr
+
 }

@@ -44,7 +44,7 @@ public class InfoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_main, container, false);
+        View view = inflater.inflate(R.layout.fragment_info, container, false);
 
         unbinder = ButterKnife.bind(this, view);
 
@@ -52,7 +52,7 @@ public class InfoFragment extends Fragment {
         about_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, InfoAboutActivity.class);
+                Intent intent = new Intent(getContext(), InfoAboutActivity.class);
                 startActivity(intent);
             }
         });
@@ -60,7 +60,7 @@ public class InfoFragment extends Fragment {
         why_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, InfoWhyActivity.class);
+                Intent intent = new Intent(getContext(), InfoWhyActivity.class);
                 startActivity(intent);
             }
         });
@@ -68,7 +68,7 @@ public class InfoFragment extends Fragment {
         how_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, HowDataUsedActivity.class);
+                Intent intent = new Intent(getContext(), HowDataUsedActivity.class);
                 startActivity(intent);
             }
         });
@@ -76,7 +76,7 @@ public class InfoFragment extends Fragment {
         faqs_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, InfoFAQActivity.class);
+                Intent intent = new Intent(getContext(), InfoFAQActivity.class);
                 startActivity(intent);
             }
         });
@@ -84,7 +84,7 @@ public class InfoFragment extends Fragment {
         contactus_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, ContactUsActivity.class);
+                Intent intent = new Intent(getContext(), ContactUsActivity.class);
                 startActivity(intent);
             }
         });
