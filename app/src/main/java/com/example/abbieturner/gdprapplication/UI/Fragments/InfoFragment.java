@@ -11,6 +11,7 @@ import android.widget.Button;
 
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.Activity.ContactUsActivity;
+import com.example.abbieturner.gdprapplication.UI.Activity.HowDataUsedActivity;
 import com.example.abbieturner.gdprapplication.UI.Activity.InfoAboutActivity;
 import com.example.abbieturner.gdprapplication.UI.Activity.InfoFAQActivity;
 import com.example.abbieturner.gdprapplication.UI.Activity.InfoWhyActivity;

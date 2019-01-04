@@ -1388,6 +1388,7 @@ drawable question
 drawable rectangle_box
 drawable ring
 drawable ripple
+drawable securedata
 drawable side_nav_bar
 drawable toast_frame
 drawable tooltip_frame_dark

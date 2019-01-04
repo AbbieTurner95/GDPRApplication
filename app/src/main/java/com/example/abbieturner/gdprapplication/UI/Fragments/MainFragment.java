@@ -2,7 +2,9 @@ package com.example.abbieturner.gdprapplication.UI.Fragments;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -10,6 +12,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,6 +26,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
+import static java.net.Proxy.Type.HTTP;
+
 public class MainFragment extends Fragment {
 
     Unbinder unbinder;
@@ -30,6 +35,8 @@ public class MainFragment extends Fragment {
     ImageView iv_user_profile;
     @BindView(R.id.tv_user_name)
     TextView tv_user_name;
+    @BindView(R.id.request_btn)
+    Button request_data;
 
     private MainViewModel mainViewModel;
 
@@ -45,6 +52,34 @@ public class MainFragment extends Fragment {
         unbinder = ButterKnife.bind(this, view);
 
         mainViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
+
+        request_data.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mainViewModel.getUserLiveData().observe(MainFragment.this, new Observer<User>() {
+                    @Override
+                    public void onChanged(@Nullable User user) {
+                        if (user != null) {
+                            Intent emailIntent = new Intent(Intent.ACTION_SEND);
+                            emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Personal Data");
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, "Please see all data kept below");
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getProfile());
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getName());
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getAddress());
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getEmail());
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getEthnicity());
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getFax());
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getLang());
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getMedical());
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getPhone());
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getWorkHour());
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getWorkPlace());
+                        }
+                    }
+                });
+            }
+        });
+
         mainViewModel.getUserLiveData().observe(this, new Observer<User>() {
             @Override
             public void onChanged(@Nullable User user) {
