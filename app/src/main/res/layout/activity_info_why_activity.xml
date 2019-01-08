@@ -9,17 +9,31 @@
 
 
     <ImageView
-        android:src="@drawable/question"
+        android:id="@+id/why_img"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="160dp"
+        android:contentDescription="@string/why_img_cd"
+        android:src="@drawable/question"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
-        android:textSize="@dimen/eighteen_TS"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Why have I been asked to download this app?"/>
-
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/big_noodle"
+        android:gravity="center"
+        android:padding="@dimen/padd_five"
+        android:text="@string/why_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/eighteen_TS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/why_img" />
 
 
 </android.support.constraint.ConstraintLayout>

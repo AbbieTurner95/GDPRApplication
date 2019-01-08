@@ -8,14 +8,14 @@
     tools:context=".UI.Activity.InfoAboutActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/about_img"
         android:layout_width="wrap_content"
-        android:layout_height="157dp"
+        android:layout_height="160dp"
+        android:contentDescription="@string/graphic_image_for_about_gdpr_page"
         android:src="@drawable/content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/graphic_image_for_about_gdpr_page" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
@@ -31,26 +31,26 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/about_img" />
 
     <LinearLayout
-        android:padding="@dimen/padding_eight"
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
+        android:padding="@dimen/padding_eight"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <TextView
-            android:padding="@dimen/padd_five"
-            android:textColor="@color/colorPrimary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/what_is_gdpr"
             android:fontFamily="@font/big_noodle"
+            android:padding="@dimen/padd_five"
+            android:text="@string/what_is_gdpr"
+            android:textColor="@color/colorPrimary"
             android:textSize="@dimen/sixteen_TS"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="16dp"
@@ -71,14 +71,14 @@
         </ScrollView>
 
         <TextView
-            android:padding="@dimen/padd_five"
             android:layout_width="wrap_content"
-            android:textSize="@dimen/sixteen_TS"
-            android:textStyle="bold"
-            android:fontFamily="@font/big_noodle"
-            android:textColor="@color/colorPrimary"
             android:layout_height="wrap_content"
-            android:text="@string/gdpr_and_employee_data"/>
+            android:fontFamily="@font/big_noodle"
+            android:padding="@dimen/padd_five"
+            android:text="@string/gdpr_and_employee_data"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sixteen_TS"
+            android:textStyle="bold" />
 
         <ScrollView
             android:layout_width="wrap_content"
@@ -87,11 +87,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/gdpr_employee_text"/>
+                android:text="@string/gdpr_employee_text" />
 
         </ScrollView>
 
     </LinearLayout>
-
-
 </android.support.constraint.ConstraintLayout>

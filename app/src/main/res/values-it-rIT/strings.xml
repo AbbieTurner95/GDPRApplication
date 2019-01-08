@@ -52,4 +52,13 @@
     <string name="update_profile_data">Aggiorna i dati del profilo</string>
     <string name="request_data">Richiesta Dati</string>
     <string name="hows_my_data_being_used">Come vengono utilizzati i miei dati?</string>
+    <string name="about_gdpr_text">L\'Europa è ora coperta dalle più solide regole di protezione dei dati del mondo. Il regolamento generale sulla protezione dei dati (GDPR \\), approvato di comune accordo, è entrato in vigore il 25 maggio 2018 ed è stato progettato per modernizzare le leggi che proteggono le informazioni personali degli individui. Il sito web GDPR dell\'UE afferma che la legislazione è stata concepita per \"armonizzare\" le leggi sulla privacy dei dati in tutta Europa e per offrire maggiore protezione e diritti alle persone.</string>
+    <string name="gdpr_employee_text">Secondo il GDPR, i dipendenti in quanto soggetti interessati godranno di maggiori diritti. La buona notizia per i datori di lavoro del Regno Unito è che molti di questi diritti sono simili a quelli previsti dall\'attuale Data Protection Act del Regno Unito del 1998 \\ (DPA \\). La cattiva notizia è che, come regola generale, il GDPR espande i diritti previsti dal DPA, introduce alcuni nuovi diritti e impone sanzioni significative per le violazioni. In sintesi, ai sensi del GDPR, i dipendenti in quanto soggetti interessati hanno i seguenti diritti: il diritto di essere informato, che comprende l\'obbligo per i datori di lavoro di fornire trasparenza sul modo in cui i dati personali saranno utilizzati; il diritto di accesso, simile a quelli previsti dal DPA e comprendente la richiesta di accesso ai soggetti sempre più diffusa; il diritto alla rettifica dei dati che è inaccurato o incompleto \\ (di nuovo simile al DPA \\) \\; il diritto all\'oblio in determinate circostanze; il diritto di bloccare o sopprimere l\'elaborazione di dati personali \\ (simile al DPA \\) \\; e il nuovo diritto alla portabilità dei dati che consente ai dipendenti di ottenere e riutilizzare i propri dati personali per i propri scopi tra diversi servizi in determinate circostanze.</string>
+    <string name="what_is_gdpr">Cosa è GDPR?</string>
+    <string name="gdpr_and_employee_data">Dati GDPR e dipendenti</string>
+    <string name="graphic_image_for_about_gdpr_page">Immagine grafica per la pagina GDPR</string>
+    <string name="why_title">Perché mi è stato chiesto di scaricare questa app?</string>
+    <string name="faq_about_cd">Scatola di dati per rappresentare la pagina delle domande</string>
+    <string name="why_img_cd">Immagine del punto interrogativo tenuto da lady</string>
+    <string name="welcome">Benvenuti,</string>
 </resources>

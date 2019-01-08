@@ -9,9 +9,31 @@
 
 
     <ImageView
+        android:id="@+id/faq_image"
         android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:contentDescription="@string/faq_about_cd"
+        android:src="@drawable/collecting"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/collecting"/>
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/big_noodle"
+        android:gravity="center"
+        android:padding="@dimen/padd_five"
+        android:text="@string/faqs"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/eighteen_TS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faq_image" />
 
 
 </android.support.constraint.ConstraintLayout>

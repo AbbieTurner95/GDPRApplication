@@ -52,23 +52,13 @@
     <string name="request_data">Request Data</string>
     <string name="hows_my_data_being_used">Hows my data being used?</string>
 
-    <string name="about_gdpr_text">Europe is now covered by the world\'s strongest data protection rules.
-        The mutually agreed General Data Protection Regulation \(GDPR\) came into force on May 25, 2018,
-        and was designed to modernise laws that protect the personal information of individuals. The EU\'s GDPR website says the
-        legislation is designed to \"harmonise\" data privacy laws across Europe as well as give greater protection and rights to
-        individuals.</string>
-    <string name="gdpr_employee_text">Under the GDPR, employees as data subjects will have greater rights.
-        The good news for UK employers is that many of these rights are similar to those under the current
-        UK Data Protection Act 1998 \(DPA\). The bad news is that, as a general rule, the GDPR expands the rights
-        under the DPA, introduces a few new rights, and imposes significant penalties for breaches. In summary,
-        under the GDPR, employees as data subjects have the following rights\: the right to be informed, which encompasses
-        the obligation on employers to provide transparency as to how personal data will be used; the right of access,
-        similar to those rights under the DPA and encompassing the ever-popular subject access request; the right to
-        rectification of data that is inaccurate or incomplete \(again similar to the DPA\)\; the right to be forgotten under
-        certain circumstances; the right to block or suppress processing of personal data \(similar to the DPA\)\; and the new
-        right to data portability which allows employees to obtain and reuse their personal data for their own purposes across
-        different services under certain circumstances.</string>
+    <string name="about_gdpr_text">Europe is now covered by the world\'s strongest data protection rules.         The mutually agreed General Data Protection Regulation \\(GDPR\\) came into force on May 25, 2018,         and was designed to modernise laws that protect the personal information of individuals. The EU\'s GDPR website says the         legislation is designed to \"harmonise\" data privacy laws across Europe as well as give greater protection and rights to         individuals.</string>
+    <string name="gdpr_employee_text">Under the GDPR, employees as data subjects will have greater rights.         The good news for UK employers is that many of these rights are similar to those under the current         UK Data Protection Act 1998 \\(DPA\\). The bad news is that, as a general rule, the GDPR expands the rights         under the DPA, introduces a few new rights, and imposes significant penalties for breaches. In summary,         under the GDPR, employees as data subjects have the following rights\\: the right to be informed, which encompasses         the obligation on employers to provide transparency as to how personal data will be used; the right of access,         similar to those rights under the DPA and encompassing the ever-popular subject access request; the right to         rectification of data that is inaccurate or incomplete \\(again similar to the DPA\\)\\; the right to be forgotten under         certain circumstances; the right to block or suppress processing of personal data \\(similar to the DPA\\)\\; and the new         right to data portability which allows employees to obtain and reuse their personal data for their own purposes across         different services under certain circumstances.</string>
     <string name="what_is_gdpr">What is GDPR?</string>
     <string name="gdpr_and_employee_data">GDPR and Employee Data</string>
     <string name="graphic_image_for_about_gdpr_page">Graphic image for about gdpr page</string>
+    <string name="why_title">Why have I been asked to download this app?</string>
+    <string name="faq_about_cd">Box of data to represent faqs page</string>
+    <string name="why_img_cd">Image of question mark held by lady</string>
+    <string name="welcome">Welcome,</string>
 </resources>

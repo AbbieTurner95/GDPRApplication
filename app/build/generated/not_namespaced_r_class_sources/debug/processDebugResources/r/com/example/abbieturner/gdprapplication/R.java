@@ -6251,7 +6251,7 @@ public final class R {
     public static final int ifRoom=0x7f0a00a0;
     public static final int image=0x7f0a00a1;
     public static final int imageView=0x7f0a00a2;
-    public static final int imageView2=0x7f0a00a3;
+    public static final int about_img =0x7f0a00a3;
     public static final int imageView3=0x7f0a00a4;
     public static final int img_count=0x7f0a00a5;
     public static final int img_profile=0x7f0a00a6;
