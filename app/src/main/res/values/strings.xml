@@ -63,4 +63,5 @@
     <string name="welcome">Welcome,</string>
     <string name="why_gdpr_text">The GDPR (General Data Protection Regulation) came into force on 25 May 2018. The regulation replaced the current Data Protection Act. Both employers and their employees have new responsibilities to consider to help ensure compliance. After Britain leaves the European Union, a new UK Data Protection Act will ensure that the GDPR principles remain in UK law. Organisations must have a valid reason for having personal data and the data should not be held for any longer than necessary. This is the company you work fors chosen route in helping them not only comply with the regulations but to help keep your personal data safe and make sure you as an employee have all the information you need on the go.</string>
     <string name="can_t_see_your_question_click_here_to_contact_us">Can\'t see your question? Click here to contact us.</string>
+    <string name="ask">Ask us anything!</string>
 </resources>

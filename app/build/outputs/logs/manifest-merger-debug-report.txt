@@ -6,6 +6,7 @@ INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/A
 INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:2:1-47:12
 MERGED from [com.android.support:multidex:1.0.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e0ec370969575774d1c3fc619f18f86c/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.Shashank02051997:FancyAlertDialog-Android:0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/FancyAlertDialog-Android-0.1.aar/8e4c1617332abbba69fe7936c57806b7/AndroidManifest.xml:2:1-11:12
+MERGED from [com.yarolegovich:lovely-dialog:1.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/lovely-dialog-1.1.0.aar/a4d93daf82e8fa7f532c85e5c54bc501/AndroidManifest.xml:2:1-12:12
 MERGED from [com.github.harrylefit:bottomnavigation:1.1.6.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/bottomnavigation-1.1.6.1.aar/fa59d8e5c073abe20b9cba4b70381936/AndroidManifest.xml:2:1-11:12
 MERGED from [com.karumi:dexter:5.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/dexter-5.0.0.aar/f3f4e2957a635df5133ddbb07529cc64/AndroidManifest.xml:17:1-32:12
 MERGED from [com.fxn769:pix:1.2.5] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/pix-1.2.5.aar/480b3c0ab0c6c4dcc07cc33327b4c3ca/AndroidManifest.xml:2:1-26:12
@@ -336,6 +337,8 @@ MERGED from [com.android.support:multidex:1.0.2] /Users/abbieturner/.gradle/cach
 MERGED from [com.android.support:multidex:1.0.2] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e0ec370969575774d1c3fc619f18f86c/AndroidManifest.xml:20:5-43
 MERGED from [com.github.Shashank02051997:FancyAlertDialog-Android:0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/FancyAlertDialog-Android-0.1.aar/8e4c1617332abbba69fe7936c57806b7/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.Shashank02051997:FancyAlertDialog-Android:0.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/FancyAlertDialog-Android-0.1.aar/8e4c1617332abbba69fe7936c57806b7/AndroidManifest.xml:7:5-9:41
+MERGED from [com.yarolegovich:lovely-dialog:1.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/lovely-dialog-1.1.0.aar/a4d93daf82e8fa7f532c85e5c54bc501/AndroidManifest.xml:8:5-10:41
+MERGED from [com.yarolegovich:lovely-dialog:1.1.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/lovely-dialog-1.1.0.aar/a4d93daf82e8fa7f532c85e5c54bc501/AndroidManifest.xml:8:5-10:41
 MERGED from [com.github.harrylefit:bottomnavigation:1.1.6.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/bottomnavigation-1.1.6.1.aar/fa59d8e5c073abe20b9cba4b70381936/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.harrylefit:bottomnavigation:1.1.6.1] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/bottomnavigation-1.1.6.1.aar/fa59d8e5c073abe20b9cba4b70381936/AndroidManifest.xml:7:5-9:41
 MERGED from [com.karumi:dexter:5.0.0] /Users/abbieturner/.gradle/caches/transforms-1/files-1.1/dexter-5.0.0.aar/f3f4e2957a635df5133ddbb07529cc64/AndroidManifest.xml:22:5-24:41

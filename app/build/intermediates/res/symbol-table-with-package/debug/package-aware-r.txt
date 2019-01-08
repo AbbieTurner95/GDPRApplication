@@ -782,6 +782,7 @@ color fui_transparent
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color ic_launcher_background
+color ld_textInputError
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1037,6 +1038,8 @@ dimen hint_pressed_alpha_material_light
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
+dimen ld_side_cb_margin
+dimen ld_side_margin
 dimen ll_height
 dimen main_margin
 dimen mainheight
@@ -1403,6 +1406,7 @@ id META
 id SHIFT
 id SYM
 id about_btn
+id about_img
 id action0
 id action_bar
 id action_bar_activity_content
@@ -1475,6 +1479,7 @@ id clip_vertical
 id collapseActionView
 id confirmation_code
 id confirmation_code_layout
+id contact_q_btn
 id contactus
 id contactus_btn
 id container
@@ -1487,6 +1492,7 @@ id customPanel
 id dark
 id decor_content_parent
 id default_activity_button
+id del_btn
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1526,6 +1532,7 @@ id et_work_place
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id faq_image
 id faqs_btn
 id fastscroll_bubble
 id fastscroll_handle
@@ -1559,7 +1566,6 @@ id icon_only
 id ifRoom
 id image
 id imageView
-id imageView2
 id imageView3
 id img_count
 id img_profile
@@ -1571,8 +1577,24 @@ id italic
 id item_touch_helper_previous_elevation
 id iv_notification
 id iv_user_profile
+id kept_btn
 id labeled
 id largeLabel
+id ld_btn_confirm
+id ld_btn_negative
+id ld_btn_neutral
+id ld_btn_no
+id ld_btn_yes
+id ld_cb_dont_show_again
+id ld_choices
+id ld_color_area
+id ld_custom_view_container
+id ld_error_message
+id ld_icon
+id ld_message
+id ld_text_input
+id ld_title
+id ld_top_title
 id left
 id light
 id line1
@@ -1651,6 +1673,7 @@ id radio
 id rectangle
 id recyclerView
 id relativelayout1
+id reqdata_btn
 id request_btn
 id resend_barrier
 id resend_code
@@ -1722,6 +1745,7 @@ id tagTitle
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id tech_btn
 id terrain
 id text
 id text2
@@ -1750,6 +1774,8 @@ id textStart
 id textView
 id textView2
 id textView3
+id textView4
+id textView5
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1781,6 +1807,7 @@ id tv_user_name
 id uniform
 id unlabeled
 id up
+id update_btn
 id useLogo
 id viewPager
 id view_notification
@@ -1790,6 +1817,7 @@ id welcome_back_idp_button
 id welcome_back_idp_prompt
 id welcome_back_password_body
 id why_btn
+id why_img
 id wide
 id withText
 id wrap
@@ -1873,6 +1901,13 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_choice
+layout dialog_custom
+layout dialog_info
+layout dialog_progress
+layout dialog_standard
+layout dialog_standard_vertical
+layout dialog_text_input
 layout fancyalertdialog
 layout fragment_info
 layout fragment_main
@@ -1898,6 +1933,9 @@ layout fui_welcome_back_idp_prompt_layout
 layout fui_welcome_back_password_prompt_layout
 layout header_row
 layout inital_image
+layout item_footer_confirm
+layout item_simple_text
+layout item_simple_text_multichoice
 layout main_image
 layout md_dialog_basic
 layout md_dialog_basic_check
@@ -1944,7 +1982,9 @@ layout style_dialog_header_icon
 layout style_dialog_header_title
 layout support_simple_spinner_dropdown_item
 layout toast_layout
+layout view_color_area
 layout view_tab
+layout view_title_and_message
 menu activity_main_drawer
 menu dropdown
 menu menu_main
@@ -1998,7 +2038,9 @@ string about_gdpr_text
 string address
 string app_name
 string appbar_scrolling_view_behavior
+string ask
 string bottom_sheet_behavior
+string can_t_see_your_question_click_here_to_contact_us
 string cancelled_sign_in
 string change_email
 string change_password
@@ -2030,6 +2072,7 @@ string contact_us_background
 string copyright_sign
 string default_web_client_id
 string define_materialstyleddialogs
+string dont_show_again
 string email
 string enter_new_password
 string enter_old_password
@@ -2038,10 +2081,13 @@ string enter_your_new_email
 string enter_your_password
 string error_connection
 string ethnicity
+string ex_msg_dialog_choice_confirm
+string ex_msg_dialog_view_not_set
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string facebook_application_id
 string facebook_login_protocol_scheme
+string faq_about_cd
 string faqs
 string fax
 string fcm_fallback_notification_channel_label
@@ -2178,8 +2224,12 @@ string twitter_consumer_secret
 string update_data
 string update_profile_data
 string visit_our_website
+string welcome
 string what_is_gdpr
+string why_gdpr_text
 string why_have_i_been_asked_to_get_this_app
+string why_img_cd
+string why_title
 string work_hours
 string work_place
 style AlertDialog_AppCompat
@@ -2384,6 +2434,7 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style Dexter_Internal_Theme_Transparent
+style DialogButton
 style FirebaseUI
 style FirebaseUI_AuthMethodPicker
 style FirebaseUI_AuthMethodPicker_ButtonHolder
