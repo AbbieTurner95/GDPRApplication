@@ -35,5 +35,90 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/faq_image" />
 
+    <Button
+        android:id="@+id/reqdata_btn"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/big_noodle"
+        android:text="Where can I request my Data?"
+        app:layout_constraintBottom_toTopOf="@+id/update_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/update_btn"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorAccent"
+        android:text="Where can I update my data?"
+        android:fontFamily="@font/big_noodle"
+        app:layout_constraintBottom_toTopOf="@+id/tech_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reqdata_btn" />
+
+    <Button
+        android:id="@+id/tech_btn"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/big_noodle"
+        android:text="I'm having a technical issue, where can I go?"
+        app:layout_constraintBottom_toTopOf="@+id/del_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_btn" />
+
+    <Button
+        android:id="@+id/del_btn"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/big_noodle"
+        android:text="How do I request to delete my data?"
+        app:layout_constraintBottom_toTopOf="@+id/kept_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tech_btn" />
+
+
+    <Button
+        android:id="@+id/kept_btn"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/big_noodle"
+        android:text="How long is my data kept for?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/del_btn" />
+
+    <Button
+        android:id="@+id/contact_q_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/big_noodle"
+        android:text="@string/can_t_see_your_question_click_here_to_contact_us"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sixteen_TS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>
