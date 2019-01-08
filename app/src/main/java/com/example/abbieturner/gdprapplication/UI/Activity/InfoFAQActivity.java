@@ -1,10 +1,14 @@
 package com.example.abbieturner.gdprapplication.UI.Activity;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.EditText;
 
 import com.example.abbieturner.gdprapplication.R;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
@@ -46,7 +50,6 @@ public class InfoFAQActivity extends AppCompatActivity {
                         .setMessage("Go back to the homepage and select the 'request data' button, if having any technical problems please contact us")
                         .setNegativeButton(android.R.string.ok, null)
                         .show();
-
             }
         });
 
@@ -54,6 +57,13 @@ public class InfoFAQActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                new LovelyStandardDialog(InfoFAQActivity.this, LovelyStandardDialog.ButtonLayout.VERTICAL)
+                        .setTopColorRes(R.color.colorPrimary)
+                        .setButtonsColorRes(R.color.colorAccent)
+                        .setTitle(R.string.update_string)
+                        .setMessage("You can update your data in the profile section of this application. Profile > Update Data")
+                        .setNegativeButton(android.R.string.ok, null)
+                        .show();
             }
         });
 
@@ -62,6 +72,13 @@ public class InfoFAQActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                new LovelyStandardDialog(InfoFAQActivity.this, LovelyStandardDialog.ButtonLayout.VERTICAL)
+                        .setTopColorRes(R.color.colorPrimary)
+                        .setButtonsColorRes(R.color.colorAccent)
+                        .setMessage("Any issues please contact us. Visit the contact us page.")
+                        .setTitle(R.string.tech_string)
+                        .setNegativeButton(android.R.string.ok, null)
+                        .show();
             }
         });
 
@@ -69,6 +86,13 @@ public class InfoFAQActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                new LovelyStandardDialog(InfoFAQActivity.this, LovelyStandardDialog.ButtonLayout.VERTICAL)
+                        .setTopColorRes(R.color.colorPrimary)
+                        .setButtonsColorRes(R.color.colorAccent)
+                        .setMessage("To request to delete your data please visit profile and select the request to delete data button")
+                        .setTitle(R.string.del_req_string)
+                        .setNegativeButton(android.R.string.ok, null)
+                        .show();
             }
         });
 
@@ -77,15 +101,42 @@ public class InfoFAQActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                new LovelyStandardDialog(InfoFAQActivity.this, LovelyStandardDialog.ButtonLayout.VERTICAL)
+                        .setTopColorRes(R.color.colorPrimary)
+                        .setButtonsColorRes(R.color.colorAccent)
+                        .setMessage("Your data is kept for up to three years after three years it will be deleted. ")
+                        .setTitle(R.string.kept_string)
+                        .setNegativeButton(android.R.string.ok, null)
+                        .show();
             }
         });
 
 
         contact_q_btn.setOnClickListener(new View.OnClickListener() {
+            Context context;
+
             @Override
             public void onClick(View view) {
+                    final EditText taskEditText = new EditText(context);
+                    AlertDialog dialog = new AlertDialog.Builder(context)
+                            .setTitle("Ask us anything!")
+                            .setMessage("We aim to reply within 48 hours.")
+                            .setView(taskEditText)
+                            .setPositiveButton("Send", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    String text = String.valueOf(taskEditText.getText());
+                                    Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                                    emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Question");
+                                    emailIntent.putExtra(Intent.EXTRA_TEXT, text);
+                                    startActivity(Intent.createChooser(emailIntent, "Send email..."));
 
-            }
+                                }
+                            })
+                            .setNegativeButton("Cancel", null)
+                            .create();
+                    dialog.show();
+                }
         });
     }
 }
