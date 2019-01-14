@@ -37,6 +37,8 @@ public class MainFragment extends Fragment {
     TextView tv_user_name;
     @BindView(R.id.request_btn)
     Button request_data;
+    @BindView(R.id.delete_data_btn)
+    Button delte_data_btn;
 
     private MainViewModel mainViewModel;
 
@@ -78,6 +80,16 @@ public class MainFragment extends Fragment {
                         }
                     }
                 });
+            }
+        });
+
+        delte_data_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+
+
             }
         });
 

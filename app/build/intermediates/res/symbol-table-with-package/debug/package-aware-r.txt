@@ -1493,6 +1493,7 @@ id dark
 id decor_content_parent
 id default_activity_button
 id del_btn
+id delete_data_btn
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1871,7 +1872,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_admin_home
 layout activity_contact_us
+layout activity_employee_data
 layout activity_forgot_password
 layout activity_how_data_used
 layout activity_info_about_activity
@@ -2072,6 +2075,7 @@ string contact_us_background
 string copyright_sign
 string default_web_client_id
 string define_materialstyleddialogs
+string del_req_string
 string dont_show_again
 string email
 string enter_new_password
@@ -2177,6 +2181,7 @@ string graphic_image_for_about_gdpr_page
 string hide_bottom_view_on_scroll_behavior
 string hows_my_data_being_used
 string information
+string kept_string
 string language
 string library_materialstyleddialogs_author
 string library_materialstyleddialogs_authorWebsite
@@ -2212,17 +2217,20 @@ string register
 string register_securely_today
 string register_your_account_today
 string request_data
+string request_to_delete_data
 string reset
 string search_menu_title
 string selection_limiter_pix
 string sign_in_error
 string slogan
 string status_bar_notification_info_overflow
+string tech_string
 string toast_message
 string twitter_consumer_key
 string twitter_consumer_secret
 string update_data
 string update_profile_data
+string update_string
 string visit_our_website
 string welcome
 string what_is_gdpr

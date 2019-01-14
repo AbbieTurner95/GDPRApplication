@@ -16,7 +16,6 @@ import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-
 public class InfoFAQActivity extends AppCompatActivity {
 
     @BindView(R.id.reqdata_btn)
@@ -32,6 +31,8 @@ public class InfoFAQActivity extends AppCompatActivity {
 
     @BindView(R.id.contact_q_btn)
     Button contact_q_btn;
+
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,30 +114,30 @@ public class InfoFAQActivity extends AppCompatActivity {
 
 
         contact_q_btn.setOnClickListener(new View.OnClickListener() {
-            Context context;
-
             @Override
             public void onClick(View view) {
-                    final EditText taskEditText = new EditText(context);
-                    AlertDialog dialog = new AlertDialog.Builder(context)
-                            .setTitle("Ask us anything!")
-                            .setMessage("We aim to reply within 48 hours.")
-                            .setView(taskEditText)
-                            .setPositiveButton("Send", new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    String text = String.valueOf(taskEditText.getText());
-                                    Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-                                    emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Question");
-                                    emailIntent.putExtra(Intent.EXTRA_TEXT, text);
-                                    startActivity(Intent.createChooser(emailIntent, "Send email..."));
 
-                                }
-                            })
-                            .setNegativeButton("Cancel", null)
-                            .create();
-                    dialog.show();
-                }
+                final EditText taskEditText = new EditText(InfoFAQActivity.this);
+                AlertDialog dialog = new AlertDialog.Builder(InfoFAQActivity.this)
+                        .setTitle("Ask us anything!")
+                        .setMessage("We aim to reply within 48 hours.")
+                        .setView(taskEditText)
+                        .setPositiveButton("Send", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                String text = String.valueOf(taskEditText.getText());
+                                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                                emailIntent.setType("text/plain");
+                                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Question");
+                                emailIntent.putExtra(Intent.EXTRA_TEXT, text);
+                                startActivity(Intent.createChooser(emailIntent, "Send email..."));
+
+                            }
+                        })
+                        .setNegativeButton("Cancel", null)
+                        .create();
+                dialog.show();
+            }
         });
     }
 }
