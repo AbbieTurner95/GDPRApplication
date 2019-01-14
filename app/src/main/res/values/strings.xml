@@ -70,4 +70,6 @@
     <string name="update_string">Where can I update my data?</string>
     <string name="request_to_delete_data">Request to delete data</string>
     <string name="admin_home_page">Admin Home Page</string>
+    <string name="data_string_how">Data protection inc. use your personal data for the sole purpose of being able to contact you only. The data is not shared with any other parties and will not be sold to any other company. If any of this changes employees will be first notified prior to the changes.</string>
+    <string name="firebase_why_string">Your data is stored on a secure server based in the control room at Data inc. The data stored on this application is stored on a protected GDPR complient databse called Firebase. Admin Abbie Turner from Data inc is the only person with access to this database. For more information of Firebase please click the logo below.</string>
 </resources>

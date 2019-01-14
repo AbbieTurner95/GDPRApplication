@@ -1512,7 +1512,6 @@ id email_button
 id email_footer_tos_and_pp_text
 id email_layout
 id email_tos_and_pp_text
-id employee_name
 id employees_rv
 id end
 id end_padder
@@ -1813,7 +1812,17 @@ id unlabeled
 id up
 id update_btn
 id useLogo
+id user_address
+id user_email
+id user_ethnicity
+id user_fax
+id user_image
+id user_lang
+id user_medicalcond
 id user_name
+id user_number
+id user_workhours
+id user_workplace
 id viewPager
 id view_notification
 id view_offset_helper
@@ -2044,6 +2053,7 @@ string abc_toolbar_collapse_description
 string about_gdpr
 string about_gdpr_text
 string address
+string admin_home_page
 string app_name
 string appbar_scrolling_view_behavior
 string ask

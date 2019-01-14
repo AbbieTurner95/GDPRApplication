@@ -22,13 +22,20 @@ import android.widget.Toast;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.example.abbieturner.gdprapplication.Models.User;
 import com.example.abbieturner.gdprapplication.R;
+import com.example.abbieturner.gdprapplication.UI.Activity.Admin.AdminHomeActivity;
 import com.example.abbieturner.gdprapplication.utils.Utils;
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -56,6 +63,7 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
 
     private ProgressDialog progressDialog;
     private FirebaseAuth mAuth;
+    private DatabaseReference mRootRef;
 
 
     @Override
@@ -73,10 +81,7 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
         navigationView.setNavigationItemSelectedListener(this);
 
         mAuth = FirebaseAuth.getInstance();
-
-        if (mAuth.getCurrentUser() != null) {
-            startActivity(new Intent(this, MainActivity.class));
-        }
+        mRootRef = FirebaseDatabase.getInstance().getReference();
 
         progressDialog = new ProgressDialog(this);
 
@@ -117,23 +122,7 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    if (task.getResult().getUser().isEmailVerified()) {
-                                        progressDialog.dismiss();
-                                        startActivity(new Intent(getApplicationContext(), MainActivity.class)
-                                                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
-                                        finish();
-                                    } else {
-                                        mAuth.getCurrentUser().sendEmailVerification()
-                                                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                                    @Override
-                                                    public void onComplete(@NonNull Task<Void> task) {
-                                                        if (task.isSuccessful()) {
-                                                            progressDialog.hide();
-                                                            Toasty.warning(getApplicationContext(), "Your email has not been verified, Please check your email again! ", Toast.LENGTH_SHORT, true).show();
-                                                        }
-                                                    }
-                                                });
-                                    }
+                                    detectIfAdminOrNot();
                                 }
                             }
                         });
@@ -143,6 +132,31 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
         }
     }
 
+    private void detectIfAdminOrNot() {
+        mRootRef.child("users").child(mAuth.getCurrentUser().getUid())
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        User user = dataSnapshot.getValue(User.class);
+                        if (user.getAdmin()) {
+                            progressDialog.dismiss();
+                            startActivity(new Intent(getApplicationContext(), AdminHomeActivity.class)
+                                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
+                            finish();
+                        } else {
+                            progressDialog.dismiss();
+                            startActivity(new Intent(getApplicationContext(), MainActivity.class)
+                                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
+                            finish();
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+    }
 
     @Override
     public void onBackPressed() {
@@ -194,7 +208,7 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
                         @Override
                         public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
                             Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                                    "mailto","abbieturner95@hotmail.com", null));
+                                    "mailto", "abbieturner95@hotmail.com", null));
                             emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Trouble Using App.");
                             emailIntent.putExtra(Intent.EXTRA_TEXT, "");
                             startActivity(Intent.createChooser(emailIntent, "Sending email..."));

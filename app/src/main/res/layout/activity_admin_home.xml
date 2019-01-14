@@ -6,32 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".UI.Activity.Admin.AdminHomeActivity">
 
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/admin_home_page"
-        android:textSize="@dimen/twentyfive_TS"
-        android:textColor="@color/colorAccent"
-        android:gravity="center"
         android:fontFamily="@font/big_noodle"
-        app:layout_constraintBottom_toTopOf="@+id/employees_rv"
+        android:text="ADMIN HOME PAGE"
+        android:textAlignment="center"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/employees_rv"
         android:layout_width="match_parent"
-        android:layout_height="433dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginBottom="32dp"
+        android:layout_height="553dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-
+    
 </android.support.constraint.ConstraintLayout>
