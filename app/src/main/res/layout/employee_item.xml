@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimaryDark"
+    android:layout_gravity="center"
+    android:padding="@dimen/padd_five">
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/user_name"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:padding="@dimen/padd_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/big_noodle"
+        android:text="Abbie Turner"
+        android:textColor="@color/colorAccent2"
+        android:textSize="@dimen/sixteen_TS" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/user_number"
+        android:padding="@dimen/padd_five"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/big_noodle"
+        android:text="078859876455"
+        android:textSize="@dimen/sixteen_TS" />
+
+</LinearLayout>
+

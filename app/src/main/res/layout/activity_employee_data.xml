@@ -1,15 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UI.Activity.Admin.EmployeeDataActivity">
 
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/employee_name"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:id="@+id/user_name"
+        android:fontFamily="@font/big_noodle"
+        android:textSize="@dimen/sixteen_TS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/user_address"
+        android:fontFamily="@font/big_noodle"
+        android:textSize="@dimen/sixteen_TS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/user_number"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/sixteen_TS"
+        android:fontFamily="@font/big_noodle"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/user_fax"
+        android:fontFamily="@font/big_noodle"
+        android:textSize="@dimen/sixteen_TS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/sixteen_TS"
+        android:fontFamily="@font/big_noodle"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/user_lang"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/sixteen_TS"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/user_workplace"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/sixteen_TS"
+        android:fontFamily="@font/big_noodle"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/user_workhours"
+        android:fontFamily="@font/big_noodle"
+        android:textSize="@dimen/sixteen_TS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/user_medicalcond"
+        android:fontFamily="@font/big_noodle"
+        android:textSize="@dimen/sixteen_TS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/user_ethnicity"
+        android:fontFamily="@font/big_noodle"
+        android:textSize="@dimen/sixteen_TS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 
 </android.support.constraint.ConstraintLayout>

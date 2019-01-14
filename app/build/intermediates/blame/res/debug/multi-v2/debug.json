@@ -472,6 +472,21 @@
             ]
         },
         {
+            "outputFile": "/Users/abbieturner/Documents/GitHub/GDPRApplication/app/build/intermediates/res/merged/debug/values-h720dp-v13_values-h720dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/abbieturner/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f0ce22d98be02427cfa49697d880a42e/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/Users/abbieturner/Documents/GitHub/GDPRApplication/app/build/intermediates/res/merged/debug/values-eu_values-eu.arsc.flat",
             "map": [
                 {
@@ -557,21 +572,6 @@
                         "startOffsets": "5835",
                         "endColumns": "100",
                         "endOffsets": "5931"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/abbieturner/Documents/GitHub/GDPRApplication/app/build/intermediates/res/merged/debug/values-h720dp-v13_values-h720dp-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/abbieturner/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f0ce22d98be02427cfa49697d880a42e/res/values-h720dp-v13/values-h720dp-v13.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "66",
-                        "endOffsets": "117"
                     }
                 }
             ]

@@ -69,4 +69,5 @@
     <string name="tech_string">I\'m having a technical issue, where can I go?</string>
     <string name="update_string">Where can I update my data?</string>
     <string name="request_to_delete_data">Request to delete data</string>
+    <string name="admin_home_page">Admin Home Page</string>
 </resources>
