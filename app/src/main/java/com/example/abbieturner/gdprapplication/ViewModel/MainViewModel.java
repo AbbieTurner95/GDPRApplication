@@ -1,4 +1,4 @@
-package com.example.abbieturner.gdprapplication.VM;
+package com.example.abbieturner.gdprapplication.ViewModel;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;

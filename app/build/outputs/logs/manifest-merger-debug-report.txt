@@ -283,10 +283,10 @@ ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/Andr
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:27:13-68
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:26:13-58
-activity#com.example.abbieturner.gdprapplication.UI.Activity.LoginActivity
+activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActivity
 ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:29:9-35:20
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:29:19-60
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:29:19-71
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
@@ -297,50 +297,50 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:33:17-77
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:33:27-74
-activity#com.example.abbieturner.gdprapplication.UI.Activity.MainActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:36:9-62
+activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.MainActivity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:36:9-73
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:36:19-59
-activity#com.example.abbieturner.gdprapplication.UI.Activity.RegisterActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:37:9-66
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:36:19-70
+activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.RegisterActivity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:37:9-77
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:37:19-63
-activity#com.example.abbieturner.gdprapplication.UI.Activity.ContactUsActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:38:9-67
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:37:19-74
+activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.ContactUsActivity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:38:9-78
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:38:19-64
-activity#com.example.abbieturner.gdprapplication.UI.Activity.ForgotPasswordActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:39:9-72
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:38:19-75
+activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.ForgotPasswordActivity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:39:9-83
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:39:19-69
-activity#com.example.abbieturner.gdprapplication.UI.Activity.InfoWhyActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:40:9-65
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:39:19-80
+activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoWhyActivity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:40:9-76
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:40:19-62
-activity#com.example.abbieturner.gdprapplication.UI.Activity.InfoFAQActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:41:9-65
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:40:19-73
+activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoFAQActivity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:41:9-76
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:41:19-62
-activity#com.example.abbieturner.gdprapplication.UI.Activity.InfoAboutActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:42:9-67
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:41:19-73
+activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoAboutActivity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:42:9-78
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:42:19-64
-activity#com.example.abbieturner.gdprapplication.UI.Activity.UpdateProfileActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:43:9-71
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:42:19-75
+activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.UpdateProfileActivity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:43:9-82
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:43:19-68
-activity#com.example.abbieturner.gdprapplication.UI.Activity.HowDataUsedActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:44:9-69
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:43:19-79
+activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.HowDataUsedActivity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:44:9-80
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:44:19-66
-activity#com.example.abbieturner.gdprapplication.UI.Admin.AdminHomeActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:45:9-64
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:44:19-77
+activity#com.example.abbieturner.gdprapplication.UI.Admin.Activitys.AdminHomeActivity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:45:9-74
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:45:19-61
-activity#com.example.abbieturner.gdprapplication.UI.Admin.EmployeeDataActivity
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:45:19-71
+activity#com.example.abbieturner.gdprapplication.UI.Admin.Activitys.EmployeeDataActivity
 ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:46:9-76
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:46:19-64
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:46:19-74
 uses-sdk
 INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml

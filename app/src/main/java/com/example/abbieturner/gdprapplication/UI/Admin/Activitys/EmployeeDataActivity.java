@@ -1,4 +1,4 @@
-package com.example.abbieturner.gdprapplication.UI.Admin;
+package com.example.abbieturner.gdprapplication.UI.Admin.Activitys;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
