@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_emp"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Employees" />
+    <item
+        android:id="@+id/action_req"
+        android:icon="@drawable/ic_delete_forever_white_24dp"
+        android:title="Requests" />
+
+</menu>

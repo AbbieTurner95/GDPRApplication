@@ -24,7 +24,7 @@ import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.example.abbieturner.gdprapplication.Models.User;
 import com.example.abbieturner.gdprapplication.R;
-import com.example.abbieturner.gdprapplication.UI.Activity.Admin.AdminHomeActivity;
+import com.example.abbieturner.gdprapplication.UI.Admin.AdminHomeActivity;
 import com.example.abbieturner.gdprapplication.utils.Utils;
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
 import com.google.android.gms.tasks.OnCompleteListener;

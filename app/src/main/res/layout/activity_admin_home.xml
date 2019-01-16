@@ -4,28 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.Activity.Admin.AdminHomeActivity">
+    tools:context=".UI.Admin.AdminHomeActivity">
 
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/big_noodle"
-        android:text="ADMIN HOME PAGE"
-        android:textAlignment="center"
-        android:textSize="18sp"
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/employees_rv"
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="553dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@drawable/bottom_navigation_colours"
+        app:itemTextColor="@drawable/bottom_navigation_colours"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-    
+        app:menu="@menu/menu_admin" />
+
 </android.support.constraint.ConstraintLayout>

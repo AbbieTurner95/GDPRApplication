@@ -35,6 +35,7 @@
         android:protectionLevel="signature"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.google.android.gms.version"
@@ -59,8 +60,8 @@
         <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.InfoAboutActivity" />
         <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.UpdateProfileActivity" />
         <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.HowDataUsedActivity" />
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.Admin.AdminHomeActivity" />
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Activity.Admin.EmployeeDataActivity" />
+        <activity android:name="com.example.abbieturner.gdprapplication.UI.Admin.AdminHomeActivity" />
+        <activity android:name="com.example.abbieturner.gdprapplication.UI.Admin.EmployeeDataActivity" />
         <activity
             android:name="com.karumi.dexter.DexterActivity"
             android:theme="@style/Dexter.Internal.Theme.Transparent" />

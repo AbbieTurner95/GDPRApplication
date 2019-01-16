@@ -333,14 +333,14 @@ activity#com.example.abbieturner.gdprapplication.UI.Activity.HowDataUsedActivity
 ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:44:9-69
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:44:19-66
-activity#com.example.abbieturner.gdprapplication.UI.Activity.Admin.AdminHomeActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:45:9-73
+activity#com.example.abbieturner.gdprapplication.UI.Admin.AdminHomeActivity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:45:9-64
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:45:19-70
-activity#com.example.abbieturner.gdprapplication.UI.Activity.Admin.EmployeeDataActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:46:9-85
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:45:19-61
+activity#com.example.abbieturner.gdprapplication.UI.Admin.EmployeeDataActivity
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:46:9-76
 	android:name
-		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:46:19-73
+		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:46:19-64
 uses-sdk
 INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml

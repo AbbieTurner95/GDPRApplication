@@ -1333,6 +1333,8 @@ drawable ic_check_white_48dp
 drawable ic_clear_white_48dp
 drawable ic_copyright_black_24dp
 drawable ic_copyright_white_24dp
+drawable ic_delete_forever_white_24dp
+drawable ic_edit_white_24dp
 drawable ic_error_outline_black_24dp
 drawable ic_error_outline_white_48dp
 drawable ic_flash_auto_black_24dp
@@ -1418,6 +1420,7 @@ id action_bar_title
 id action_container
 id action_context_bar
 id action_divider
+id action_emp
 id action_home
 id action_image
 id action_info
@@ -1427,6 +1430,7 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_profile
+id action_req
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1505,6 +1509,7 @@ id disableHome
 id doubleRipple
 id drawer_layout
 id dynamic
+id edit_icon
 id edit_phone_number
 id edit_query
 id email
@@ -1544,6 +1549,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id firebaselogo
 id fixed
 id flash
 id forever
@@ -1568,6 +1574,7 @@ id icon_only
 id ifRoom
 id image
 id imageView
+id imageView2
 id imageView3
 id img_count
 id img_profile
@@ -1693,6 +1700,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollView2
+id scrollView3
 id scrollable
 id search_badge
 id search_bar
@@ -1778,7 +1786,9 @@ id textView2
 id textView3
 id textView4
 id textView5
-id textView6
+id textView7
+id textView8
+id textView9
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1927,8 +1937,10 @@ layout dialog_text_input
 layout employee_item
 layout fancyalertdialog
 layout fragment_info
+layout fragment_list
 layout fragment_main
 layout fragment_profile
+layout fragment_requests
 layout fui_activity_invisible
 layout fui_activity_register_email
 layout fui_activity_register_phone
@@ -2004,6 +2016,7 @@ layout view_tab
 layout view_title_and_message
 menu activity_main_drawer
 menu dropdown
+menu menu_admin
 menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_foreground
@@ -2054,6 +2067,7 @@ string about_gdpr
 string about_gdpr_text
 string address
 string admin_home_page
+string admin_home_page_string
 string app_name
 string appbar_scrolling_view_behavior
 string ask
@@ -2088,6 +2102,7 @@ string confirm_new_password
 string contact_us
 string contact_us_background
 string copyright_sign
+string data_string_how
 string default_web_client_id
 string define_materialstyleddialogs
 string del_req_string
@@ -2112,6 +2127,7 @@ string fax
 string fcm_fallback_notification_channel_label
 string firebase_database_url
 string firebase_web_host
+string firebase_why_string
 string forgot_password
 string fui_accessibility_logo
 string fui_auto_verified
@@ -2193,6 +2209,7 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string graphic_image_for_about_gdpr_page
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string hows_my_data_being_used
 string information
@@ -2206,6 +2223,7 @@ string library_materialstyleddialogs_libraryName
 string library_materialstyleddialogs_libraryWebsite
 string library_materialstyleddialogs_licenseId
 string library_materialstyleddialogs_repositoryLink
+string list_of_employees
 string log_in
 string logo_for_gdpr
 string medical_history

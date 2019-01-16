@@ -42,8 +42,8 @@
         <activity android:name=".UI.Activity.InfoAboutActivity" />
         <activity android:name=".UI.Activity.UpdateProfileActivity" />
         <activity android:name=".UI.Activity.HowDataUsedActivity" />
-        <activity android:name=".UI.Activity.Admin.AdminHomeActivity" />
-        <activity android:name=".UI.Activity.Admin.EmployeeDataActivity"></activity>
+        <activity android:name=".UI.Admin.AdminHomeActivity" />
+        <activity android:name=".UI.Admin.EmployeeDataActivity"></activity>
     </application>
 
 </manifest>
