@@ -1,85 +1,337 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UI.Admin.Activitys.EmployeeDataActivity">
 
-    <ImageView
-        android:id="@+id/user_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_eight"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/user_name"
-        android:fontFamily="@font/big_noodle"
-        android:textSize="@dimen/sixteen_TS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_eight">
 
-    <TextView
-        android:id="@+id/user_address"
-        android:fontFamily="@font/big_noodle"
-        android:textSize="@dimen/sixteen_TS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="149dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/person_placeholder" />
 
-    <TextView
-        android:id="@+id/user_number"
-        android:layout_width="wrap_content"
-        android:textSize="@dimen/sixteen_TS"
-        android:fontFamily="@font/big_noodle"
-        android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/padd_five">
 
-    <TextView
-        android:id="@+id/user_fax"
-        android:fontFamily="@font/big_noodle"
-        android:textSize="@dimen/sixteen_TS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/user_email"
-        android:layout_width="wrap_content"
-        android:textSize="@dimen/sixteen_TS"
-        android:fontFamily="@font/big_noodle"
-        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/big_noodle"
+                        android:padding="@dimen/padd_five"
+                        android:text="Name :"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/sixteen_TS"
+                        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/user_lang"
-        android:layout_width="wrap_content"
-        android:textSize="@dimen/sixteen_TS"
-        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="abbie turner"
+                        android:textSize="@dimen/sixteen_TS" />
 
-    <TextView
-        android:id="@+id/user_workplace"
-        android:layout_width="wrap_content"
-        android:textSize="@dimen/sixteen_TS"
-        android:fontFamily="@font/big_noodle"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/user_workhours"
-        android:fontFamily="@font/big_noodle"
-        android:textSize="@dimen/sixteen_TS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+                </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/user_medicalcond"
-        android:fontFamily="@font/big_noodle"
-        android:textSize="@dimen/sixteen_TS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/user_ethnicity"
-        android:fontFamily="@font/big_noodle"
-        android:textSize="@dimen/sixteen_TS"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/big_noodle"
+                        android:padding="@dimen/padd_five"
+                        android:text="Address :"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/sixteen_TS"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/user_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123 test address"
+                        android:textSize="@dimen/sixteen_TS" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/big_noodle"
+                        android:padding="@dimen/padd_five"
+                        android:text="Number :"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/sixteen_TS"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/user_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="07880598678"
+                        android:textSize="@dimen/sixteen_TS" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/big_noodle"
+                        android:padding="@dimen/padd_five"
+                        android:text="Fax :"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/sixteen_TS"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/user_fax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8974829442"
+                        android:textSize="@dimen/sixteen_TS" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/big_noodle"
+                        android:padding="@dimen/padd_five"
+                        android:text="E-mail :"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/sixteen_TS"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/user_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="abbie96@gmail.com"
+                        android:textSize="@dimen/sixteen_TS" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/big_noodle"
+                android:padding="@dimen/padding_eight"
+                android:text="Workplace :"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_workplace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_eight"
+                android:text="sheffield"
+                android:textSize="@dimen/sixteen_TS" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/big_noodle"
+                android:padding="@dimen/padding_eight"
+                android:text="Workhours :"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_workhours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_eight"
+                android:text="25"
+                android:textSize="@dimen/sixteen_TS" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/big_noodle"
+                android:padding="@dimen/padding_eight"
+                android:text="Language :"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_eight"
+                android:text="english"
+                android:textSize="@dimen/sixteen_TS" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/big_noodle"
+                android:padding="@dimen/padding_eight"
+                android:text="Ethnicity:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_ethnicity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_eight"
+                android:text="british"
+                android:textSize="@dimen/sixteen_TS" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/big_noodle"
+                android:padding="@dimen/padding_eight"
+                android:text="Medical Conditions :"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/user_medicalcond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_eight"
+                android:text="astma"
+                android:textSize="@dimen/sixteen_TS" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="48dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/delete_emp_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padd_five"
+            android:background="@color/colorAccent3"
+            android:padding="@dimen/padd_five"
+            android:text="@string/delete_employee"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="474dp" />
+
+        <Button
+            android:id="@+id/contact_emp_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padd_five"
+            android:background="@color/colorAccent"
+            android:padding="@dimen/padd_five"
+            android:text="@string/contact_employee"
+            tools:layout_editor_absoluteX="173dp"
+            tools:layout_editor_absoluteY="474dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/notification_btn"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/send_notification_to_update_data"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
 
 </android.support.constraint.ConstraintLayout>

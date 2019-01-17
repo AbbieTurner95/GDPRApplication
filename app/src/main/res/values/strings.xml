@@ -77,4 +77,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delete_employee">Delete Employee</string>
+    <string name="contact_employee">Contact Employee</string>
+    <string name="send_notification_to_update_data">Send Notification To Update Data</string>
 </resources>

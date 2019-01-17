@@ -1464,6 +1464,7 @@ id btn_login
 id btn_register
 id btn_reset
 id btn_update
+id button
 id buttonPanel
 id button_create
 id button_done
@@ -1483,6 +1484,7 @@ id clip_vertical
 id collapseActionView
 id confirmation_code
 id confirmation_code_layout
+id contact_emp_btn
 id contact_q_btn
 id contactus
 id contactus_btn
@@ -1498,6 +1500,7 @@ id decor_content_parent
 id default_activity_button
 id del_btn
 id delete_data_btn
+id delete_emp_btn
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1609,7 +1612,9 @@ id light
 id line1
 id line3
 id linearLayout
+id linearLayout2
 id linearLayout3
+id linearLayout4
 id listMode
 id list_item
 id logo
@@ -2099,6 +2104,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string confirm_new_password
+string contact_employee
 string contact_us
 string contact_us_background
 string copyright_sign
@@ -2106,6 +2112,7 @@ string data_string_how
 string default_web_client_id
 string define_materialstyleddialogs
 string del_req_string
+string delete_employee
 string dont_show_again
 string email
 string enter_new_password
@@ -2254,6 +2261,7 @@ string request_to_delete_data
 string reset
 string search_menu_title
 string selection_limiter_pix
+string send_notification_to_update_data
 string sign_in_error
 string slogan
 string status_bar_notification_info_overflow

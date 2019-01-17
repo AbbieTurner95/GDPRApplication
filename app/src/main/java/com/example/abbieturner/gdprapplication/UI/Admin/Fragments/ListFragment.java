@@ -1,6 +1,7 @@
 package com.example.abbieturner.gdprapplication.UI.Admin.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.view.ViewGroup;
 
 import com.example.abbieturner.gdprapplication.Models.User;
 import com.example.abbieturner.gdprapplication.R;
+import com.example.abbieturner.gdprapplication.UI.Admin.Activitys.EmployeeDataActivity;
 import com.example.abbieturner.gdprapplication.UI.Admin.Adapters.UserAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
@@ -76,6 +78,31 @@ public class ListFragment extends Fragment implements UserAdapter.UserClickListe
 
     @Override
     public void onEmployeeItemClick(User user) {
-        //
+        String name = "emp_name";
+        String address = "emp_address";
+        String email = "emp_email";
+        String ethnicity = "emp_ethn";
+        String fax = "emp_fax";
+        String lang = "emp_lang";
+        String medical = "emp_med";
+        String phone = "emp_phone";
+        String workHour = "emp_wh";
+        String workPlace = "emp_wp";
+        String profile = "emp_pp";
+
+        Intent intent = new Intent(context, EmployeeDataActivity.class);
+        intent.putExtra(name, user.getName());
+        intent.putExtra(address, user.getAddress());
+        intent.putExtra(email, user.getEmail());
+        intent.putExtra(ethnicity, user.getEthnicity());
+        intent.putExtra(fax, user.getFax());
+        intent.putExtra(lang, user.getLang());
+        intent.putExtra(phone, user.getPhone());
+        intent.putExtra(workHour, user.getWorkHour());
+        intent.putExtra(workPlace, user.getWorkPlace());
+        intent.putExtra(profile, user.getProfile());
+        intent.putExtra(medical, user.getMedical());
+
+        startActivity(intent);
     }
 }
