@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.Employees.Activity.Fragments.MainFragment">
+    tools:context=".UI.Employees.Fragments.MainFragment">
 
     <TextView
         android:id="@+id/textView"
@@ -56,6 +56,7 @@
         android:fontFamily="@font/big_noodle_italic"
         android:text="@string/request_data"
         app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/colorAccent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_user_name" />
@@ -70,6 +71,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/big_noodle_italic"
+        android:backgroundTint="@color/colorAccent"
         android:text="@string/request_to_delete_data"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

@@ -112,11 +112,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
 
-            <android.support.design.widget.TextInputEditText
+            <Spinner
+                android:entries="@array/Languages"
                 android:id="@+id/et_lang"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/language" />
+                android:layout_height="wrap_content"/>
+
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -130,11 +131,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
 
-            <android.support.design.widget.TextInputEditText
+            <Spinner
+                android:entries="@array/Ethnicitys"
                 android:id="@+id/et_ethnicity"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/ethnicity" />
+                android:layout_height="wrap_content"/>
+
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout

@@ -16,7 +16,6 @@
         android:layout_marginBottom="8dp"
         android:orientation="vertical"
         android:paddingTop="@dimen/padding_eight"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">

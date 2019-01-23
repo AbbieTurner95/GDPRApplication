@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@android:color/white"
     android:layout_height="match_parent"
-    tools:context=".UI.Employees.Activity.Fragments.ProfileFragment">
+    tools:context=".UI.Employees.Fragments.ProfileFragment">
 
     <ImageView
         android:layout_width="0dp"
@@ -21,6 +21,7 @@
     <Button
         android:id="@+id/btn_chg_mail"
         style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:backgroundTint="@color/colorAccent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -37,6 +38,7 @@
     <Button
         android:id="@+id/btn_chg_pass"
         style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:backgroundTint="@color/colorAccent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -53,6 +55,7 @@
     <Button
         android:id="@+id/btn_chg_data"
         style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:backgroundTint="@color/colorAccent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
