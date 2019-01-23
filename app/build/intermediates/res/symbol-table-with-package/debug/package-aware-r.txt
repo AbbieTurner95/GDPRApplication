@@ -1664,6 +1664,7 @@ id never
 id none
 id normal
 id notification_background
+id notification_btn
 id notification_main_column
 id notification_main_column_container
 id outline

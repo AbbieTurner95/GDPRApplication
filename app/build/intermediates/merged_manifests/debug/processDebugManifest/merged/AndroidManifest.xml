@@ -62,6 +62,13 @@
         <activity android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.HowDataUsedActivity" />
         <activity android:name="com.example.abbieturner.gdprapplication.UI.Admin.Activitys.AdminHomeActivity" />
         <activity android:name="com.example.abbieturner.gdprapplication.UI.Admin.Activitys.EmployeeDataActivity" />
+
+        <service android:name="com.example.abbieturner.gdprapplication.FCM.MyFirebaseMessagingService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
         <activity
             android:name="com.karumi.dexter.DexterActivity"
             android:theme="@style/Dexter.Internal.Theme.Transparent" />

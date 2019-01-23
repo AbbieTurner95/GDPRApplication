@@ -9,6 +9,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,6 +28,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -83,6 +86,7 @@ public class RegisterActivity extends AppCompatActivity {
     private HashMap hashMap;
     private static Uri photoUri;
     public static final int PIC_IMAGE_PICKER = 19;
+    private String token;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,6 +100,16 @@ public class RegisterActivity extends AppCompatActivity {
         mStorageReference = FirebaseStorage.getInstance().getReference();
         progressDialog = new ProgressDialog(this);
         hashMap = new HashMap();
+
+        FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
+            @Override
+            public void onComplete(@NonNull Task<InstanceIdResult> task) {
+                if (task.isSuccessful()){
+                    token=task.getResult().getToken();
+                    Log.e("REGISTER",token);
+                }
+            }
+        });
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -212,15 +226,14 @@ public class RegisterActivity extends AppCompatActivity {
         hashMap.put("ethnicity", etEthn.toString());
         hashMap.put("workHour", etWorkHour.getText().toString());
         hashMap.put("workPlace", etWorkPlace.getText().toString());
+        hashMap.put("token_id",token);
 
         mRootRef.child("users").child(mAuth.getCurrentUser().getUid())
                 .updateChildren(hashMap, new DatabaseReference.CompletionListener() {
                     @Override
                     public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
                         progressDialog.dismiss();
-                        Toasty.success(getApplicationContext(), "Register Successful! Please check your email to verify your account."
-                                , Toast.LENGTH_SHORT, true).show();
-                        startActivity(new Intent(getApplicationContext(), LoginActivity.class)
+                        startActivity(new Intent(getApplicationContext(), MainActivity.class)
                                 .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
                         finish();
                     }

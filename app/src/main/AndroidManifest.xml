@@ -44,6 +44,13 @@
         <activity android:name=".UI.Employees.Activitys.HowDataUsedActivity" />
         <activity android:name=".UI.Admin.Activitys.AdminHomeActivity" />
         <activity android:name=".UI.Admin.Activitys.EmployeeDataActivity"/>
+
+        <service android:name=".FCM.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>
