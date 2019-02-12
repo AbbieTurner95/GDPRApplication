@@ -11,16 +11,20 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="152dp"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
         android:contentDescription="@string/contact_us_background"
         android:scaleType="fitCenter"
-        android:src="@drawable/contactpic" />
+        android:src="@drawable/contactpic"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="34dp"
         android:background="@color/colorPrimaryDark"
         android:fontFamily="@font/big_noodle_italic"
@@ -28,19 +32,23 @@
         android:text="@string/contact_us"
         android:textColor="@android:color/white"
         android:textSize="@dimen/twentyfive_TS"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="218dp" />
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="0dp"
-        android:padding="10dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
         android:background="@color/colorAccent3"
+        android:gravity="center"
         android:orientation="vertical"
+        android:padding="10dp"
         android:paddingTop="@dimen/padd_five"
         app:layout_constraintBottom_toTopOf="@+id/google_maps"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
@@ -159,10 +167,11 @@
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/google_maps"
-        android:layout_width="0dp"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
 </android.support.constraint.ConstraintLayout>

@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/big_noodle"
-            android:background="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent"
             android:text="@string/about_gdpr"
             tools:layout_editor_absoluteX="122dp"
             tools:layout_editor_absoluteY="248dp" />
@@ -51,7 +51,7 @@
             style="@android:style/Widget.DeviceDefault.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent"
             android:fontFamily="@font/big_noodle_italic"
             android:text="@string/hows_my_data_being_used" />
 
@@ -60,8 +60,8 @@
             style="@android:style/Widget.DeviceDefault.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
             android:fontFamily="@font/big_noodle"
+            android:backgroundTint="@color/colorAccent"
             android:text="@string/why_have_i_been_asked_to_get_this_app"
             tools:layout_editor_absoluteX="98dp"
             tools:layout_editor_absoluteY="374dp" />
@@ -73,6 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/big_noodle"
+            android:backgroundTint="@color/colorAccent"
             android:text="@string/faqs"
             tools:layout_editor_absoluteX="122dp"
             tools:layout_editor_absoluteY="309dp" />
@@ -84,6 +85,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/big_noodle"
+            android:backgroundTint="@color/colorAccent"
             android:text="@string/contact_us"
             tools:layout_editor_absoluteX="98dp"
             tools:layout_editor_absoluteY="374dp" />

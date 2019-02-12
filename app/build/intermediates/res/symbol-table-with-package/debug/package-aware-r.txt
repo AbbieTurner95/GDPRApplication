@@ -1417,6 +1417,7 @@ id action_bar_root
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
+id action_cont
 id action_container
 id action_context_bar
 id action_divider
@@ -1941,6 +1942,7 @@ layout dialog_standard_vertical
 layout dialog_text_input
 layout employee_item
 layout fancyalertdialog
+layout fragment_contact_us
 layout fragment_info
 layout fragment_list
 layout fragment_main

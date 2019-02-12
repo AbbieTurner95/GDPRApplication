@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.abbieturner.gdprapplication.R;
+import com.example.abbieturner.gdprapplication.UI.Admin.Fragments.ContactUsFragment;
 import com.example.abbieturner.gdprapplication.UI.Admin.Fragments.RequestsFragment;
 
 import butterknife.BindView;
@@ -38,7 +39,7 @@ public class AdminHomeActivity extends AppCompatActivity {
                         openFragment(new RequestsFragment());
                         return true;
                     case R.id.action_cont:
-                        openFragment(new RequestsFragment());
+                        openFragment(new ContactUsFragment());
                         return true;
                 }
                 return false;
