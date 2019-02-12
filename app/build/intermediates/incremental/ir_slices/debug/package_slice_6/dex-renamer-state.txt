@@ -1,0 +1,4 @@
+#Tue Feb 12 09:29:40 GMT 2019
+base.0=/Users/abbieturner/Documents/GitHub/GDPRApplication/app/build/intermediates/transforms/dexMerger/debug/6
+path.0=classes.dex
+renamed.0=classes.dex
