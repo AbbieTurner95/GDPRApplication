@@ -1464,7 +1464,6 @@ id btn_login
 id btn_register
 id btn_reset
 id btn_update
-id button
 id buttonPanel
 id button_create
 id button_done

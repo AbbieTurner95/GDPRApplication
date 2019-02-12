@@ -196,6 +196,7 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
                     .setTitle("Having trouble with the app?")
                     .setDescription("Send us an email and we aim to get back within 24 hours.")
                     .setHeaderDrawable(R.drawable.emailpic)
+                    .setHeaderColor(R.color.md_divider_white)
                     .setHeaderScaleType(ImageView.ScaleType.FIT_CENTER)
                     .setPositiveText("Email")
                     .setNegativeText("Cancel")

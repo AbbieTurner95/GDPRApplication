@@ -4,7 +4,7 @@
             "outputFile": "/Users/abbieturner/Documents/GitHub/GDPRApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.2.1.aar/9752b2a6bd0adcd1841944c39aebd02c/res/values-v26/values-v26.xml",
+                    "source": "/Users/abbieturner/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.2.1.aar/8b7932eb0427edff3e91255af9e60971/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,6,10,14",
                         "startColumns": "4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/abbieturner/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f0ce22d98be02427cfa49697d880a42e/res/values-v26/values-v26.xml",
+                    "source": "/Users/abbieturner/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d9917d578fc591079d4363030a312edd/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
