@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".UI.Employees.Activitys.ContactUsActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="152dp"
+        android:contentDescription="@string/contact_us_background"
+        android:scaleType="fitCenter"
+        android:src="@drawable/contactpic" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="411dp"
+        android:layout_height="34dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/big_noodle_italic"
+        android:gravity="center"
+        android:text="@string/contact_us"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/twentyfive_TS"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:padding="10dp"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent3"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padd_five"
+        app:layout_constraintBottom_toTopOf="@+id/google_maps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+        <LinearLayout
+            android:id="@+id/contactus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="@dimen/padd_five">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="18dp"
+                android:src="@drawable/fui_ic_phone_white_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/big_noodle"
+                android:text="@string/_07527433503"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/eighteen_TS" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="@dimen/padd_five">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="18dp"
+                android:src="@drawable/fui_ic_mail_white_24dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/big_noodle"
+                android:text="@string/gdprinfo_outlook_co_uk"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/eighteen_TS" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="@dimen/padd_five">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="18dp"
+                android:src="@drawable/fui_ic_facebook_white_22dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/big_noodle"
+                android:text="@string/gdpr_application_sheffield"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/eighteen_TS" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="@dimen/padd_five">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="@dimen/eighteen_TS"
+                android:src="@drawable/fui_ic_twitter_bird_white_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/big_noodle"
+                android:text="@string/gdprappssheff"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/eighteen_TS" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/google_maps"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

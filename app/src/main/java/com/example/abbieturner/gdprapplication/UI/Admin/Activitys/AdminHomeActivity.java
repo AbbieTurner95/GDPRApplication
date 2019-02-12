@@ -37,6 +37,9 @@ public class AdminHomeActivity extends AppCompatActivity {
                     case R.id.action_req:
                         openFragment(new RequestsFragment());
                         return true;
+                    case R.id.action_cont:
+                        openFragment(new RequestsFragment());
+                        return true;
                 }
                 return false;
             }
