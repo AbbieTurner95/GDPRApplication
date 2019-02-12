@@ -116,21 +116,21 @@ public final class R {
         public static final int left = 0x7f0a00ce;
         public static final int line1 = 0x7f0a00d0;
         public static final int line3 = 0x7f0a00d1;
-        public static final int none = 0x7f0a0104;
-        public static final int normal = 0x7f0a0105;
-        public static final int notification_background = 0x7f0a0106;
-        public static final int notification_main_column = 0x7f0a0108;
-        public static final int notification_main_column_container = 0x7f0a0109;
-        public static final int right = 0x7f0a0123;
-        public static final int right_icon = 0x7f0a0124;
-        public static final int right_side = 0x7f0a0125;
-        public static final int start = 0x7f0a015a;
-        public static final int tag_transition_group = 0x7f0a0165;
-        public static final int text = 0x7f0a016a;
-        public static final int text2 = 0x7f0a016b;
-        public static final int time = 0x7f0a018f;
-        public static final int title = 0x7f0a0190;
-        public static final int top = 0x7f0a0197;
+        public static final int none = 0x7f0a0105;
+        public static final int normal = 0x7f0a0106;
+        public static final int notification_background = 0x7f0a0107;
+        public static final int notification_main_column = 0x7f0a0109;
+        public static final int notification_main_column_container = 0x7f0a010a;
+        public static final int right = 0x7f0a0124;
+        public static final int right_icon = 0x7f0a0125;
+        public static final int right_side = 0x7f0a0126;
+        public static final int start = 0x7f0a015b;
+        public static final int tag_transition_group = 0x7f0a0166;
+        public static final int text = 0x7f0a016b;
+        public static final int text2 = 0x7f0a016c;
+        public static final int time = 0x7f0a0190;
+        public static final int title = 0x7f0a0191;
+        public static final int top = 0x7f0a0198;
     }
     public static final class integer {
         private integer() {}
@@ -152,7 +152,7 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int status_bar_notification_info_overflow = 0x7f1100ed;
+        public static final int status_bar_notification_info_overflow = 0x7f1100ee;
     }
     public static final class style {
         private style() {}

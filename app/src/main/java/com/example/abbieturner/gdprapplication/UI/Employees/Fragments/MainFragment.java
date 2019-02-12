@@ -19,6 +19,7 @@ import com.amulyakhare.textdrawable.TextDrawable;
 import com.example.abbieturner.gdprapplication.Models.User;
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.ViewModel.MainViewModel;
+import com.google.firebase.auth.FirebaseAuth;
 import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
@@ -35,8 +36,11 @@ public class MainFragment extends Fragment {
     @BindView(R.id.request_btn)
     Button request_data;
     @BindView(R.id.delete_data_btn)
-    Button delte_data_btn;
+    Button delete_data_btn;
+    @BindView(R.id.log_out_btn)
+    Button log_out_btn;
 
+    private FirebaseAuth mAuth;
     private MainViewModel mainViewModel;
 
     public MainFragment() {
@@ -49,6 +53,8 @@ public class MainFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_main, container, false);
         unbinder = ButterKnife.bind(this, view);
+
+        mAuth = FirebaseAuth.getInstance();
 
         mainViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
 
@@ -80,13 +86,18 @@ public class MainFragment extends Fragment {
             }
         });
 
-        delte_data_btn.setOnClickListener(new View.OnClickListener() {
+        delete_data_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+            //delete data req send to admin
+            }
+        });
 
 
-
-
+        log_out_btn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                mAuth.signOut();
             }
         });
 

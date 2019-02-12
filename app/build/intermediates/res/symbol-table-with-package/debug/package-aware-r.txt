@@ -1617,6 +1617,7 @@ id linearLayout3
 id linearLayout4
 id listMode
 id list_item
+id log_out_btn
 id logo
 id mainFrameLayout
 id main_content
@@ -2234,6 +2235,7 @@ string library_materialstyleddialogs_licenseId
 string library_materialstyleddialogs_repositoryLink
 string list_of_employees
 string log_in
+string log_out
 string logo_for_gdpr
 string medical_history
 string message_to_drag_up
