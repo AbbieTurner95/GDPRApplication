@@ -123,6 +123,8 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     detectIfAdminOrNot();
+                                } else {
+                                    Toast.makeText(getApplicationContext(), "Incorrect Password! Please try again.", Toast.LENGTH_LONG).show();
                                 }
                             }
                         });
@@ -218,5 +220,11 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mAuth.signOut();
     }
 }

@@ -124,4 +124,10 @@ public class MainFragment extends Fragment {
         super.onDestroy();
         unbinder.unbind();
     }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mAuth.signOut();
+    }
 }

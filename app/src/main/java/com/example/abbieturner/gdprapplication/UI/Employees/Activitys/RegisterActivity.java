@@ -249,4 +249,10 @@ public class RegisterActivity extends AppCompatActivity {
             img_profile.setImageURI(photoUri);
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mAuth.signOut();
+    }
 }

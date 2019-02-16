@@ -15,6 +15,9 @@ import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.HowDataUse
 import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoAboutActivity;
 import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoFAQActivity;
 import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoWhyActivity;
+import com.google.firebase.auth.FirebaseAuth;
+
+import java.security.PrivateKey;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -36,6 +39,7 @@ public class InfoFragment extends Fragment {
     Button how_btn;
 
     Context context;
+    private FirebaseAuth mAuth;
 
     public InfoFragment() {
     }
@@ -47,6 +51,7 @@ public class InfoFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_info, container, false);
 
         unbinder = ButterKnife.bind(this, view);
+        mAuth = FirebaseAuth.getInstance();
 
 
         about_btn.setOnClickListener(new View.OnClickListener() {
@@ -97,5 +102,11 @@ public class InfoFragment extends Fragment {
     public void onDestroy() {
         super.onDestroy();
         unbinder.unbind();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mAuth.signOut();
     }
 }

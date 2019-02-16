@@ -332,4 +332,10 @@ public class UpdateProfileActivity extends AppCompatActivity {
                     }
                 });
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mAuth.signOut();
+    }
 }

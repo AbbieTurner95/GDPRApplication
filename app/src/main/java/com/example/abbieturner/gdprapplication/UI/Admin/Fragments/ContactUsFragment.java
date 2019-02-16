@@ -14,6 +14,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.auth.FirebaseAuth;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -30,6 +31,7 @@ public class ContactUsFragment extends Fragment implements OnMapReadyCallback {
     private String loc = "-1.321860";
     private GoogleMap gmap;
     private static final String MAP_VIEW_BUNDLE_KEY = "MapViewBundleKey";
+    private FirebaseAuth mAuth;
 
     public ContactUsFragment(){
 
@@ -40,6 +42,8 @@ public class ContactUsFragment extends Fragment implements OnMapReadyCallback {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_contact_us, container, false);
         unbinder = ButterKnife.bind(this, view);
+
+        mAuth = FirebaseAuth.getInstance();
 
         Bundle mapViewBundle = null;
         if (savedInstanceState != null) {
@@ -106,6 +110,7 @@ public class ContactUsFragment extends Fragment implements OnMapReadyCallback {
     public void onPause() {
         mapView.onPause();
         super.onPause();
+        mAuth.signOut();
     }
 
     @Override

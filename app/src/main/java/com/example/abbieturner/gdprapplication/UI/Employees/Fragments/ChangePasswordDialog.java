@@ -113,4 +113,11 @@ public class ChangePasswordDialog extends DialogFragment {
             Toasty.warning(getActivity(), "Check internet connection", Toast.LENGTH_SHORT, true).show();
         }
     }
+
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mAuth.signOut();
+    }
 }

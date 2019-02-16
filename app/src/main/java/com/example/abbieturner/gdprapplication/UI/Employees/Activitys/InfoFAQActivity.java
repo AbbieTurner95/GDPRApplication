@@ -11,7 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.abbieturner.gdprapplication.R;
+import com.google.firebase.auth.FirebaseAuth;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
+
+import java.lang.reflect.Field;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -32,6 +35,7 @@ public class InfoFAQActivity extends AppCompatActivity {
     @BindView(R.id.contact_q_btn)
     Button contact_q_btn;
 
+    private FirebaseAuth mAuth;
     Context context;
 
     @Override
@@ -39,6 +43,8 @@ public class InfoFAQActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_faq_activity);
         ButterKnife.bind(this);
+
+        mAuth = FirebaseAuth.getInstance();
 
         reqdata_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -139,5 +145,11 @@ public class InfoFAQActivity extends AppCompatActivity {
                 dialog.show();
             }
         });
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mAuth.signOut();
     }
 }

@@ -37,6 +37,8 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         mAuth = FirebaseAuth.getInstance();
+
+        mAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);
 
         btn_reset.setOnClickListener(new View.OnClickListener() {
@@ -75,5 +77,11 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                         }
                     });
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mAuth.signOut();
     }
 }

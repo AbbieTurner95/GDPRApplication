@@ -125,4 +125,10 @@ public class ChangeMailDialog extends DialogFragment {
         super.onDestroy();
         unbinder.unbind();
     }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mAuth.signOut();
+    }
 }

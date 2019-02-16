@@ -10,6 +10,7 @@ import android.widget.Button;
 
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.UpdateProfileActivity;
+import com.google.firebase.auth.FirebaseAuth;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,12 +26,16 @@ public class ProfileFragment extends Fragment {
     @BindView(R.id.btn_chg_data)
     Button btn_chg_data;
 
+    private FirebaseAuth mAuth;
+
     public ProfileFragment() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        mAuth = FirebaseAuth.getInstance();
 
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
         unbinder = ButterKnife.bind(this, view);
@@ -64,5 +69,11 @@ public class ProfileFragment extends Fragment {
     public void onDestroy() {
         super.onDestroy();
         unbinder.unbind();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mAuth.signOut();
     }
 }

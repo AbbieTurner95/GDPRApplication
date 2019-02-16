@@ -16,6 +16,7 @@ import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.Admin.Activitys.EmployeeDataActivity;
 import com.example.abbieturner.gdprapplication.UI.Admin.Adapters.UserAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -33,6 +34,8 @@ public class ListFragment extends Fragment implements UserAdapter.UserClickListe
     Unbinder unbinder;
     Context context;
 
+    private FirebaseAuth mAuth;
+
 
     public ListFragment() {
     }
@@ -42,6 +45,8 @@ public class ListFragment extends Fragment implements UserAdapter.UserClickListe
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_list, container, false);
         unbinder = ButterKnife.bind(this, view);
+
+        mAuth = FirebaseAuth.getInstance();
 
         mRootRef = FirebaseDatabase.getInstance().getReference().child("users");
 
@@ -74,6 +79,12 @@ public class ListFragment extends Fragment implements UserAdapter.UserClickListe
     public void onStop() {
         super.onStop();
         mAdapter.stopListening();
+    }
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        mAuth.signOut();
     }
 
     @Override

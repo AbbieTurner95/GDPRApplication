@@ -71,5 +71,11 @@ public class MainActivity extends AppCompatActivity {
                 .addToBackStack(null)
                 .commit();
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mAuth.signOut();
+    }
 }
 

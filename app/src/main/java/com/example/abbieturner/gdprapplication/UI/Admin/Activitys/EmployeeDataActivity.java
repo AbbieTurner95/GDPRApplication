@@ -8,11 +8,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.abbieturner.gdprapplication.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class EmployeeDataActivity extends AppCompatActivity {
+
+    private FirebaseAuth mAuth;
 
     String emp_name, emp_address, emp_email, emp_ethn, emp_fax, emp_lang, emp_med, emp_phone, emp_wh, emp_wp, emp_pp;
 
@@ -54,6 +57,8 @@ public class EmployeeDataActivity extends AppCompatActivity {
         setContentView(R.layout.activity_employee_data);
         ButterKnife.bind(this);
 
+        mAuth = FirebaseAuth.getInstance();
+
         Intent intent = getIntent();
 
         if (intent != null) {
@@ -84,4 +89,11 @@ public class EmployeeDataActivity extends AppCompatActivity {
 
 
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mAuth.signOut();
+    }
 }
+

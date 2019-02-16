@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.Admin.Fragments.ContactUsFragment;
 import com.example.abbieturner.gdprapplication.UI.Admin.Fragments.RequestsFragment;
+import com.google.firebase.auth.FirebaseAuth;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -20,11 +21,15 @@ public class AdminHomeActivity extends AppCompatActivity {
     @BindView(R.id.bottomNavigationView)
     BottomNavigationView bottomNavigationView;
 
+    private FirebaseAuth mAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_home);
         ButterKnife.bind(this);
+
+        mAuth = FirebaseAuth.getInstance();
 
         openFragment(new ListFragment());
 
@@ -52,5 +57,11 @@ public class AdminHomeActivity extends AppCompatActivity {
                 .replace(R.id.container, fragment)
                 .addToBackStack(null)
                 .commit();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mAuth.signOut();
     }
 }
