@@ -47,24 +47,48 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyA5h5uo1yGow25kbZvtuf9IaPXm_oI-WUc" />
 
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActivity" >
+        <activity
+            android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.MainActivity" />
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.RegisterActivity" />
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.ContactUsActivity" />
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.ForgotPasswordActivity" />
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoWhyActivity" />
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoFAQActivity" />
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoAboutActivity" />
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.UpdateProfileActivity" />
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.HowDataUsedActivity" />
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Admin.Activitys.AdminHomeActivity" />
-        <activity android:name="com.example.abbieturner.gdprapplication.UI.Admin.Activitys.EmployeeDataActivity" />
+        <activity
+            android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoWhyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoFAQActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoAboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.UpdateProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.abbieturner.gdprapplication.UI.Employees.Activitys.HowDataUsedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.abbieturner.gdprapplication.UI.Admin.Activitys.AdminHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.abbieturner.gdprapplication.UI.Admin.Activitys.EmployeeDataActivity"
+            android:screenOrientation="portrait" />
 
         <service android:name="com.example.abbieturner.gdprapplication.FCM.MyFirebaseMessagingService" >
             <intent-filter>

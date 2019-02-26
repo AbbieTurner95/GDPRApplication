@@ -2,6 +2,7 @@ package com.example.abbieturner.gdprapplication.UI.Admin.Fragments;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -44,6 +45,7 @@ public class ListFragment extends Fragment implements UserAdapter.UserClickListe
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_list, container, false);
+        getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         unbinder = ButterKnife.bind(this, view);
 
         mAuth = FirebaseAuth.getInstance();

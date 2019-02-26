@@ -1,5 +1,6 @@
 package com.example.abbieturner.gdprapplication.UI.Admin.Fragments;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -21,6 +22,7 @@ public class RequestsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_requests, container, false);
+        getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         mAuth = FirebaseAuth.getInstance();
         return view;

@@ -1,6 +1,7 @@
 package com.example.abbieturner.gdprapplication.UI.Employees.Fragments;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -38,6 +39,7 @@ public class ProfileFragment extends Fragment {
         mAuth = FirebaseAuth.getInstance();
 
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
+        getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         unbinder = ButterKnife.bind(this, view);
 
         btn_chg_mail.setOnClickListener(new View.OnClickListener() {

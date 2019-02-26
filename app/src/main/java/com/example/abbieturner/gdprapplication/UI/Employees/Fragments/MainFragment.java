@@ -3,6 +3,7 @@ package com.example.abbieturner.gdprapplication.UI.Employees.Fragments;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -52,6 +53,7 @@ public class MainFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_main, container, false);
+        getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         unbinder = ButterKnife.bind(this, view);
 
         mAuth = FirebaseAuth.getInstance();

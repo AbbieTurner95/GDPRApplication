@@ -1,5 +1,6 @@
 package com.example.abbieturner.gdprapplication.UI.Admin.Fragments;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -41,6 +42,7 @@ public class ContactUsFragment extends Fragment implements OnMapReadyCallback {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_contact_us, container, false);
+        getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         unbinder = ButterKnife.bind(this, view);
 
         mAuth = FirebaseAuth.getInstance();

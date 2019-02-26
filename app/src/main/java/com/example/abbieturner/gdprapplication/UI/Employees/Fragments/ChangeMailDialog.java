@@ -2,6 +2,7 @@ package com.example.abbieturner.gdprapplication.UI.Employees.Fragments;
 
 
 import android.app.ProgressDialog;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputEditText;
@@ -51,6 +52,7 @@ public class ChangeMailDialog extends DialogFragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.change_mail_dialog, container, false);
+        getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         unbinder = ButterKnife.bind(this, view);
         progressDialog = new ProgressDialog(getActivity());
         mAuth = FirebaseAuth.getInstance();
