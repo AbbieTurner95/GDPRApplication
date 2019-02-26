@@ -26,7 +26,7 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int rippelColor = 0x7f06009b;
+        public static final int rippelColor = 0x7f06009f;
     }
     public static final class id {
         private id() {}
