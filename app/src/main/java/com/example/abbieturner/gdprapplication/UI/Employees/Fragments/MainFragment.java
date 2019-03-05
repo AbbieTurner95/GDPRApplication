@@ -69,19 +69,19 @@ public class MainFragment extends Fragment {
                         if (user != null) {
                             Intent emailIntent = new Intent(Intent.ACTION_SEND);
                             emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Personal Data");
-                            emailIntent.putExtra(Intent.EXTRA_TEXT, "Please see all data kept below");
-                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getProfile());
-                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getName());
-                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getAddress());
-                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getEmail());
-                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getEthnicity());
-                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getFax());
-                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getLang());
-                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getMedical());
-                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getPhone());
-                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getWorkHour());
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, "Please see all data we keep on yourself below ; ");
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getProfile() + "/n");
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getName() + "/n");
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getAddress() + "/n");
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getEmail() + "/n");
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getEthnicity() + "/n");
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getFax() + "/n");
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getLang() + "/n");
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getMedical() + "/n");
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getPhone() + "/n");
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, user.getWorkHour() + "/n");
                             emailIntent.putExtra(Intent.EXTRA_TEXT, user.getWorkPlace());
-                            startActivity(emailIntent);
+                            startActivity(Intent.createChooser(emailIntent, "Email:"));
                         }
                     }
                 });
@@ -91,7 +91,7 @@ public class MainFragment extends Fragment {
         delete_data_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            //delete data req send to admin
+                //delete data req send to admin
             }
         });
 

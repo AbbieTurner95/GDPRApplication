@@ -45,7 +45,6 @@ public class ListFragment extends Fragment implements UserAdapter.UserClickListe
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_list, container, false);
-        getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         unbinder = ButterKnife.bind(this, view);
 
         mAuth = FirebaseAuth.getInstance();
@@ -115,7 +114,6 @@ public class ListFragment extends Fragment implements UserAdapter.UserClickListe
         intent.putExtra(workPlace, user.getWorkPlace());
         intent.putExtra(profile, user.getProfile());
         intent.putExtra(medical, user.getMedical());
-
         startActivity(intent);
     }
 }

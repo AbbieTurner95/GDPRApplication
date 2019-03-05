@@ -304,67 +304,67 @@ ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/Andr
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:35:27-74
 activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.MainActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:38:9-120
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:38:9-110
 	android:screenOrientation
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:38:71-107
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:38:19-70
 activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.RegisterActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:39:9-123
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:39:9-113
 	android:screenOrientation
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:39:75-111
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:39:19-74
 activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.ContactUsActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:40:9-124
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:40:9-114
 	android:screenOrientation
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:40:76-112
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:40:19-75
 activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.ForgotPasswordActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:41:9-129
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:41:9-119
 	android:screenOrientation
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:41:81-117
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:41:19-80
 activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoWhyActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:42:9-122
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:42:9-112
 	android:screenOrientation
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:42:74-110
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:42:19-73
 activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoFAQActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:43:9-122
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:43:9-112
 	android:screenOrientation
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:43:74-110
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:43:19-73
 activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoAboutActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:44:9-124
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:44:9-114
 	android:screenOrientation
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:44:76-112
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:44:19-75
 activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.UpdateProfileActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:45:9-128
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:45:9-118
 	android:screenOrientation
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:45:80-116
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:45:19-79
 activity#com.example.abbieturner.gdprapplication.UI.Employees.Activitys.HowDataUsedActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:46:9-126
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:46:9-116
 	android:screenOrientation
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:46:78-114
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:46:19-77
 activity#com.example.abbieturner.gdprapplication.UI.Admin.Activitys.AdminHomeActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:47:9-120
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:47:9-110
 	android:screenOrientation
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:47:72-108
 	android:name
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:47:19-71
 activity#com.example.abbieturner.gdprapplication.UI.Admin.Activitys.EmployeeDataActivity
-ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:48:9-123
+ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:48:9-113
 	android:screenOrientation
 		ADDED from /Users/abbieturner/Documents/GitHub/GDPRApplication/app/src/main/AndroidManifest.xml:48:75-111
 	android:name

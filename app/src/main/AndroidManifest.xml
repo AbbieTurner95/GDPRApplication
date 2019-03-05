@@ -35,17 +35,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UI.Employees.Activitys.MainActivity" android:screenOrientation="portrait" ></activity>
-        <activity android:name=".UI.Employees.Activitys.RegisterActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".UI.Employees.Activitys.ContactUsActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".UI.Employees.Activitys.ForgotPasswordActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".UI.Employees.Activitys.InfoWhyActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".UI.Employees.Activitys.InfoFAQActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".UI.Employees.Activitys.InfoAboutActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".UI.Employees.Activitys.UpdateProfileActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".UI.Employees.Activitys.HowDataUsedActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".UI.Admin.Activitys.AdminHomeActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".UI.Admin.Activitys.EmployeeDataActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".UI.Employees.Activitys.MainActivity" android:screenOrientation="portrait" />
+        <activity android:name=".UI.Employees.Activitys.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".UI.Employees.Activitys.ContactUsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".UI.Employees.Activitys.ForgotPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".UI.Employees.Activitys.InfoWhyActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".UI.Employees.Activitys.InfoFAQActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".UI.Employees.Activitys.InfoAboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".UI.Employees.Activitys.UpdateProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".UI.Employees.Activitys.HowDataUsedActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".UI.Admin.Activitys.AdminHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".UI.Admin.Activitys.EmployeeDataActivity" android:screenOrientation="portrait"/>
 
         <service android:name=".FCM.MyFirebaseMessagingService">
             <intent-filter>

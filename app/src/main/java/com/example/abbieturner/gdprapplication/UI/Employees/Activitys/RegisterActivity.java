@@ -18,6 +18,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.abbieturner.gdprapplication.R;
+import com.example.abbieturner.gdprapplication.utils.SharedPref;
 import com.example.abbieturner.gdprapplication.utils.Utils;
 import com.fxn.pix.Pix;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -87,6 +88,7 @@ public class RegisterActivity extends AppCompatActivity {
     private static Uri photoUri;
     public static final int PIC_IMAGE_PICKER = 19;
     private String token;
+    private SharedPref sharedPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,7 +96,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         ButterKnife.bind(this);
-
+        sharedPref = new SharedPref(this);
         mAuth = FirebaseAuth.getInstance();
         mRootRef = FirebaseDatabase.getInstance().getReference();
         mStorageReference = FirebaseStorage.getInstance().getReference();
@@ -105,7 +107,7 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<InstanceIdResult> task) {
                 if (task.isSuccessful()){
-                    token=task.getResult().getToken();
+                    token = task.getResult().getToken();
                     Log.e("REGISTER",token);
                 }
             }
@@ -228,6 +230,7 @@ public class RegisterActivity extends AppCompatActivity {
         hashMap.put("workPlace", etWorkPlace.getText().toString());
         hashMap.put("token_id",token);
 
+        sharedPref.setUserId(mAuth.getCurrentUser().getUid());
         mRootRef.child("users").child(mAuth.getCurrentUser().getUid())
                 .updateChildren(hashMap, new DatabaseReference.CompletionListener() {
                     @Override

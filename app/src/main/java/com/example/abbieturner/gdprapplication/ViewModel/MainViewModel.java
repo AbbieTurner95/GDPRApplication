@@ -24,15 +24,14 @@ public class MainViewModel extends AndroidViewModel {
 
     public MainViewModel(@NonNull Application application) {
         super(application);
-        sharedPref=new SharedPref(application.getApplicationContext());
+        mAuth = FirebaseAuth.getInstance();
+        mRootRef = FirebaseDatabase.getInstance().getReference();
+        sharedPref = new SharedPref(application.getApplicationContext());
     }
 
     private void fetchData(){
-
-        mAuth = FirebaseAuth.getInstance();
-        mRootRef = FirebaseDatabase.getInstance().getReference();
         mRootRef.keepSynced(true);
-        mRootRef.child("users").child(mAuth.getCurrentUser().getUid())
+        mRootRef.child("users").child(sharedPref.getUserId())
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

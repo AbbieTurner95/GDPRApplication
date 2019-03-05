@@ -25,6 +25,7 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import com.example.abbieturner.gdprapplication.Models.User;
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.Admin.Activitys.AdminHomeActivity;
+import com.example.abbieturner.gdprapplication.utils.SharedPref;
 import com.example.abbieturner.gdprapplication.utils.Utils;
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -64,6 +65,7 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
     private ProgressDialog progressDialog;
     private FirebaseAuth mAuth;
     private DatabaseReference mRootRef;
+    private SharedPref sharedPref;
 
 
     @Override
@@ -72,6 +74,7 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
         setContentView(R.layout.navigation_draw_layout);
         setSupportActionBar(toolbar);
         ButterKnife.bind(this);
+        sharedPref = new SharedPref(this);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -107,7 +110,6 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
         });
 
     }
-
     private void startLogin() {
         if (Utils.isNetworkAvailable(this)) {
             if (Utils.checkError(etMail) && Utils.checkError(etPass) && Utils.checkEmail(etMail)) {
@@ -122,6 +124,7 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
+                                    sharedPref.setUserId(mAuth.getCurrentUser().getUid());
                                     detectIfAdminOrNot();
                                 } else {
                                     Toast.makeText(getApplicationContext(), "Incorrect Password! Please try again.", Toast.LENGTH_LONG).show();
@@ -135,7 +138,7 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
     }
 
     private void detectIfAdminOrNot() {
-        mRootRef.child("users").child(mAuth.getCurrentUser().getUid())
+        mRootRef.child("users").child(sharedPref.getUserId())
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
