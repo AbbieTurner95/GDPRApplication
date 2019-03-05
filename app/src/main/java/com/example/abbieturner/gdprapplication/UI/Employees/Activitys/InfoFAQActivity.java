@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.abbieturner.gdprapplication.R;
+import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 
@@ -151,5 +152,17 @@ public class InfoFAQActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 }

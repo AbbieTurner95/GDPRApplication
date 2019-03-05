@@ -1,9 +1,11 @@
 package com.example.abbieturner.gdprapplication.UI.Employees.Activitys;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.abbieturner.gdprapplication.R;
+import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 
 import butterknife.BindView;
@@ -27,5 +29,17 @@ public class InfoWhyActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 }

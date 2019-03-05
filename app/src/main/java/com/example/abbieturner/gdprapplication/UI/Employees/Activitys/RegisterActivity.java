@@ -20,6 +20,7 @@ import android.widget.Toast;
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.utils.SharedPref;
 import com.example.abbieturner.gdprapplication.utils.Utils;
+import com.firebase.ui.auth.AuthUI;
 import com.fxn.pix.Pix;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -257,5 +258,17 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 }

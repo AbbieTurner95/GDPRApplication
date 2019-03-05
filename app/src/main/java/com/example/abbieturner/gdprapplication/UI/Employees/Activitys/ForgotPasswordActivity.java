@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.utils.Utils;
+import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -83,5 +84,17 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 }

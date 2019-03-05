@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.abbieturner.gdprapplication.R;
+import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActivity;
+import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 
 import butterknife.BindView;
@@ -94,6 +96,18 @@ public class EmployeeDataActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 }
 

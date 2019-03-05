@@ -61,5 +61,4 @@ public class UserAdapter extends FirebaseRecyclerAdapter<User, UserAdapter.UserH
     public interface UserClickListener {
         void onEmployeeItemClick(User user);
     }
-
 }

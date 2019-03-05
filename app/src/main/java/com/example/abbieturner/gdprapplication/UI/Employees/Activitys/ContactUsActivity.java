@@ -1,9 +1,11 @@
 package com.example.abbieturner.gdprapplication.UI.Employees.Activitys;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.abbieturner.gdprapplication.R;
+import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -91,14 +93,20 @@ public class ContactUsActivity extends AppCompatActivity implements OnMapReadyCa
     public void onStop() {
         super.onStop();
         mapView.onStop();
+        mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 
     @Override
     public void onPause() {
         mapView.onPause();
         super.onPause();
-
         mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 
     @Override

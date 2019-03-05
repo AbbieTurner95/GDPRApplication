@@ -1,6 +1,7 @@
 package com.example.abbieturner.gdprapplication.UI.Employees.Activitys;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.Employees.Fragments.InfoFragment;
 import com.example.abbieturner.gdprapplication.UI.Employees.Fragments.MainFragment;
 import com.example.abbieturner.gdprapplication.UI.Employees.Fragments.ProfileFragment;
+import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -76,6 +78,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 }
 

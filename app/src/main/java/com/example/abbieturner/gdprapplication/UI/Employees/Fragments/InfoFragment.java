@@ -16,6 +16,8 @@ import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.HowDataUse
 import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoAboutActivity;
 import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoFAQActivity;
 import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoWhyActivity;
+import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActivity;
+import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.security.PrivateKey;
@@ -110,5 +112,17 @@ public class InfoFragment extends Fragment {
     public void onPause() {
         super.onPause();
         mAuth.signOut();
+        AuthUI.getInstance().signOut(getActivity());
+        Intent intent = new Intent(getContext(), LoginActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        mAuth.signOut();
+        AuthUI.getInstance().signOut(getActivity());
+        Intent intent = new Intent(getContext(), LoginActivity.class);
+        startActivity(intent);
     }
 }

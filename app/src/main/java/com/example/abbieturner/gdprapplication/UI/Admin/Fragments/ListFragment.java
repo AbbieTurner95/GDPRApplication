@@ -16,6 +16,8 @@ import com.example.abbieturner.gdprapplication.Models.User;
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.Admin.Activitys.EmployeeDataActivity;
 import com.example.abbieturner.gdprapplication.UI.Admin.Adapters.UserAdapter;
+import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActivity;
+import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -79,6 +81,10 @@ public class ListFragment extends Fragment implements UserAdapter.UserClickListe
     @Override
     public void onStop() {
         super.onStop();
+        mAuth.signOut();
+        AuthUI.getInstance().signOut(getActivity());
+        Intent intent = new Intent(getContext(), LoginActivity.class);
+        startActivity(intent);
         mAdapter.stopListening();
     }
 
@@ -86,6 +92,9 @@ public class ListFragment extends Fragment implements UserAdapter.UserClickListe
     public void onPause(){
         super.onPause();
         mAuth.signOut();
+        AuthUI.getInstance().signOut(getActivity());
+        Intent intent = new Intent(getContext(), LoginActivity.class);
+        startActivity(intent);
     }
 
     @Override

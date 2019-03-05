@@ -1,5 +1,6 @@
 package com.example.abbieturner.gdprapplication.UI.Admin.Activitys;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -11,6 +12,8 @@ import android.view.MenuItem;
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.Admin.Fragments.ContactUsFragment;
 import com.example.abbieturner.gdprapplication.UI.Admin.Fragments.RequestsFragment;
+import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActivity;
+import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 
 import butterknife.BindView;
@@ -63,5 +66,17 @@ public class AdminHomeActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        mAuth.signOut();
+        AuthUI.getInstance().signOut(getApplicationContext());
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 }
