@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.Shashank02051997:FancyAlertDialog-Android:0.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/FancyAlertDialog-Android-0.1.aar/1ad07d67c1f6bb36301045c6db1271e8/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/FancyAlertDialog-Android-0.1.aar/1ad07d67c1f6bb36301045c6db1271e8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/FancyAlertDialog-Android-0.1.aar/f98ed0b212f4f5811d21551524d6cc5c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/FancyAlertDialog-Android-0.1.aar/f98ed0b212f4f5811d21551524d6cc5c/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

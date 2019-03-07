@@ -225,22 +225,4 @@ public class LoginActivity extends AppCompatActivity implements NavigationView.O
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getApplicationContext());
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getApplicationContext());
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
-    }
 }
