@@ -82,6 +82,7 @@ public class EmpFragment extends Fragment implements UserAdapter.UserClickListen
         String phone = "emp_phone";
         String workHour = "emp_wh";
         String workPlace = "emp_wp";
+        String userId = "user_id";
         String profile = "emp_pp";
 
         Intent intent = new Intent(getActivity(), EmployeeDataActivity.class);
@@ -96,6 +97,7 @@ public class EmpFragment extends Fragment implements UserAdapter.UserClickListen
         intent.putExtra(workPlace, user.getWorkPlace());
         intent.putExtra(profile, user.getProfile());
         intent.putExtra(medical, user.getMedical());
+        intent.putExtra(userId, user.getUserId());
         startActivity(intent);
     }
 

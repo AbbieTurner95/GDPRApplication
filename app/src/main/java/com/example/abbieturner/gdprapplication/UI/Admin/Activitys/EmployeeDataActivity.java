@@ -12,9 +12,12 @@ import android.widget.TextView;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.example.abbieturner.gdprapplication.Models.User;
 import com.example.abbieturner.gdprapplication.R;
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.shashank.sony.fancydialoglib.FancyAlertDialog;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 
@@ -25,7 +28,7 @@ public class EmployeeDataActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
 
-    String emp_name, emp_address, emp_email, emp_ethn, emp_fax, emp_lang, emp_med, emp_phone, emp_wh, emp_wp, emp_pp;
+    String emp_name, emp_address, emp_email, emp_ethn, emp_fax, emp_lang, emp_med, emp_phone, emp_wh, emp_wp, emp_pp, emp_id;
 
     @BindView(R.id.user_image)
     ImageView user_image;
@@ -49,13 +52,14 @@ public class EmployeeDataActivity extends AppCompatActivity {
     TextView user_medicalcond;
     @BindView(R.id.user_ethnicity)
     TextView user_ethnicity;
-
     @BindView(R.id.delete_emp_btn)
     Button delete_emp_btn;
     @BindView(R.id.notification_btn)
     Button notification_btn;
     @BindView(R.id.contact_emp_btn)
     Button contact_emp_btn;
+
+    private DatabaseReference mRootRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +68,7 @@ public class EmployeeDataActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         mAuth = FirebaseAuth.getInstance();
+        mRootRef = FirebaseDatabase.getInstance().getReference();
 
         Intent intent = getIntent();
 
@@ -79,6 +84,7 @@ public class EmployeeDataActivity extends AppCompatActivity {
             emp_wh = intent.getStringExtra("emp_wh");
             emp_wp = intent.getStringExtra("emp_wp");
             emp_pp = intent.getStringExtra("emp_pp");
+            emp_id = intent.getStringExtra("user_id");
         }
 
 
@@ -95,17 +101,19 @@ public class EmployeeDataActivity extends AppCompatActivity {
         user_number.setText(emp_phone);
 
 
+
+
         delete_emp_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //dialog asking you sure? if so delete fully.
+                mRootRef.child("user").child(emp_id).removeValue();
             }
         });
 
         notification_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               //send notification to update data
+               //send notification to user to update data
             }
         });
 

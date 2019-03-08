@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class User implements Serializable {
 
     private String address;
+    private String ID;
     private String workPlace;
     private String workHour;
     private String lang;
@@ -19,6 +20,10 @@ public class User implements Serializable {
 
     public String getAddress() {
         return address;
+    }
+
+    public String getUserId() {
+        return ID;
     }
 
     public void setAddress(String address) {
