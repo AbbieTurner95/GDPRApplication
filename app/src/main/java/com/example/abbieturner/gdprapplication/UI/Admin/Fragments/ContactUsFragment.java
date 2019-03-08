@@ -31,8 +31,8 @@ public class ContactUsFragment extends Fragment implements OnMapReadyCallback {
     MapView mapView;
 
     Unbinder unbinder;
-    private String lat = "53.370491";
-    private String loc = "-1.321860";
+    private final String lat = "53.370491";
+    private final String loc = "-1.321860";
     private GoogleMap gmap;
     private static final String MAP_VIEW_BUNDLE_KEY = "MapViewBundleKey";
     private FirebaseAuth mAuth;
@@ -109,20 +109,12 @@ public class ContactUsFragment extends Fragment implements OnMapReadyCallback {
     public void onStop() {
         super.onStop();
         mAuth.signOut();
-        mapView.onStop();
-        AuthUI.getInstance().signOut(getActivity());
-        Intent intent = new Intent(getContext(), LoginActivity.class);
-        startActivity(intent);
     }
 
     @Override
     public void onPause() {
         super.onPause();
         mapView.onPause();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getActivity());
-        Intent intent = new Intent(getContext(), LoginActivity.class);
-        startActivity(intent);
     }
 
     @Override

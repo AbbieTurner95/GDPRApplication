@@ -1,7 +1,6 @@
 package com.example.abbieturner.gdprapplication.UI.Employees.Activitys;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -14,8 +13,6 @@ import com.example.abbieturner.gdprapplication.R;
 import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
-
-import java.lang.reflect.Field;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -37,7 +34,6 @@ public class InfoFAQActivity extends AppCompatActivity {
     Button contact_q_btn;
 
     private FirebaseAuth mAuth;
-    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -151,18 +147,10 @@ public class InfoFAQActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getApplicationContext());
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getApplicationContext());
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
     }
 }

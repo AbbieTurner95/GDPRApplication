@@ -22,8 +22,8 @@ public class ContactUsActivity extends AppCompatActivity implements OnMapReadyCa
 
     @BindView(R.id.google_maps)
     MapView mapView;
-    private String lat = "53.370491";
-    private String loc = "-1.321860";
+    private final String lat = "53.370491";
+    private final String loc = "-1.321860";
     private GoogleMap gmap;
     private static final String MAP_VIEW_BUNDLE_KEY = "MapViewBundleKey";
     private FirebaseAuth mAuth;
@@ -93,20 +93,12 @@ public class ContactUsActivity extends AppCompatActivity implements OnMapReadyCa
     public void onStop() {
         super.onStop();
         mapView.onStop();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getApplicationContext());
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
     }
 
     @Override
     public void onPause() {
         mapView.onPause();
         super.onPause();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getApplicationContext());
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
     }
 
     @Override

@@ -26,6 +26,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.Objects;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -55,7 +57,7 @@ public class ChangeMailDialog extends DialogFragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.change_mail_dialog, container, false);
-        getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        Objects.requireNonNull(getActivity()).setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         unbinder = ButterKnife.bind(this, view);
         progressDialog = new ProgressDialog(getActivity());
         mAuth = FirebaseAuth.getInstance();
@@ -134,18 +136,10 @@ public class ChangeMailDialog extends DialogFragment {
     @Override
     public void onPause() {
         super.onPause();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getActivity());
-        Intent intent = new Intent(getContext(), LoginActivity.class);
-        startActivity(intent);
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getActivity());
-        Intent intent = new Intent(getContext(), LoginActivity.class);
-        startActivity(intent);
     }
 }

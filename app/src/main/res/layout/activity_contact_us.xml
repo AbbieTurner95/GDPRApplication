@@ -67,7 +67,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:paddingEnd="18dp"
-                android:src="@drawable/fui_ic_phone_white_24dp" />
+                android:src="@drawable/fui_ic_phone_white_24dp"
+                android:contentDescription="@string/phone_icon_cd" />
 
             <TextView
                 android:layout_width="wrap_content"

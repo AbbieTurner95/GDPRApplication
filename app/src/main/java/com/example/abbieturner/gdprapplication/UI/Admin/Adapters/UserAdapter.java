@@ -22,8 +22,14 @@ public class UserAdapter extends FirebaseRecyclerAdapter<User, UserAdapter.UserH
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull UserHolder holder, int position, @NonNull User model) {
+    protected void onBindViewHolder(@NonNull UserHolder holder, int position, @NonNull final User model) {
         holder.bind(model);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onEmployeeItemClick(model);
+            }
+        });
     }
 
     @NonNull
@@ -35,7 +41,7 @@ public class UserAdapter extends FirebaseRecyclerAdapter<User, UserAdapter.UserH
         return new UserHolder(view);
     }
 
-    class UserHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    class UserHolder extends RecyclerView.ViewHolder  {
         private User user;
         TextView name;
         TextView workplace;
@@ -52,10 +58,6 @@ public class UserAdapter extends FirebaseRecyclerAdapter<User, UserAdapter.UserH
             workplace.setText(user.getWorkPlace());
         }
 
-        @Override
-        public void onClick(View v) {
-            listener.onEmployeeItemClick(user);
-        }
     }
 
     public interface UserClickListener {

@@ -9,7 +9,6 @@ import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.provider.Settings;
 import android.widget.EditText;
-import android.widget.Spinner;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

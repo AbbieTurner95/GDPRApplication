@@ -1,6 +1,5 @@
 package com.example.abbieturner.gdprapplication.UI.Admin.Activitys;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -14,6 +13,7 @@ import android.widget.Button;
 
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.Admin.Fragments.ContactUsFragment;
+import com.example.abbieturner.gdprapplication.UI.Admin.Fragments.EmpFragment;
 import com.example.abbieturner.gdprapplication.UI.Admin.Fragments.RequestsFragment;
 import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActivity;
 import com.firebase.ui.auth.AuthUI;
@@ -26,11 +26,8 @@ public class AdminHomeActivity extends AppCompatActivity {
 
     @BindView(R.id.bottomNavigationView)
     BottomNavigationView bottomNavigationView;
-    @BindView(R.id.log_out_btn)
-    Button logout_btn;
 
     private FirebaseAuth mAuth;
-    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,14 +37,14 @@ public class AdminHomeActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        openFragment(new ListFragment());
+        openFragment(new EmpFragment());
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.action_emp:
-                        openFragment(new ListFragment());
+                        openFragment(new EmpFragment());
                         return true;
                     case R.id.action_req:
                         openFragment(new RequestsFragment());
@@ -57,16 +54,6 @@ public class AdminHomeActivity extends AppCompatActivity {
                         return true;
                 }
                 return false;
-            }
-        });
-
-
-        logout_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mAuth.signOut();
-                Intent intent = new Intent(context, LoginActivity.class);
-                startActivity(intent);
             }
         });
     }
@@ -81,18 +68,10 @@ public class AdminHomeActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getApplicationContext());
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getApplicationContext());
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
     }
 }

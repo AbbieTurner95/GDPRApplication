@@ -8,7 +8,6 @@ import com.example.abbieturner.gdprapplication.R;
 import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class InfoWhyActivity extends AppCompatActivity {
@@ -28,18 +27,10 @@ public class InfoWhyActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getApplicationContext());
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getApplicationContext());
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
     }
 }

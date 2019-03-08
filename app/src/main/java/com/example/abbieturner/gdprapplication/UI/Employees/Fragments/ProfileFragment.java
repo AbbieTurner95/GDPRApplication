@@ -78,18 +78,10 @@ public class ProfileFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getActivity());
-        Intent intent = new Intent(getContext(), LoginActivity.class);
-        startActivity(intent);
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getActivity());
-        Intent intent = new Intent(getContext(), LoginActivity.class);
-        startActivity(intent);
     }
 }

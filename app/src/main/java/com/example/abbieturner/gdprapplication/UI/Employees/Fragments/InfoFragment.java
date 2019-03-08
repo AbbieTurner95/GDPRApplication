@@ -1,6 +1,5 @@
 package com.example.abbieturner.gdprapplication.UI.Employees.Fragments;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -19,8 +18,6 @@ import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoWhyAct
 import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActivity;
 import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
-
-import java.security.PrivateKey;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -41,7 +38,6 @@ public class InfoFragment extends Fragment {
     @BindView(R.id.how_data_used_btn)
     Button how_btn;
 
-    Context context;
     private FirebaseAuth mAuth;
 
     public InfoFragment() {
@@ -111,18 +107,10 @@ public class InfoFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getActivity());
-        Intent intent = new Intent(getContext(), LoginActivity.class);
-        startActivity(intent);
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getActivity());
-        Intent intent = new Intent(getContext(), LoginActivity.class);
-        startActivity(intent);
     }
 }

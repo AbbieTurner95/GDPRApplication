@@ -59,15 +59,12 @@ public class UpdateProfileActivity extends AppCompatActivity {
     EditText etAddress;
     @BindView(R.id.et_phone)
     EditText etPhone;
-
     @BindView(R.id.et_fax)
     EditText etFax;
-
     @BindView(R.id.et_lang)
     Spinner etLang;
     @BindView(R.id.et_ethnicity)
     Spinner etEthn;
-
     @BindView(R.id.et_medical)
     EditText etMedical;
     @BindView(R.id.et_work_hour)
@@ -337,18 +334,10 @@ public class UpdateProfileActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getApplicationContext());
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getApplicationContext());
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
     }
 }

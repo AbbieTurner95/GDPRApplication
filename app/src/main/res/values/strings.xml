@@ -81,4 +81,13 @@
     <string name="contact_employee">Contact Employee</string>
     <string name="send_notification_to_update_data">Send Notification To Update Data</string>
     <string name="log_out">Log Out</string>
+    <string name="gdpr_application_icon_cd">GDPR Application Icon</string>
+    <string name="phone_icon_cd">Phone Icon</string>
+    <string name="person_placeholder_cd">Person Placeholder for photo</string>
+    <string name="firebase_logo_cd">Firebase Logo</string>
+    <string name="profile_picture_Cd">Profile Picture</string>
+    <string name="edit_icon_cd">Edit Icon</string>
+    <string name="email_icon_cd">Email Icon</string>
+    <string name="facebook_logo_cd">Facebook Logo</string>
+    <string name="twitter_logo_cd">Twitter Logo</string>
 </resources>

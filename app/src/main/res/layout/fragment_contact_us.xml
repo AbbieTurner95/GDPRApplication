@@ -66,7 +66,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:paddingEnd="18dp"
-                android:src="@drawable/fui_ic_phone_white_24dp" />
+                android:src="@drawable/fui_ic_phone_white_24dp"
+                android:contentDescription="@string/phone_icon_cd" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -93,7 +94,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:paddingEnd="18dp"
-                android:src="@drawable/fui_ic_mail_white_24dp" />
+                android:src="@drawable/fui_ic_mail_white_24dp"
+                android:contentDescription="@string/email_icon_cd" />
 
 
             <TextView
@@ -122,7 +124,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:paddingEnd="18dp"
-                android:src="@drawable/fui_ic_facebook_white_22dp" />
+                android:src="@drawable/fui_ic_facebook_white_22dp"
+                android:contentDescription="@string/facebook_logo_cd" />
 
 
             <TextView
@@ -150,7 +153,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:paddingEnd="@dimen/eighteen_TS"
-                android:src="@drawable/fui_ic_twitter_bird_white_24dp" />
+                android:src="@drawable/fui_ic_twitter_bird_white_24dp"
+                android:contentDescription="@string/twitter_logo_cd" />
 
             <TextView
                 android:layout_width="match_parent"

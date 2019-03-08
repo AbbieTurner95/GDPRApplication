@@ -224,9 +224,9 @@ public class RegisterActivity extends AppCompatActivity {
             hashMap.put("profile", "default");
         }
 
-        hashMap.put("lang", etLang.toString());
+        hashMap.put("lang", etLang.getSelectedItem().toString());
         hashMap.put("medical", etMedical.getText().toString());
-        hashMap.put("ethnicity", etEthn.toString());
+        hashMap.put("ethnicity", etEthn.getSelectedItem().toString());
         hashMap.put("workHour", etWorkHour.getText().toString());
         hashMap.put("workPlace", etWorkPlace.getText().toString());
         hashMap.put("token_id",token);
@@ -257,18 +257,10 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getApplicationContext());
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        mAuth.signOut();
-        AuthUI.getInstance().signOut(getApplicationContext());
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
     }
 }
