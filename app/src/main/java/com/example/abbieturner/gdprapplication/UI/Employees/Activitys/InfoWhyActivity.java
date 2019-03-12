@@ -5,12 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.abbieturner.gdprapplication.R;
+import com.example.abbieturner.gdprapplication.UI.BaseActivity;
 import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 
 import butterknife.ButterKnife;
 
-public class InfoWhyActivity extends AppCompatActivity {
+public class InfoWhyActivity extends BaseActivity {
 
     private FirebaseAuth mAuth;
 

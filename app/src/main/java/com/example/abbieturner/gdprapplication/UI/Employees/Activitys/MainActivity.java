@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.abbieturner.gdprapplication.R;
+import com.example.abbieturner.gdprapplication.UI.BaseActivity;
 import com.example.abbieturner.gdprapplication.UI.Employees.Fragments.InfoFragment;
 import com.example.abbieturner.gdprapplication.UI.Employees.Fragments.MainFragment;
 import com.example.abbieturner.gdprapplication.UI.Employees.Fragments.ProfileFragment;
@@ -22,7 +23,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @BindView(R.id.bottomNavigationView)
     BottomNavigationView bottomNavigationView;

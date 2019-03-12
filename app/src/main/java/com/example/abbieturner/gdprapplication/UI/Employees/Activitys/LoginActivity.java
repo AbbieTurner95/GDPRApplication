@@ -25,6 +25,7 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import com.example.abbieturner.gdprapplication.Models.User;
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.Admin.Activitys.AdminHomeActivity;
+import com.example.abbieturner.gdprapplication.UI.BaseActivity;
 import com.example.abbieturner.gdprapplication.utils.SharedPref;
 import com.example.abbieturner.gdprapplication.utils.Utils;
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
@@ -43,7 +44,7 @@ import butterknife.ButterKnife;
 import es.dmoral.toasty.Toasty;
 
 
-public class LoginActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class LoginActivity extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     @BindView(R.id.et_mail)
     EditText etMail;

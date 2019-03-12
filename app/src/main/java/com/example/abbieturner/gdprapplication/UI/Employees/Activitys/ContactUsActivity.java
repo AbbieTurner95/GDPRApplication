@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.abbieturner.gdprapplication.R;
+import com.example.abbieturner.gdprapplication.UI.BaseActivity;
 import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -18,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ContactUsActivity extends AppCompatActivity implements OnMapReadyCallback {
+public class ContactUsActivity extends BaseActivity implements OnMapReadyCallback {
 
     @BindView(R.id.google_maps)
     MapView mapView;

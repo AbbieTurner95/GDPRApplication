@@ -14,6 +14,7 @@ import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.example.abbieturner.gdprapplication.Models.User;
 import com.example.abbieturner.gdprapplication.R;
+import com.example.abbieturner.gdprapplication.UI.BaseActivity;
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -24,7 +25,7 @@ import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class EmployeeDataActivity extends AppCompatActivity {
+public class EmployeeDataActivity extends BaseActivity {
 
     private FirebaseAuth mAuth;
 

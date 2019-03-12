@@ -18,6 +18,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.abbieturner.gdprapplication.R;
+import com.example.abbieturner.gdprapplication.UI.BaseActivity;
 import com.example.abbieturner.gdprapplication.utils.SharedPref;
 import com.example.abbieturner.gdprapplication.utils.Utils;
 import com.firebase.ui.auth.AuthUI;
@@ -50,7 +51,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import es.dmoral.toasty.Toasty;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends BaseActivity {
 
     @BindView(R.id.img_profile)
     ImageView img_profile;

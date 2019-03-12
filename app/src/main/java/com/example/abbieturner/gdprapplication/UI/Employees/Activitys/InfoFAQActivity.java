@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.abbieturner.gdprapplication.R;
+import com.example.abbieturner.gdprapplication.UI.BaseActivity;
 import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
@@ -17,7 +18,7 @@ import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class InfoFAQActivity extends AppCompatActivity {
+public class InfoFAQActivity extends BaseActivity {
 
     @BindView(R.id.reqdata_btn)
     Button reqdata_btn;

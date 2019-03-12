@@ -15,6 +15,7 @@ import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.Admin.Fragments.ContactUsFragment;
 import com.example.abbieturner.gdprapplication.UI.Admin.Fragments.EmpFragment;
 import com.example.abbieturner.gdprapplication.UI.Admin.Fragments.RequestsFragment;
+import com.example.abbieturner.gdprapplication.UI.BaseActivity;
 import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActivity;
 import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
@@ -22,7 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class AdminHomeActivity extends AppCompatActivity {
+public class AdminHomeActivity extends BaseActivity {
 
     @BindView(R.id.bottomNavigationView)
     BottomNavigationView bottomNavigationView;
