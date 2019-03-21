@@ -21,8 +21,10 @@ import com.example.abbieturner.gdprapplication.Models.User;
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActivity;
 import com.example.abbieturner.gdprapplication.ViewModel.MainViewModel;
-import com.firebase.ui.auth.AuthUI;
+import com.example.abbieturner.gdprapplication.utils.SharedPref;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
@@ -45,6 +47,7 @@ public class MainFragment extends Fragment {
 
     private FirebaseAuth mAuth;
     private MainViewModel mainViewModel;
+    private DatabaseReference mRootRef;
 
     public MainFragment() {
 
@@ -59,7 +62,7 @@ public class MainFragment extends Fragment {
         unbinder = ButterKnife.bind(this, view);
 
         mAuth = FirebaseAuth.getInstance();
-
+        mRootRef = FirebaseDatabase.getInstance().getReference();
         mainViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
 
         request_data.setOnClickListener(new View.OnClickListener() {
@@ -93,7 +96,7 @@ public class MainFragment extends Fragment {
         delete_data_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //delete data req send to admin
+                mRootRef.child("requests").child(new SharedPref(getActivity()).getUserId()).setValue("");
             }
         });
 

@@ -14,8 +14,6 @@ import com.example.abbieturner.gdprapplication.Models.User;
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.Admin.Activitys.EmployeeDataActivity;
 import com.example.abbieturner.gdprapplication.UI.Admin.Adapters.UserAdapter;
-import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActivity;
-import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -36,7 +34,7 @@ public class EmpFragment extends Fragment implements UserAdapter.UserClickListen
     Context context;
 
     private FirebaseAuth mAuth;
-
+    public String token = "token";
 
     public EmpFragment() {
     }
@@ -82,10 +80,11 @@ public class EmpFragment extends Fragment implements UserAdapter.UserClickListen
         String phone = "emp_phone";
         String workHour = "emp_wh";
         String workPlace = "emp_wp";
-        String userId = "user_id";
+        String userId = "id";
         String profile = "emp_pp";
 
         Intent intent = new Intent(getActivity(), EmployeeDataActivity.class);
+        intent.putExtra(token,user.getToken_id());
         intent.putExtra(name, user.getName());
         intent.putExtra(address, user.getAddress());
         intent.putExtra(email, user.getEmail());
@@ -97,7 +96,7 @@ public class EmpFragment extends Fragment implements UserAdapter.UserClickListen
         intent.putExtra(workPlace, user.getWorkPlace());
         intent.putExtra(profile, user.getProfile());
         intent.putExtra(medical, user.getMedical());
-        intent.putExtra(userId, user.getUserId());
+        intent.putExtra(userId, user.getID());
         startActivity(intent);
     }
 

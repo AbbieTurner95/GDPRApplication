@@ -1,6 +1,5 @@
 package com.example.abbieturner.gdprapplication.UI.Admin.Fragments;
 
-import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,8 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.abbieturner.gdprapplication.R;
-import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActivity;
-import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;

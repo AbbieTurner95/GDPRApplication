@@ -1,11 +1,9 @@
 package com.example.abbieturner.gdprapplication.UI.Employees.Activitys;
 
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -14,7 +12,6 @@ import com.example.abbieturner.gdprapplication.UI.BaseActivity;
 import com.example.abbieturner.gdprapplication.UI.Employees.Fragments.InfoFragment;
 import com.example.abbieturner.gdprapplication.UI.Employees.Fragments.MainFragment;
 import com.example.abbieturner.gdprapplication.UI.Employees.Fragments.ProfileFragment;
-import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;

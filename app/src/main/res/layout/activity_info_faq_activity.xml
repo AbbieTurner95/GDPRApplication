@@ -44,7 +44,7 @@
         android:layout_marginBottom="8dp"
         android:background="@color/colorAccent"
         android:fontFamily="@font/big_noodle"
-        android:text="Where can I request my Data?"
+        android:text="@string/where_can_i_request_my_data"
         app:layout_constraintBottom_toTopOf="@+id/update_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

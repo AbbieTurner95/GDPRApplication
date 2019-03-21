@@ -10,9 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.abbieturner.gdprapplication.R;
-import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActivity;
 import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.UpdateProfileActivity;
-import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 
 import butterknife.BindView;

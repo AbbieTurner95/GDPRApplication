@@ -3,34 +3,35 @@ package com.example.abbieturner.gdprapplication.UI.Admin.Activitys;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+import android.support.annotation.Nullable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import android.widget.Toast;
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.example.abbieturner.gdprapplication.Models.User;
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.BaseActivity;
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.shashank.sony.fancydialoglib.FancyAlertDialog;
-import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 
+import java.util.HashMap;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class EmployeeDataActivity extends BaseActivity {
 
+
     private FirebaseAuth mAuth;
 
-    String emp_name, emp_address, emp_email, emp_ethn, emp_fax, emp_lang, emp_med, emp_phone, emp_wh, emp_wp, emp_pp, emp_id;
-
+    String emp_name, emp_address, emp_email, emp_ethn, emp_fax, emp_lang, emp_med, emp_phone, emp_wh, emp_wp, emp_pp, emp_id,token;
     @BindView(R.id.user_image)
     ImageView user_image;
     @BindView(R.id.user_name)
@@ -59,17 +60,18 @@ public class EmployeeDataActivity extends BaseActivity {
     Button notification_btn;
     @BindView(R.id.contact_emp_btn)
     Button contact_emp_btn;
-
     private DatabaseReference mRootRef;
+    private HashMap hashMap;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_data);
         ButterKnife.bind(this);
-
         mAuth = FirebaseAuth.getInstance();
         mRootRef = FirebaseDatabase.getInstance().getReference();
+        hashMap = new HashMap();
 
         Intent intent = getIntent();
 
@@ -86,8 +88,8 @@ public class EmployeeDataActivity extends BaseActivity {
             emp_wp = intent.getStringExtra("emp_wp");
             emp_pp = intent.getStringExtra("emp_pp");
             emp_id = intent.getStringExtra("user_id");
+            token=intent.getStringExtra("token");
         }
-
 
         //user_image.setImageBitmap(emp_pp);
         user_name.setText(emp_name);
@@ -101,29 +103,43 @@ public class EmployeeDataActivity extends BaseActivity {
         user_workplace.setText(emp_wp);
         user_number.setText(emp_phone);
 
-
-
-
         delete_emp_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mRootRef.child("user").child(emp_id).removeValue();
+                mRootRef.child("users").child(emp_id).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()){
+                            startActivity(new Intent(getApplicationContext(),AdminHomeActivity.class));
+                            finish();
+                        }
+                    }
+                });
             }
         });
+
 
         notification_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               //send notification to user to update data
+                hashMap.put("name",emp_name);
+                hashMap.put("token",token);
+                mRootRef.child("updates").child(emp_id)
+                        .updateChildren(hashMap, new DatabaseReference.CompletionListener() {
+                            @Override
+                            public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
+                                Toast.makeText(EmployeeDataActivity.this, "Success", Toast.LENGTH_SHORT).show();
+                            }
+                        });
             }
         });
+
 
         contact_emp_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final String number = emp_phone;
                 final String email = emp_email;
-
                 new MaterialStyledDialog.Builder(EmployeeDataActivity.this)
                         .setHeaderDrawable(R.drawable.emailpic)
                         .setHeaderColor(R.color.defaultTextColor)
@@ -149,7 +165,6 @@ public class EmployeeDataActivity extends BaseActivity {
                         }).show();
             }
         });
-
     }
 
     @Override
@@ -162,4 +177,3 @@ public class EmployeeDataActivity extends BaseActivity {
         super.onStop();
     }
 }
-

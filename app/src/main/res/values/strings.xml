@@ -90,4 +90,13 @@
     <string name="email_icon_cd">Email Icon</string>
     <string name="facebook_logo_cd">Facebook Logo</string>
     <string name="twitter_logo_cd">Twitter Logo</string>
+    <string name="name">Name :</string>
+    <string name="number">Number :</string>
+    <string name="where_can_i_request_my_data">Where can I request my Data?</string>
+    <string name="reg_">Register</string>
+    <string name="employees">Employees</string>
+    <string name="requests">Requests</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
 </resources>

@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -21,7 +20,6 @@ import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.BaseActivity;
 import com.example.abbieturner.gdprapplication.utils.SharedPref;
 import com.example.abbieturner.gdprapplication.utils.Utils;
-import com.firebase.ui.auth.AuthUI;
 import com.fxn.pix.Pix;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -218,6 +216,7 @@ public class RegisterActivity extends BaseActivity {
         hashMap.put("phone", etPhone.getText().toString());
         hashMap.put("fax", etFax.getText().toString());
         hashMap.put("admin", false);
+        hashMap.put("ID",mAuth.getCurrentUser().getUid());
 
         if (downloadUri != null) {
             hashMap.put("profile", downloadUri.toString());

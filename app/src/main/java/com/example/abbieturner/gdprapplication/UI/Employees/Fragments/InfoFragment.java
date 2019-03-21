@@ -15,8 +15,6 @@ import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.HowDataUse
 import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoAboutActivity;
 import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoFAQActivity;
 import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.InfoWhyActivity;
-import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActivity;
-import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 
 import butterknife.BindView;

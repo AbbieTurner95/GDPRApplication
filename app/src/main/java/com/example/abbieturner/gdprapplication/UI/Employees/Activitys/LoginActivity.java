@@ -8,7 +8,6 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -144,7 +143,7 @@ public class LoginActivity extends BaseActivity implements NavigationView.OnNavi
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         User user = dataSnapshot.getValue(User.class);
-                        if (user.getAdmin()) {
+                        if (user.isAdmin()) {
                             progressDialog.dismiss();
                             startActivity(new Intent(getApplicationContext(), AdminHomeActivity.class)
                                     .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));

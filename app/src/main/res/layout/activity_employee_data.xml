@@ -53,7 +53,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/big_noodle"
                     android:padding="@dimen/padd_five"
-                    android:text="Name :"
+                    android:text="@string/name"
                     android:textColor="@color/colorAccent"
                     android:textSize="@dimen/sixteen_TS"
                     android:textStyle="bold" />
@@ -78,7 +78,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/big_noodle"
                     android:padding="@dimen/padd_five"
-                    android:text="Address :"
+                    android:text="@string/address"
                     android:textColor="@color/colorAccent"
                     android:textSize="@dimen/sixteen_TS"
                     android:textStyle="bold" />
@@ -103,7 +103,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/big_noodle"
                     android:padding="@dimen/padd_five"
-                    android:text="Number :"
+                    android:text="@string/number"
                     android:textColor="@color/colorAccent"
                     android:textSize="@dimen/sixteen_TS"
                     android:textStyle="bold" />
@@ -128,7 +128,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/big_noodle"
                     android:padding="@dimen/padd_five"
-                    android:text="Fax :"
+                    android:text="@string/fax"
                     android:textColor="@color/colorAccent"
                     android:textSize="@dimen/sixteen_TS"
                     android:textStyle="bold" />
@@ -153,7 +153,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/big_noodle"
                     android:padding="@dimen/padd_five"
-                    android:text="E-mail :"
+                    android:text="@string/email"
                     android:textColor="@color/colorAccent"
                     android:textSize="@dimen/sixteen_TS"
                     android:textStyle="bold" />
@@ -181,7 +181,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/big_noodle"
                 android:padding="@dimen/padding_eight"
-                android:text="Workplace :"
+                android:text="@string/work_place"
                 android:textColor="@color/colorPrimaryDark"
                 android:textStyle="bold" />
 
@@ -198,7 +198,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/big_noodle"
                 android:padding="@dimen/padding_eight"
-                android:text="Workhours :"
+                android:text="@string/work_hours"
                 android:textColor="@color/colorPrimaryDark"
                 android:textStyle="bold" />
 
@@ -223,7 +223,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/big_noodle"
                 android:padding="@dimen/padding_eight"
-                android:text="Language :"
+                android:text="@string/language"
                 android:textColor="@color/colorPrimaryDark"
                 android:textStyle="bold" />
 
@@ -240,7 +240,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/big_noodle"
                 android:padding="@dimen/padding_eight"
-                android:text="Ethnicity:"
+                android:text="@string/ethnicity"
                 android:textColor="@color/colorPrimaryDark"
                 android:textStyle="bold" />
 
@@ -264,7 +264,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/big_noodle"
                 android:padding="@dimen/padding_eight"
-                android:text="Medical Conditions :"
+                android:text="@string/medical_history"
                 android:textColor="@color/colorPrimaryDark"
                 android:textStyle="bold" />
 

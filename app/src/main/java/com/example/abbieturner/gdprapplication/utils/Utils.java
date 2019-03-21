@@ -34,7 +34,7 @@ public class Utils {
         return matcher.matches();
     }
 
-    public static final boolean checkEmail(EditText email) {
+    public static boolean checkEmail(EditText email) {
         if (!isEmailValid(email.getText().toString())) {
             email.setError("Please check e-mail address is correct.");
             return false;
@@ -51,7 +51,7 @@ public class Utils {
         return false;
     }
 
-    public static final boolean checkError(EditText editText) {
+    public static boolean checkError(EditText editText) {
         if (!isValid(editText.getText().toString())) {
             editText.setError("Please fill out this empty field.");
             return false;
