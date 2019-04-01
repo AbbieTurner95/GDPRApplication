@@ -61,4 +61,5 @@
     <string name="faq_about_cd">Scatola di dati per rappresentare la pagina delle domande</string>
     <string name="why_img_cd">Immagine del punto interrogativo tenuto da lady</string>
     <string name="welcome">Benvenuti,</string>
+    <string name="why_gdpr_text">Il GDPR (Regolamento generale sulla protezione dei dati) è entrato in vigore il 25 maggio 2018. Il regolamento ha sostituito l\'attuale legge sulla protezione dei dati. Sia i datori di lavoro che i loro dipendenti hanno nuove responsabilità da considerare per contribuire a garantire la conformità. Dopo che la Gran Bretagna ha lasciato l\'Unione Europea, una nuova legge sulla protezione dei dati del Regno Unito garantirà che i principi del GDPR rimangano nella legislazione del Regno Unito. Le organizzazioni devono avere una ragione valida per avere dati personali e i dati non devono essere conservati più a lungo del necessario. Questa è l\'azienda per cui operi per il percorso scelto, aiutandoli non solo a rispettare i regolamenti, ma anche a mantenere i tuoi dati personali al sicuro e assicurarti che tu abbia tutte le informazioni di cui hai bisogno in viaggio.</string>
 </resources>
