@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.example.abbieturner.gdprapplication.R;
@@ -23,6 +24,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -31,7 +33,7 @@ public class EmployeeDataActivity extends BaseActivity {
 
     private FirebaseAuth mAuth;
 
-    String emp_name, emp_address, emp_email, emp_ethn, emp_fax, emp_lang, emp_med, emp_phone, emp_wh, emp_wp, emp_pp, emp_id,token;
+    String emp_name, emp_address, emp_email, emp_ethn, emp_fax, emp_lang, emp_med, emp_phone, emp_wh, emp_wp, emp_pp, emp_id, token;
     @BindView(R.id.user_image)
     ImageView user_image;
     @BindView(R.id.user_name)
@@ -88,7 +90,7 @@ public class EmployeeDataActivity extends BaseActivity {
             emp_wp = intent.getStringExtra("emp_wp");
             emp_pp = intent.getStringExtra("emp_pp");
             emp_id = intent.getStringExtra("user_id");
-            token=intent.getStringExtra("token");
+            token = intent.getStringExtra("token");
         }
 
         //user_image.setImageBitmap(emp_pp);
@@ -109,8 +111,8 @@ public class EmployeeDataActivity extends BaseActivity {
                 mRootRef.child("users").child(emp_id).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()){
-                            startActivity(new Intent(getApplicationContext(),AdminHomeActivity.class));
+                        if (task.isSuccessful()) {
+                            startActivity(new Intent(getApplicationContext(), AdminHomeActivity.class));
                             finish();
                         }
                     }
@@ -122,8 +124,8 @@ public class EmployeeDataActivity extends BaseActivity {
         notification_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                hashMap.put("name",emp_name);
-                hashMap.put("token",token);
+                hashMap.put("name", emp_name);
+                hashMap.put("token", token);
                 mRootRef.child("updates").child(emp_id)
                         .updateChildren(hashMap, new DatabaseReference.CompletionListener() {
                             @Override
@@ -158,7 +160,7 @@ public class EmployeeDataActivity extends BaseActivity {
                             @Override
                             public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
                                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                                        "mailto", email , null));
+                                        "mailto", email, null));
                                 emailIntent.putExtra(Intent.EXTRA_TEXT, "");
                                 startActivity(Intent.createChooser(emailIntent, "Sending email..."));
                             }

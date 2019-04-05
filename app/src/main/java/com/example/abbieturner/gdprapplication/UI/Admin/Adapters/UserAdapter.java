@@ -41,7 +41,7 @@ public class UserAdapter extends FirebaseRecyclerAdapter<User, UserAdapter.UserH
         return new UserHolder(view);
     }
 
-    class UserHolder extends RecyclerView.ViewHolder  {
+    class UserHolder extends RecyclerView.ViewHolder {
         private User user;
         TextView name;
         TextView workplace;

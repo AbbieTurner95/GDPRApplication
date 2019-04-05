@@ -42,8 +42,8 @@ public class Utils {
         return true;
     }
 
-    public static boolean checkMatch(EditText pass, EditText confirm_pass){
-        if(!pass.getText().toString().matches(confirm_pass.getText().toString())){
+    public static boolean checkMatch(EditText pass, EditText confirm_pass) {
+        if (!pass.getText().toString().matches(confirm_pass.getText().toString())) {
             confirm_pass.setError("Confirm password is not matched!");
         } else {
             return true;
@@ -58,6 +58,7 @@ public class Utils {
         }
         return true;
     }
+
     public static boolean checkPhoneSize(EditText mPhone) {
         if (mPhone.getText().toString().length() < 6) {
             mPhone.setError("Phone number must be 11 characters.");
@@ -66,7 +67,7 @@ public class Utils {
         return true;
     }
 
-    public static void goToImageSettings(final Context context){
+    public static void goToImageSettings(final Context context) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context)
                 .setMessage("App needs permission to upload images.")
                 .setPositiveButton("Settings", new DialogInterface.OnClickListener() {

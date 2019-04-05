@@ -34,7 +34,7 @@ public class ContactUsFragment extends Fragment implements OnMapReadyCallback {
     private static final String MAP_VIEW_BUNDLE_KEY = "MapViewBundleKey";
     private FirebaseAuth mAuth;
 
-    public ContactUsFragment(){
+    public ContactUsFragment() {
 
     }
 

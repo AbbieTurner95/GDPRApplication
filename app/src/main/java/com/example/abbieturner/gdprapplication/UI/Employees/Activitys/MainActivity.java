@@ -47,7 +47,7 @@ public class MainActivity extends BaseActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.action_home:
                         openFragment(new MainFragment());
                         return true;
@@ -58,16 +58,18 @@ public class MainActivity extends BaseActivity {
                         openFragment(new InfoFragment());
                         return true;
 
-                } return false;
+                }
+                return false;
             }
         });
     }
 
-    private void fetchData() { }
+    private void fetchData() {
+    }
 
-    public void openFragment(Fragment fragment){
+    public void openFragment(Fragment fragment) {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container,fragment)
+                .replace(R.id.container, fragment)
                 .addToBackStack(null)
                 .commit();
     }

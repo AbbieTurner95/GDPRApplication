@@ -91,7 +91,7 @@ public class ChangePasswordDialog extends DialogFragment {
                                             .addOnCompleteListener(new OnCompleteListener<Void>() {
                                                 @Override
                                                 public void onComplete(@NonNull Task<Void> task) {
-                                                    if (task.isSuccessful()){
+                                                    if (task.isSuccessful()) {
                                                         progressDialog.dismiss();
                                                         ChangePasswordDialog.this.dismiss();
                                                         Toasty.success(getActivity(),
@@ -101,7 +101,7 @@ public class ChangePasswordDialog extends DialogFragment {
                                                     }
                                                 }
                                             });
-                                }else{
+                                } else {
                                     progressDialog.dismiss();
                                     Toasty.error(getActivity(),
                                             "Authentication Failed",

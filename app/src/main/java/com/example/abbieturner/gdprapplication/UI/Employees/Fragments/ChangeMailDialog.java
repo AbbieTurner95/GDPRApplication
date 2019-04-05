@@ -108,7 +108,7 @@ public class ChangeMailDialog extends DialogFragment {
                                                     }
                                                 }
                                             });
-                                }else{
+                                } else {
                                     progressDialog.dismiss();
                                     Toasty.error(getActivity(),
                                             "Authentication Failed",

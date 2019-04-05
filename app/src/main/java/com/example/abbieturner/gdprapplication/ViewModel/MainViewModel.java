@@ -29,7 +29,7 @@ public class MainViewModel extends AndroidViewModel {
         sharedPref = new SharedPref(application.getApplicationContext());
     }
 
-    private void fetchData(){
+    private void fetchData() {
         mRootRef.keepSynced(true);
         mRootRef.child("users").child(sharedPref.getUserId())
                 .addValueEventListener(new ValueEventListener() {
@@ -46,8 +46,8 @@ public class MainViewModel extends AndroidViewModel {
                 });
     }
 
-    public MutableLiveData<User> getUserLiveData(){
-        if(userLiveData == null){
+    public MutableLiveData<User> getUserLiveData() {
+        if (userLiveData == null) {
             userLiveData = new MutableLiveData<>();
             fetchData();
         }

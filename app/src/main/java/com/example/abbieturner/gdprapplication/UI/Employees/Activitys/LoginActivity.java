@@ -10,6 +10,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,6 +38,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -68,6 +71,9 @@ public class LoginActivity extends BaseActivity implements NavigationView.OnNavi
     private SharedPref sharedPref;
 
 
+    private String token;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,6 +91,15 @@ public class LoginActivity extends BaseActivity implements NavigationView.OnNavi
 
         mAuth = FirebaseAuth.getInstance();
         mRootRef = FirebaseDatabase.getInstance().getReference();
+        FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
+            @Override
+            public void onComplete(@NonNull Task<InstanceIdResult> task) {
+                if (task.isSuccessful()) {
+                    token = task.getResult().getToken();
+                    Log.e("REGISTER", token);
+                }
+            }
+        });
 
         progressDialog = new ProgressDialog(this);
 
@@ -110,6 +125,7 @@ public class LoginActivity extends BaseActivity implements NavigationView.OnNavi
         });
 
     }
+
     private void startLogin() {
         if (Utils.isNetworkAvailable(this)) {
             if (Utils.checkError(etMail) && Utils.checkError(etPass) && Utils.checkEmail(etMail)) {
@@ -142,7 +158,11 @@ public class LoginActivity extends BaseActivity implements NavigationView.OnNavi
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        mRootRef.child("users").child(sharedPref.getUserId())
+                                .child("token_id").setValue(token);
+
                         User user = dataSnapshot.getValue(User.class);
+
                         if (user.isAdmin()) {
                             progressDialog.dismiss();
                             startActivity(new Intent(getApplicationContext(), AdminHomeActivity.class)

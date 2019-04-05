@@ -106,9 +106,9 @@ public class RegisterActivity extends BaseActivity {
         FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
             @Override
             public void onComplete(@NonNull Task<InstanceIdResult> task) {
-                if (task.isSuccessful()){
+                if (task.isSuccessful()) {
                     token = task.getResult().getToken();
-                    Log.e("REGISTER",token);
+                    Log.e("REGISTER", token);
                 }
             }
         });
@@ -216,7 +216,7 @@ public class RegisterActivity extends BaseActivity {
         hashMap.put("phone", etPhone.getText().toString());
         hashMap.put("fax", etFax.getText().toString());
         hashMap.put("admin", false);
-        hashMap.put("ID",mAuth.getCurrentUser().getUid());
+        hashMap.put("ID", mAuth.getCurrentUser().getUid());
 
         if (downloadUri != null) {
             hashMap.put("profile", downloadUri.toString());
@@ -229,7 +229,7 @@ public class RegisterActivity extends BaseActivity {
         hashMap.put("ethnicity", etEthn.getSelectedItem().toString());
         hashMap.put("workHour", etWorkHour.getText().toString());
         hashMap.put("workPlace", etWorkPlace.getText().toString());
-        hashMap.put("token_id",token);
+        hashMap.put("token_id", token);
 
         sharedPref.setUserId(mAuth.getCurrentUser().getUid());
         mRootRef.child("users").child(mAuth.getCurrentUser().getUid())

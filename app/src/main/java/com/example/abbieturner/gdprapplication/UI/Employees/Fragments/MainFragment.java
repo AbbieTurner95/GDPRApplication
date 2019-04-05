@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,9 +24,15 @@ import com.example.abbieturner.gdprapplication.UI.Employees.Activitys.LoginActiv
 import com.example.abbieturner.gdprapplication.ViewModel.MainViewModel;
 import com.example.abbieturner.gdprapplication.utils.SharedPref;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
+
+import java.util.HashMap;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -48,6 +55,7 @@ public class MainFragment extends Fragment {
     private FirebaseAuth mAuth;
     private MainViewModel mainViewModel;
     private DatabaseReference mRootRef;
+    private User user;
 
     public MainFragment() {
 
@@ -65,6 +73,8 @@ public class MainFragment extends Fragment {
         mRootRef = FirebaseDatabase.getInstance().getReference();
         mainViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
 
+
+        getAdmin();
         request_data.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -96,7 +106,15 @@ public class MainFragment extends Fragment {
         delete_data_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mRootRef.child("requests").child(new SharedPref(getActivity()).getUserId()).setValue("");
+                HashMap hashMap=new HashMap();
+                hashMap.put("user_id",new SharedPref(getActivity()).getUserData().getID());
+                hashMap.put("user_name",new SharedPref(getActivity()).getUserData().getName());
+                hashMap.put("admin_token",user.getToken_id());
+                mRootRef.child("requests").child(new SharedPref(getActivity()).getUserId()).updateChildren(hashMap, new DatabaseReference.CompletionListener() {
+                    @Override
+                    public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
+                    }
+                });
             }
         });
 
@@ -126,6 +144,28 @@ public class MainFragment extends Fragment {
             }
         });
         return view;
+    }
+
+
+    private void getAdmin(){
+        mRootRef.child("users").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                Log.e("Count " ,""+dataSnapshot.getChildrenCount());
+                for (DataSnapshot snapshot:dataSnapshot.getChildren()){
+                    if (snapshot.getValue(User.class).isAdmin()){
+                        user=snapshot.getValue(User.class);
+                        break;
+                    }
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Log.e("The read failed: " ,databaseError.getMessage());
+            }
+        });
     }
 
     @Override

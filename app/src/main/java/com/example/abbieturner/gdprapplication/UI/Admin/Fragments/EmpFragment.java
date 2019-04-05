@@ -63,7 +63,7 @@ public class EmpFragment extends Fragment implements UserAdapter.UserClickListen
                 .build();
 
         mAdapter = new UserAdapter(options, this);
-        mAdapter.setHasStableIds(true);
+        //mAdapter.setHasStableIds(true);
         employee_rv.setAdapter(mAdapter);
 
     }
@@ -84,7 +84,7 @@ public class EmpFragment extends Fragment implements UserAdapter.UserClickListen
         String profile = "emp_pp";
 
         Intent intent = new Intent(getActivity(), EmployeeDataActivity.class);
-        intent.putExtra(token,user.getToken_id());
+        intent.putExtra(token, user.getToken_id());
         intent.putExtra(name, user.getName());
         intent.putExtra(address, user.getAddress());
         intent.putExtra(email, user.getEmail());
@@ -113,7 +113,7 @@ public class EmpFragment extends Fragment implements UserAdapter.UserClickListen
     }
 
     @Override
-    public void onPause(){
+    public void onPause() {
         super.onPause();
     }
 }
