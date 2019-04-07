@@ -37,6 +37,7 @@ import java.util.HashMap;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import es.dmoral.toasty.Toasty;
 
 public class MainFragment extends Fragment {
 
@@ -107,12 +108,27 @@ public class MainFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 HashMap hashMap=new HashMap();
-                hashMap.put("user_id",new SharedPref(getActivity()).getUserData().getID());
                 hashMap.put("user_name",new SharedPref(getActivity()).getUserData().getName());
+                hashMap.put("email", new SharedPref(getActivity()).getUserData().getEmail());
+                hashMap.put("address", new SharedPref(getActivity()).getUserData().getAddress());
+                hashMap.put("phone", new SharedPref(getActivity()).getUserData().getPhone());
+                hashMap.put("fax", new SharedPref(getActivity()).getUserData().getPhone());
+                hashMap.put("ID",new SharedPref(getActivity()).getUserId());
+
+
+                hashMap.put("profile", new SharedPref(getActivity()).getUserData().getProfile());
+
+
+                hashMap.put("lang",new SharedPref(getActivity()).getUserData().getLang());
+                hashMap.put("medical", new SharedPref(getActivity()).getUserData().getMedical());
+                hashMap.put("ethnicity", new SharedPref(getActivity()).getUserData().getEthnicity());
+                hashMap.put("workHour", new SharedPref(getActivity()).getUserData().getWorkHour());
+                hashMap.put("workPlace", new SharedPref(getActivity()).getUserData().getWorkPlace());
                 hashMap.put("admin_token",user.getToken_id());
                 mRootRef.child("requests").child(new SharedPref(getActivity()).getUserId()).updateChildren(hashMap, new DatabaseReference.CompletionListener() {
                     @Override
                     public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
+
                     }
                 });
             }

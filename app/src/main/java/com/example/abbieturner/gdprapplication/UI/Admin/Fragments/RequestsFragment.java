@@ -3,16 +3,29 @@ package com.example.abbieturner.gdprapplication.UI.Admin.Fragments;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.abbieturner.gdprapplication.Models.User;
 import com.example.abbieturner.gdprapplication.R;
+import com.example.abbieturner.gdprapplication.UI.Admin.Adapters.UserAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
-public class RequestsFragment extends Fragment {
+import butterknife.BindView;
+
+public class RequestsFragment extends Fragment implements UserAdapter.UserClickListener {
 
     private FirebaseAuth mAuth;
+    private DatabaseReference mRootRef;
+    private UserAdapter mAdapter;
+    @BindView(R.id.deleteUsersList)
+    RecyclerView recyclerView;
 
     public RequestsFragment() {
 
@@ -25,7 +38,22 @@ public class RequestsFragment extends Fragment {
         getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         mAuth = FirebaseAuth.getInstance();
+        mRootRef = FirebaseDatabase.getInstance().getReference().child("requests");
+
+        getUserRequests(mRootRef);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(linearLayoutManager);
+
         return view;
+    }
+
+    private void getUserRequests(DatabaseReference mRootRef) {
+        FirebaseRecyclerOptions<User> options = new FirebaseRecyclerOptions.Builder<User>()
+                .setQuery(mRootRef, User.class)
+                .build();
+
+        mAdapter = new UserAdapter(options, this);
+        recyclerView.setAdapter(mAdapter);
     }
 
 
@@ -37,5 +65,10 @@ public class RequestsFragment extends Fragment {
     @Override
     public void onStop() {
         super.onStop();
+    }
+
+    @Override
+    public void onEmployeeItemClick(User user) {
+        //todo (4) add your item click listener action here
     }
 }
