@@ -43,16 +43,15 @@ public class EmpFragment extends Fragment implements UserAdapter.UserClickListen
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_list, container, false);
-        unbinder = ButterKnife.bind(this, view);
 
+        unbinder = ButterKnife.bind(this, view);
         mAuth = FirebaseAuth.getInstance();
 
         mRootRef = FirebaseDatabase.getInstance().getReference().child("users");
 
+        getUsers(mRootRef);
         LinearLayoutManager linearLayout = new LinearLayoutManager(context);
         employee_rv.setLayoutManager(linearLayout);
-
-        getUsers(mRootRef);
 
         return view;
     }

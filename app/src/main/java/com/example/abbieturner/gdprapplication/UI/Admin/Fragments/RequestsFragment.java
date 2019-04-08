@@ -18,12 +18,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 public class RequestsFragment extends Fragment implements UserAdapter.UserClickListener {
 
     private FirebaseAuth mAuth;
     private DatabaseReference mRootRef;
     private UserAdapter mAdapter;
+    Unbinder unbinder;
     @BindView(R.id.deleteUsersList)
     RecyclerView recyclerView;
 
@@ -37,7 +40,9 @@ public class RequestsFragment extends Fragment implements UserAdapter.UserClickL
         View view = inflater.inflate(R.layout.fragment_requests, container, false);
         getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+        unbinder = ButterKnife.bind(this, view);
         mAuth = FirebaseAuth.getInstance();
+
         mRootRef = FirebaseDatabase.getInstance().getReference().child("requests");
 
         getUserRequests(mRootRef);
