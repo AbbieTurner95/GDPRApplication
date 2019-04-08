@@ -108,7 +108,7 @@ public class MainFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 HashMap hashMap=new HashMap();
-                hashMap.put("user_name",new SharedPref(getActivity()).getUserData().getName());
+                hashMap.put("name",new SharedPref(getActivity()).getUserData().getName());
                 hashMap.put("email", new SharedPref(getActivity()).getUserData().getEmail());
                 hashMap.put("address", new SharedPref(getActivity()).getUserData().getAddress());
                 hashMap.put("phone", new SharedPref(getActivity()).getUserData().getPhone());

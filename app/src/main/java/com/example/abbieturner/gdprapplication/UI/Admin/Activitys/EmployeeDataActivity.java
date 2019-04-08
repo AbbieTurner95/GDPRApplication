@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -33,7 +34,20 @@ public class EmployeeDataActivity extends BaseActivity {
 
     private FirebaseAuth mAuth;
 
-    String emp_name, emp_address, emp_email, emp_ethn, emp_fax, emp_lang, emp_med, emp_phone, emp_wh, emp_wp, emp_pp, emp_id, token;
+    String emp_name;
+    String emp_address;
+    String emp_email;
+    String emp_ethn;
+    String emp_fax;
+    String emp_lang;
+    String emp_med;
+    String emp_phone;
+    String emp_wh;
+    String emp_wp;
+    String emp_pp;
+    String emp_id;
+    String token;
+    boolean inRequestBool;
     @BindView(R.id.user_image)
     ImageView user_image;
     @BindView(R.id.user_name)
@@ -91,6 +105,7 @@ public class EmployeeDataActivity extends BaseActivity {
             emp_pp = intent.getStringExtra("emp_pp");
             emp_id = intent.getStringExtra("user_id");
             token = intent.getStringExtra("token");
+            inRequestBool = intent.getBooleanExtra("isRequest", false);
         }
 
         //user_image.setImageBitmap(emp_pp);
@@ -108,15 +123,20 @@ public class EmployeeDataActivity extends BaseActivity {
         delete_emp_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mRootRef.child("users").child(emp_id).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()) {
-                            startActivity(new Intent(getApplicationContext(), AdminHomeActivity.class));
-                            finish();
+                if (inRequestBool == true) {
+                    mRootRef.child("requests").child(emp_id).removeValue();
+                    mRootRef.child("users").child(emp_id).removeValue();
+                } else if (inRequestBool == false) {
+                    mRootRef.child("users").child(emp_id).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()) {
+                                startActivity(new Intent(getApplicationContext(), AdminHomeActivity.class));
+                                finish();
+                            }
                         }
-                    }
-                });
+                    });
+                }
             }
         });
 
