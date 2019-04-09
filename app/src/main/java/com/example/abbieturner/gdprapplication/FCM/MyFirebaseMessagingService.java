@@ -45,7 +45,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         Intent intent;
 
-        if (key.equals("REQUEST_TO_DELETE")) {
+        if (key != null && key.equals("REQUEST_TO_DELETE")) {
             intent = new Intent(getApplicationContext(), AdminHomeActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         } else {
