@@ -120,6 +120,7 @@ public class MainFragment extends Fragment {
 
 
                 hashMap.put("lang",new SharedPref(getActivity()).getUserData().getLang());
+                hashMap.put("admin",new SharedPref(getActivity()).getUserData().isAdmin());
                 hashMap.put("medical", new SharedPref(getActivity()).getUserData().getMedical());
                 hashMap.put("ethnicity", new SharedPref(getActivity()).getUserData().getEthnicity());
                 hashMap.put("workHour", new SharedPref(getActivity()).getUserData().getWorkHour());

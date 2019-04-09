@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -99,8 +100,8 @@ public class RequestsFragment extends Fragment implements UserAdapter.UserClickL
         String workPlace = "emp_wp";
         String userId = "id";
         String profile = "emp_pp";
+        String admin = "admin";
         String inRequestBool = "inRequest";
-        boolean inRequest = true;
 
         Intent intent = new Intent(getActivity(), EmployeeDataActivity.class);
         intent.putExtra(token, user.getToken_id());
@@ -115,8 +116,11 @@ public class RequestsFragment extends Fragment implements UserAdapter.UserClickL
         intent.putExtra(workPlace, user.getWorkPlace());
         intent.putExtra(profile, user.getProfile());
         intent.putExtra(medical, user.getMedical());
+        Log.e("USER_ID", user.getID() + "");
         intent.putExtra(userId, user.getID());
-        intent.putExtra(inRequestBool, inRequest);
+        intent.putExtra(admin, user.isAdmin());
+
+        intent.putExtra(inRequestBool, true);
         startActivity(intent);
     }
 }

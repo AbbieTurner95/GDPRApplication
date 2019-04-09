@@ -1,6 +1,9 @@
 package com.example.abbieturner.gdprapplication.UI.Admin.Activitys;
 
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -14,8 +17,11 @@ import android.widget.Toast;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.amulyakhare.textdrawable.TextDrawable;
+import com.example.abbieturner.gdprapplication.Models.User;
 import com.example.abbieturner.gdprapplication.R;
 import com.example.abbieturner.gdprapplication.UI.BaseActivity;
+import com.example.abbieturner.gdprapplication.ViewModel.MainViewModel;
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -23,6 +29,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
 
@@ -78,6 +85,7 @@ public class EmployeeDataActivity extends BaseActivity {
     Button contact_emp_btn;
     private DatabaseReference mRootRef;
     private HashMap hashMap;
+    MainViewModel mainViewModel;
 
 
     @Override
@@ -88,6 +96,7 @@ public class EmployeeDataActivity extends BaseActivity {
         mAuth = FirebaseAuth.getInstance();
         mRootRef = FirebaseDatabase.getInstance().getReference();
         hashMap = new HashMap();
+        mainViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
 
         Intent intent = getIntent();
 
@@ -102,13 +111,11 @@ public class EmployeeDataActivity extends BaseActivity {
             emp_phone = intent.getStringExtra("emp_phone");
             emp_wh = intent.getStringExtra("emp_wh");
             emp_wp = intent.getStringExtra("emp_wp");
-            emp_pp = intent.getStringExtra("emp_pp");
-            emp_id = intent.getStringExtra("user_id");
+            emp_id = intent.getStringExtra("id");
             token = intent.getStringExtra("token");
-            inRequestBool = intent.getBooleanExtra("isRequest", false);
+            inRequestBool = intent.getBooleanExtra("inRequest", false);
         }
 
-        //user_image.setImageBitmap(emp_pp);
         user_name.setText(emp_name);
         user_address.setText(emp_address);
         user_email.setText(emp_email);
@@ -120,13 +127,46 @@ public class EmployeeDataActivity extends BaseActivity {
         user_workplace.setText(emp_wp);
         user_number.setText(emp_phone);
 
+
+        mainViewModel.getUserLiveData().observe(this, new Observer<User>() {
+            @Override
+            public void onChanged(@Nullable User user) {
+                if (user != null) {
+                    if (!user.getProfile().equals("default")) {
+                        Picasso.get().load(user.getProfile()).into(user_image);
+                    } else {
+                        TextDrawable drawable = TextDrawable.builder()
+                                .buildRect(String.valueOf(user.getName().charAt(0)), Color.BLUE);
+                        user_image.setImageDrawable(drawable);
+                    }
+                }
+            }
+        });
+
+
         delete_emp_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 if (inRequestBool == true) {
-                    mRootRef.child("requests").child(emp_id).removeValue();
-                    mRootRef.child("users").child(emp_id).removeValue();
+                    Log.e("DELETE", "BOTH");
+                    mRootRef.child("requests").child(emp_id).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            mRootRef.child("users").child(emp_id).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    if (task.isSuccessful()) {
+                                        startActivity(new Intent(getApplicationContext(), AdminHomeActivity.class));
+                                        finish();
+                                    }
+                                }
+                            });
+                        }
+                    });
                 } else if (inRequestBool == false) {
+                    Log.e("DELETE", "ONCE");
+
                     mRootRef.child("users").child(emp_id).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {

@@ -163,11 +163,19 @@ public class LoginActivity extends BaseActivity implements NavigationView.OnNavi
 
                         User user = dataSnapshot.getValue(User.class);
 
-                        if (user.isAdmin()) {
-                            progressDialog.dismiss();
-                            startActivity(new Intent(getApplicationContext(), AdminHomeActivity.class)
-                                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
-                            finish();
+
+                        if (user != null) {
+                            if (user.isAdmin()) {
+                                progressDialog.dismiss();
+                                startActivity(new Intent(getApplicationContext(), AdminHomeActivity.class)
+                                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
+                                finish();
+                            } else {
+                                progressDialog.dismiss();
+                                startActivity(new Intent(getApplicationContext(), MainActivity.class)
+                                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
+                                finish();
+                            }
                         } else {
                             progressDialog.dismiss();
                             startActivity(new Intent(getApplicationContext(), MainActivity.class)
