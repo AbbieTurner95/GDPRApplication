@@ -64,14 +64,14 @@ public class ForgotPasswordActivity extends BaseActivity {
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {
                                 progressDialog.dismiss();
-                                Toasty.success(getApplicationContext(), "reset mail send successfully "
+                                Toasty.success(getApplicationContext(), "Reset Email Successful!"
                                         , Toast.LENGTH_SHORT, true).show();
                                 startActivity(new Intent(getApplicationContext(), LoginActivity.class)
                                         .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
 
                             } else {
                                 progressDialog.hide();
-                                Toasty.error(getApplicationContext(), "unexpected error happened "
+                                Toasty.error(getApplicationContext(), "Unexpected Error Happened "
                                         , Toast.LENGTH_SHORT, true).show();
                             }
                         }

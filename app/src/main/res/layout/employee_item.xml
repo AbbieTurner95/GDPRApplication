@@ -2,9 +2,9 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:background="@color/colorAccent3"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp">
+    android:layout_margin="8dp"
+    android:background="@color/colorAccent3">
 
     <TextView
         android:id="@+id/user_workplace"
@@ -14,7 +14,6 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="5dp"
         android:fontFamily="@font/big_noodle"
-        android:text="TEST NAME"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/eighteen_TS"
@@ -34,7 +33,6 @@
         android:fontFamily="@font/big_noodle"
         android:gravity="center"
         android:padding="@dimen/padd_five"
-        android:text="TEST WORKPLACE"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="@dimen/eighteen_TS"
@@ -52,12 +50,12 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:contentDescription="@string/edit_icon_cd"
         android:src="@drawable/ic_edit_white_24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/user_workplace"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.333"
-        android:contentDescription="@string/edit_icon_cd" />
+        app:layout_constraintVertical_bias="0.333" />
 
 </android.support.constraint.ConstraintLayout>

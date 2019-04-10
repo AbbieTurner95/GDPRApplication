@@ -36,6 +36,7 @@ import java.util.HashMap;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import es.dmoral.toasty.Toasty;
 
 public class MainFragment extends Fragment {
 
@@ -127,7 +128,7 @@ public class MainFragment extends Fragment {
                 mRootRef.child("requests").child(new SharedPref(getActivity()).getUserId()).updateChildren(hashMap, new DatabaseReference.CompletionListener() {
                     @Override
                     public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
-
+                        Toasty.info(getContext(), "Request Sent! Please wait for admin to review.").show();
                     }
                 });
             }

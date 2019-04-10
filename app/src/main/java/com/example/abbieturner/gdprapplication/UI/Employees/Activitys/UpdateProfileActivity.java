@@ -152,7 +152,7 @@ public class UpdateProfileActivity extends BaseActivity {
                 hashMap.put("workHour", etWorkHour.getText().toString());
                 hashMap.put("workPlace", etWorkPlace.getText().toString());
 
-                mRootRef.child("users").child(mAuth.getCurrentUser().getUid())
+                mRootRef.child("users").child(new SharedPref(this).getUserId())
                         .updateChildren(hashMap, new DatabaseReference.CompletionListener() {
                             @Override
                             public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
@@ -162,7 +162,6 @@ public class UpdateProfileActivity extends BaseActivity {
                                         Toast.LENGTH_SHORT, true).show();
                             }
                         });
-
             }
         } else {
             Toasty.warning(this, "Check internet connection", Toast.LENGTH_SHORT, true).show();

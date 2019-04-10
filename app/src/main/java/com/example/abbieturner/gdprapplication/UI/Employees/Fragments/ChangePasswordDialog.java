@@ -112,7 +112,7 @@ public class ChangePasswordDialog extends DialogFragment {
                         });
             }
         } else {
-            Toasty.warning(getActivity(), "Check internet connection", Toast.LENGTH_SHORT, true).show();
+            Toasty.warning(getActivity(), "Check Internet Connection", Toast.LENGTH_SHORT, true).show();
         }
     }
 
