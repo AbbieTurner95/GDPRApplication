@@ -1,12 +1,6 @@
 <resources>
     <string name="app_name">GDPR Application</string>
     <string name="log_in">Log In</string>
-    <string name="slogan">Because your company cares.</string>
-    <string name="error_connection">ERROR - Connection Error!</string>
-    <string name="check_connection">Check your connection!</string>
-    <string name="OK">OK</string>
-    <string name="sign_in_error">Sign in error - please try again!</string>
-    <string name="cancelled_sign_in">Sign in cancelled.</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="phone">Phone</string>
@@ -18,7 +12,6 @@
     <string name="register">Register Here!</string>
     <string name="enter_your_name">Full name</string>
     <string name="address">Address</string>
-    <string name="register_securely_today">Register Securely Today!</string>
     <string name="logo_for_gdpr">logo for GDPR</string>
     <string name="copyright_sign">copyright sign</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -62,19 +55,15 @@
     <string name="welcome">Welcome,</string>
     <string name="why_gdpr_text">The GDPR (General Data Protection Regulation) came into force on 25 May 2018. The regulation replaced the current Data Protection Act. Both employers and their employees have new responsibilities to consider to help ensure compliance. After Britain leaves the European Union, a new UK Data Protection Act will ensure that the GDPR principles remain in UK law. Organisations must have a valid reason for having personal data and the data should not be held for any longer than necessary. This is the company you work fors chosen route in helping them not only comply with the regulations but to help keep your personal data safe and make sure you as an employee have all the information you need on the go.</string>
     <string name="can_t_see_your_question_click_here_to_contact_us">Can\'t see your question? Click here to contact us.</string>
-    <string name="ask">Ask us anything!</string>
     <string name="kept_string">How long is my data kept for?</string>
     <string name="del_req_string">How do I request to delete my data?</string>
     <string name="tech_string">I\'m having a technical issue, where can I go?</string>
     <string name="update_string">Where can I update my data?</string>
     <string name="request_to_delete_data">Request to delete data</string>
-    <string name="admin_home_page">Admin Home Page</string>
     <string name="data_string_how">Data protection inc. use your personal data for the sole purpose of being able to contact you only. The data is not shared with any other parties and will not be sold to any other company. If any of this changes employees will be first notified prior to the changes.</string>
     <string name="firebase_why_string">Your data is stored on a secure server based in the control room at Data inc. The data stored on this application is stored on a protected GDPR complient databse called Firebase. Admin Abbie Turner from Data inc is the only person with access to this database. For more information of Firebase please click the logo below.</string>
     <string name="list_of_employees">List of Employees</string>
-    <string name="admin_home_page_string" translatable="false">ADMIN HOME PAGE</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="delete_employee">Delete Employee</string>
     <string name="contact_employee">Contact Employee</string>
     <string name="send_notification_to_update_data">Send Notification To Update Data</string>
@@ -97,4 +86,10 @@
     <string name="contact_us">Contact Us</string>
     <string name="home">Home</string>
     <string name="profile">Profile</string>
+    <string name="mail_icon">Mail Icon</string>
+    <string name="facebook_icon">Facebook Icon</string>
+    <string name="twitter_icon">Twitter Icon</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="list_emp_to_delete_hdr">List of Employees who wish to delete their data -</string>
+    <string name="info">Info</string>
 </resources>

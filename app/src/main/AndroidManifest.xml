@@ -12,15 +12,16 @@
 
     <application
         android:allowBackup="true"
+        android:configChanges="orientation"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:protectionLevel="signature"
-        android:configChanges="orientation"
-        android:screenOrientation="portrait"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -28,24 +29,49 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyA5h5uo1yGow25kbZvtuf9IaPXm_oI-WUc" />
 
-        <activity android:name=".UI.Employees.Activitys.LoginActivity" android:screenOrientation="portrait">
+        <activity
+            android:name=".UI.Employees.Activitys.LoginActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UI.Employees.Activitys.MainActivity" android:screenOrientation="portrait" />
-        <activity android:name=".UI.Employees.Activitys.RegisterActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".UI.Employees.Activitys.ContactUsActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".UI.Employees.Activitys.ForgotPasswordActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".UI.Employees.Activitys.InfoWhyActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".UI.Employees.Activitys.InfoFAQActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".UI.Employees.Activitys.InfoAboutActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".UI.Employees.Activitys.UpdateProfileActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".UI.Employees.Activitys.HowDataUsedActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".UI.Admin.Activitys.AdminHomeActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".UI.Admin.Activitys.EmployeeDataActivity" android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".UI.Employees.Activitys.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Employees.Activitys.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Employees.Activitys.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Employees.Activitys.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Employees.Activitys.InfoWhyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Employees.Activitys.InfoFAQActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Employees.Activitys.InfoAboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Employees.Activitys.UpdateProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Employees.Activitys.HowDataUsedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Admin.Activitys.AdminHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Admin.Activitys.EmployeeDataActivity"
+            android:screenOrientation="portrait" />
 
         <service android:name=".FCM.MyFirebaseMessagingService">
             <intent-filter>

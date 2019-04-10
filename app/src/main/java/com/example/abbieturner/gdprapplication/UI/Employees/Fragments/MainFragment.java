@@ -29,7 +29,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
@@ -37,7 +36,6 @@ import java.util.HashMap;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
-import es.dmoral.toasty.Toasty;
 
 public class MainFragment extends Fragment {
 
@@ -107,25 +105,25 @@ public class MainFragment extends Fragment {
         delete_data_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                HashMap hashMap=new HashMap();
-                hashMap.put("name",new SharedPref(getActivity()).getUserData().getName());
+                HashMap hashMap = new HashMap();
+                hashMap.put("name", new SharedPref(getActivity()).getUserData().getName());
                 hashMap.put("email", new SharedPref(getActivity()).getUserData().getEmail());
                 hashMap.put("address", new SharedPref(getActivity()).getUserData().getAddress());
                 hashMap.put("phone", new SharedPref(getActivity()).getUserData().getPhone());
                 hashMap.put("fax", new SharedPref(getActivity()).getUserData().getPhone());
-                hashMap.put("ID",new SharedPref(getActivity()).getUserId());
+                hashMap.put("ID", new SharedPref(getActivity()).getUserId());
 
 
                 hashMap.put("profile", new SharedPref(getActivity()).getUserData().getProfile());
 
 
-                hashMap.put("lang",new SharedPref(getActivity()).getUserData().getLang());
-                hashMap.put("admin",new SharedPref(getActivity()).getUserData().isAdmin());
+                hashMap.put("lang", new SharedPref(getActivity()).getUserData().getLang());
+                hashMap.put("admin", new SharedPref(getActivity()).getUserData().isAdmin());
                 hashMap.put("medical", new SharedPref(getActivity()).getUserData().getMedical());
                 hashMap.put("ethnicity", new SharedPref(getActivity()).getUserData().getEthnicity());
                 hashMap.put("workHour", new SharedPref(getActivity()).getUserData().getWorkHour());
                 hashMap.put("workPlace", new SharedPref(getActivity()).getUserData().getWorkPlace());
-                hashMap.put("admin_token",user.getToken_id());
+                hashMap.put("admin_token", user.getToken_id());
                 mRootRef.child("requests").child(new SharedPref(getActivity()).getUserId()).updateChildren(hashMap, new DatabaseReference.CompletionListener() {
                     @Override
                     public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
@@ -136,7 +134,7 @@ public class MainFragment extends Fragment {
         });
 
 
-        log_out_btn.setOnClickListener(new View.OnClickListener(){
+        log_out_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mAuth.signOut();
@@ -164,14 +162,14 @@ public class MainFragment extends Fragment {
     }
 
 
-    private void getAdmin(){
+    private void getAdmin() {
         mRootRef.child("users").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                Log.e("Count " ,""+dataSnapshot.getChildrenCount());
-                for (DataSnapshot snapshot:dataSnapshot.getChildren()){
-                    if (snapshot.getValue(User.class).isAdmin()){
-                        user=snapshot.getValue(User.class);
+                Log.e("Count ", "" + dataSnapshot.getChildrenCount());
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    if (snapshot.getValue(User.class).isAdmin()) {
+                        user = snapshot.getValue(User.class);
                         break;
                     }
 
@@ -180,7 +178,7 @@ public class MainFragment extends Fragment {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Log.e("The read failed: " ,databaseError.getMessage());
+                Log.e("The read failed: ", databaseError.getMessage());
             }
         });
     }
