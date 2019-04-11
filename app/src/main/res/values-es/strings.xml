@@ -9,7 +9,6 @@
     <string name="language">Idioma</string>
     <string name="ethnicity">Etnicidad</string>
     <string name="medical_history">Condiciones Médicas</string>
-    <string name="work_place">Lugar de trabajo.</string>
     <string name="work_hours">Horas de trabajo por semana</string>
     <string name="register">¡Registrar aquí!</string>
     <string name="enter_your_name">Nombre completo</string>
@@ -91,4 +90,6 @@
     <string name="profile_picture">Foto de perfil</string>
     <string name="list_emp_to_delete_hdr">Lista de empleados que desean borrar sus datos -</string>
     <string name="info">Info</string>
+    <string name="to_upload_profile_photo_select_placeholder_image">Para subir la foto de perfil, seleccione la imagen de marcador de posición.</string>
+    <string name="company_address">Dirección de la empresa</string>
 </resources>

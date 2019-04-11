@@ -8,7 +8,6 @@
     <string name="language">Language</string>
     <string name="ethnicity">Ethnicity</string>
     <string name="medical_history">Medical Conditions</string>
-    <string name="work_place">Place of work.</string>
     <string name="register">Register Here!</string>
     <string name="enter_your_name">Full name</string>
     <string name="address">Address</string>
@@ -63,7 +62,6 @@
     <string name="data_string_how">Data protection inc. use your personal data for the sole purpose of being able to contact you only. The data is not shared with any other parties and will not be sold to any other company. If any of this changes employees will be first notified prior to the changes.</string>
     <string name="firebase_why_string">Your data is stored on a secure server based in the control room at Data inc. The data stored on this application is stored on a protected GDPR complient databse called Firebase. Admin Abbie Turner from Data inc is the only person with access to this database. For more information of Firebase please click the logo below.</string>
     <string name="list_of_employees">List of Employees</string>
-
     <string name="delete_employee">Delete Employee</string>
     <string name="contact_employee">Contact Employee</string>
     <string name="send_notification_to_update_data">Send Notification To Update Data</string>
@@ -92,4 +90,6 @@
     <string name="profile_picture">Profile Picture</string>
     <string name="list_emp_to_delete_hdr">List of Employees who wish to delete their data -</string>
     <string name="info">Info</string>
+    <string name="to_upload_profile_photo_select_placeholder_image">To upload profile photo select placeholder image.</string>
+    <string name="company_address">Company Address</string>
 </resources>

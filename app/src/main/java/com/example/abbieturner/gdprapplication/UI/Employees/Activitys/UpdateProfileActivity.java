@@ -135,7 +135,6 @@ public class UpdateProfileActivity extends BaseActivity {
     private void startUpdating() {
         if (Utils.isNetworkAvailable(this)) {
             if (Utils.checkError(etName) && Utils.checkError(etAddress) && Utils.checkError(etPhone)
-                    && Utils.checkError(etFax) && Utils.checkError(etMedical)
                     && Utils.checkError(etWorkHour)
                     && Utils.checkError(etWorkPlace) && Utils.checkPhoneSize(etPhone)) {
 
