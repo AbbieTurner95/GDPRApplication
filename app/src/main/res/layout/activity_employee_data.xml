@@ -180,7 +180,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/big_noodle"
                 android:padding="@dimen/padding_eight"
-                android:text="@string/work_place"
+                android:text="@string/company_address"
                 android:textColor="@color/colorPrimaryDark"
                 android:textStyle="bold" />
 
